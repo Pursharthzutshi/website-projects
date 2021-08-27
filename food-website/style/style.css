@@ -1,0 +1,471 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat';
+}
+
+ul,
+.top-bar-container,
+.header-text-image-container,
+.header-buttons-container,
+.header-buttons-icons-container,
+.service-section .our-service-container,
+.service-icon-heading-column,
+.line,
+.img-container,
+.membership-section,
+.membership-container,
+.membership-icons-plan-row,
+.testimonials-container,
+.testimonials-box,
+.icons-container,
+.testimonial-name-div,
+.line-div,
+.contact-us-form-container,
+form,
+.contact-us-container,
+.contact-us-div,
+footer,
+.social-medial-icons-container,
+.customer-service-button-div {
+    display: flex;
+}
+
+ul,
+.top-bar-container,
+.header-text-image-container,
+.header-buttons-container,
+.header-buttons-icons-container,
+.our-service-container,
+.line,
+.img-container,
+.membership-container,
+.membership-icons-plan-row,
+.testimonials-container,
+.icons-container,
+.testimonial-name-div,
+.line-div,
+.contact-us-form-container,
+.contact-us-container,
+.social-medial-icons-container,
+.customer-service-button-div {
+    flex-direction: row;
+}
+
+.service-icon-heading-column,
+.service-section,
+.membership-section,
+.membership-cards,
+.testimonials-box,
+.contact-us-div,
+form,
+footer {
+    flex-direction: column;
+}
+
+.membership-cards a,
+.submit-btn,
+header,
+a:hover,
+.header-buttons-icons-container:nth-child(2) ion-icon,
+.header-buttons-icons-container:nth-child(2) button,
+.testimonials-section h1,
+.testimonials-box,
+footer,
+.social-medial-icons-container a {
+    color: white;
+}
+
+.line-div,
+.line,
+.service-section,
+.contact-us-form-container,
+.contact-us-div,
+footer {
+    justify-content: center;
+}
+
+.header-buttons-icons-container:nth-child(1) button,
+.membership-cards,
+.testimonials-section .line,
+textarea {
+    background: white;
+}
+
+button,
+a,
+.header-buttons-icons-container:nth-child(1) ion-icon {
+    color: black;
+}
+
+.service-section,
+.line,
+.testimonials-box,
+.contact-us-div,
+footer {
+    align-items: center;
+}
+
+h1,
+.service-section p,
+.contact-us-section p {
+    text-align: center;
+}
+
+ul,
+.testimonial-name-div {
+    justify-content: flex-end;
+}
+
+body::-webkit-scrollbar {
+    background: linear-gradient(to left, rgb(184, 31, 11), rgb(220, 28, 3));
+}
+
+body::-webkit-scrollbar-thumb {
+    background: rgb(255, 132, 102);
+    border-radius: 2px;
+}
+
+body::-webkit-scrollbar-button {
+    display: hidden;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.contact-us-form-container input:focus,
+textarea:focus {
+    box-shadow: 0px 0px 1px 1.5px rgb(211 0 51);
+}
+
+.contact-us-form-container input,
+textarea {
+    outline: none;
+    border: none;
+}
+
+.membership-cards a,
+.submit-btn {
+    background: rgb(255, 58, 40);
+    padding: 8px 12px 8px 12px;
+    box-shadow: .2px .2px 12px .2px rgb(241, 58, 58);
+}
+
+.header-text-image-container {
+    padding-top: 80px;
+    justify-content: space-evenly;
+}
+
+button {
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 1px 12px 8px 12px;
+    font-family: 'Montserrat';
+    border: none;
+    background: none;
+}
+
+header {
+    height: 25rem;
+    clip-path: polygon(0% 0%, 18% 100%, 100% 100%, 100% 0%);
+    background: rgb(137, 16, 0);
+}
+
+.nav-bar-icon-div {
+    display: none;
+}
+
+.nav-bar-icon {
+    visibility: hidden;
+}
+
+.top-bar-container {
+    background-color: white;
+    width: 100%;
+    padding-top: 20px;
+}
+
+.top-bar-container-logo-div {
+    padding-left: 40px;
+}
+
+.top-bar-container-logo-div h3 {
+    color: rgb(69, 45, 2);
+    padding: 8px 12px 8px 12px;
+}
+
+.top-bar-container {
+    justify-content: space-between;
+}
+
+nav {
+    padding: 10px 80px 0px 0px;
+}
+
+ul {
+    margin-top: 30px;
+    gap: 30px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    padding: 8px 12px 8px 12px;
+    text-decoration: none;
+}
+
+a:hover {
+    transition: .2s;
+    padding: 8px 12px 8px 12px;
+    background: linear-gradient(to left, rgb(211, 42, 0), rgb(209, 77, 0));
+}
+
+img {
+    box-shadow: .2px .2px 12px .2px black;
+    width: 20rem;
+    height: auto;
+}
+
+h2 {
+    line-height: 42px;
+}
+
+.header-buttons-container {
+    margin-top: 60px;
+    justify-content: space-evenly;
+    box-shadow: none;
+}
+
+.header-buttons-icons-container button {
+    border-radius: 8px;
+    margin-left: -33px;
+    letter-spacing: 1px;
+    background: none;
+    border: none;
+    padding: 10px 16px 10px 42px;
+    font-size: .9rem;
+}
+
+.header-buttons-icons-container ion-icon {
+    margin: 8px 0px 0px 25px;
+    font-size: 1.3rem;
+}
+
+.header-buttons-icons-container:nth-child(1) button {
+    box-shadow: .2px .2px 12px .2px gray;
+}
+
+.header-buttons-icons-container:nth-child(2) button {
+    background: black;
+    box-shadow: .2px .2px 5px .2px black;
+}
+
+h1 {
+    letter-spacing: 2px;
+    word-spacing: 2px;
+}
+
+.line {
+    width: 22rem;
+    height: .18rem;
+    background: rgb(255, 94, 0);
+}
+
+.service-section p {
+    font-size: 1.2rem;
+}
+
+.our-service-container {
+    justify-content: space-evenly;
+    gap: 100px;
+    margin-top: 30px;
+}
+
+.service-icon-heading-column {
+    padding: 12px 32px 2px 42px;
+    box-shadow: .2px .2px 12px .2px lightgray;
+}
+
+.service-icon-heading-column ion-icon {
+    font-size: 5rem;
+}
+
+.service-icon-heading-column h1 {
+    margin-left: -30px;
+    color: rgb(83, 1, 19);
+}
+
+.img-container img {
+    margin-top: 40px;
+    width: 23.71rem;
+    height: auto;
+}
+
+.icon-images {
+    box-shadow: none;
+    width: 10rem;
+    height: auto;
+}
+
+.membership-container {
+    margin-top: 70px;
+    justify-content: space-around;
+}
+
+.membership-cards {
+    color: rgb(223, 26, 0);
+    box-shadow: .2px .2px 12px .2px lightgray;
+    z-index: 1;
+    width: 20rem;
+    height: 20rem;
+    padding: 2px 12px 12px 2px;
+    color: rgb(108, 15, 7);
+}
+
+.membership-icons-plan-row {
+    margin-left: 20px;
+    gap: 20px;
+}
+
+.membership-icons-plan-row ion-icon {
+    font-size: 1.8rem;
+}
+
+.membership-icons-plan-row p {
+    margin: -.5px 0px 0px 0px;
+}
+
+.membership-cards a {
+    margin: 60px 0px 0px 65px;
+    font-size: .9rem;
+}
+
+svg {
+    z-index: -1;
+    margin-top: -250px;
+}
+
+.testimonials-section {
+    background-attachment: fixed;
+    margin-top: -10px;
+    background-image: linear-gradient(to left, rgba(84, 23, 5, 0.966), rgba(69, 0, 0, 0.694)), url('/style/images/website-images/amirali-mirhashemian-9hIJ4ZLMnZA-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 78vh;
+}
+
+.testimonials-container {
+    justify-content: space-around;
+}
+
+.testimonials-box {
+    padding: 22px 12px 2px 16px;
+    width: 17rem;
+    height: 20rem;
+    border: 8px double white;
+}
+
+.testimonials-box img {
+    box-shadow: none;
+    width: 4rem;
+    height: auto;
+}
+
+.testimonials-box p {
+    line-height: 25px;
+}
+
+.icons-container {
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.icons-container ion-icon {
+    font-size: 1.2rem;
+}
+
+.testimonials-box span {
+    color: whitesmoke;
+    font-size: .9rem;
+    margin: 15px 0px 0px 170px;
+    text-align: end;
+}
+
+.contact-us-section {
+    padding-bottom: 30px;
+}
+
+.contact-us-form-container {
+    align-self: center;
+}
+
+.contact-us-form-container form {
+    gap: 20px;
+    margin-left: -100px;
+}
+
+.contact-us-form-container input {
+    font-family: 'Montserrat';
+    border: none;
+    box-shadow: .2px .2px 12px .2px rgb(236, 236, 236);
+    padding: 10px 92px 10px 12px;
+    width: 100%;
+}
+
+textarea {
+    padding: 10px 92px 10px 12px;
+    width: 100%;
+    height: 10rem;
+    border: none;
+    box-shadow: .2px .2px 12px .2px rgb(236, 236, 236);
+}
+
+.submit-btn {
+    border-radius: 200px;
+    margin: 0px 0px 0px 80px;
+}
+
+.contact-us-container {
+    padding-top: 40px;
+    justify-content: space-evenly;
+}
+
+.contact-us-div ion-icon {
+    font-size: 2.3rem;
+}
+
+.contact-us-div ion-icon,
+.contact-us-div p {
+    color: rgb(142, 21, 0);
+}
+
+.contact-us-div p {
+    font-family: 'Roboto';
+}
+
+footer {
+    padding-top: 20px;
+    height: 10rem;
+    width: 100%;
+    background: linear-gradient(to left, rgb(142, 21, 0), rgb(160, 24, 6));
+}
+
+footer p {
+    margin-top: 10px;
+}
+
+footer h3 {
+    margin-top: -30px;
+}
+
+.social-medial-icons-container {
+    margin-top: 6px;
+    gap: 50px;
+}
+
+footer ion-icon {
+    font-size: 1.7rem;
+}

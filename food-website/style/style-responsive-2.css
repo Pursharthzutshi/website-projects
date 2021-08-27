@@ -1,0 +1,144 @@
+@media screen and (max-width:704px) {
+    .top-bar-container-logo-div,
+    .nav-bar-icon-div,
+    .top-bar-container,
+    .header-text-div,
+    .header-buttons-container,
+    our-service-container,
+    .img-container,
+    .membership-section,
+    .membership-container {
+        display: flex;
+    }
+    .nav-bar-icon-div,
+    .top-bar-container,
+    .header-text-div,
+    .header-buttons-container,
+    .our-service-container,
+    .img-container,
+    .membership-section,
+    .membership-container,
+    .testimonials-section,
+    .testimonials-container {
+        gap: 20px;
+        flex-direction: column;
+    }
+    .top-bar-container-logo-div {
+        justify-content: space-between;
+    }
+    .top-bar-container-logo-div h3 {
+        color: rgb(255, 81, 0);
+        border: 8px double rgb(255, 81, 0);
+        margin-top: 10px;
+        border-radius: 20px;
+        padding: 2px 15px 2px 15px;
+        white-space: nowrap;
+        font-size: 1rem;
+    }
+    header {
+        margin-top: -90px;
+        height: 15.5rem;
+        clip-path: none;
+    }
+    .header-image-div {
+        visibility: hidden;
+    }
+    .header-text-div {
+        font-size: .8rem;
+        margin: -50px 0px 0px 350px;
+    }
+    .header-text-div h2 {
+        font-size: .92rem;
+        margin: -23px 0px 0px -20px;
+        white-space: nowrap;
+    }
+    .header-buttons-container {
+        margin-top: 0px;
+        justify-content: space-evenly;
+        box-shadow: none;
+    }
+    .header-buttons-icons-container ion-icon {
+        font-size: 1.2rem;
+    }
+    .header-buttons-icons-container button {
+        font-size: .75rem;
+    }
+    .contact-us-form-container input,
+    textarea {
+        margin-left: 43px;
+        width: 70%;
+    }
+    .nav-bar-icon-div {
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-bar-icon {
+        margin: 10px 0px 0px 90px;
+        font-size: 1.8rem;
+        visibility: visible;
+        background: rgb(255, 81, 0);
+        box-shadow: .2px .2px 2px .2px rgb(255, 81, 0);
+        color: white;
+        padding: 6px 8px 6px 8px;
+        border-radius: 8px;
+    }
+    .nav-bar-icon:hover {
+        box-shadow: .2px .2px 6px .2px lightgray;
+        background: transparent;
+        transition: .2s;
+        color: rgb(255, 81, 0);
+    }
+    ul {
+        visibility: hidden;
+    }
+    h3 {
+        text-align: center;
+    }
+    .img-container img {
+        width: 18rem;
+        height: auto;
+    }
+    .service-section p {
+        font-size: .72rem;
+    }
+    .membership-section {
+        height: 75rem;
+    }
+    .header-text-div,
+    .our-service-container,
+    .img-container,
+    .membership-container,
+    .testimonials-container {
+        align-items: center;
+    }
+    .service-icon-heading-column {
+        padding: 12px 32px 2px 42px;
+        box-shadow: .2px .2px 12px .2px lightgray;
+    }
+    .membership-container {
+        margin-top: -20px;
+    }
+    .membership-cards {
+        width: 20rem;
+        height: 20rem;
+    }
+    .membership-icons-plan-row p {
+        font-size: .9rem;
+    }
+    svg {
+        z-index: -1;
+        margin-top: -110px;
+    }
+    .testimonials-section {
+        height: 80rem;
+    }
+    .contact-us-section p {
+        font-size: .88rem;
+    }
+    .contact-us-div ion-icon {
+        font-size: 1.4rem;
+    }
+    .contact-us-div p {
+        font-size: .65rem;
+    }
+}

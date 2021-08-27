@@ -1,0 +1,234 @@
+.customer-service-box,
+.log-in-box-div,
+.log-in-box-container {
+    display: flex;
+}
+
+.log-in-box-div,
+.log-in-box-container,
+.customer-service-box {
+    flex-direction: column;
+}
+
+.box-log-in-button,
+.create-your-account,
+.log-in-btn:hover,
+.customer-service-icon,
+.send-message-button {
+    color: white;
+}
+
+.log-in-box-div,
+.send-message-button:hover,
+.show-log-in-error,
+.customer-service-box {
+    background: white;
+}
+
+.log-in-box-div,
+.send-message-button,
+.customer-service-box {
+    animation-duration: .5s;
+    animation-timing-function: ease;
+}
+
+.log-in-box-div,
+.send-message-button {
+    animation-name: fadeIn;
+}
+
+.close-log-in-box-icon,
+.log-in-heading {
+    color: rgb(255, 58, 40);
+}
+
+.log-in-heading,
+.create-account-heading {
+    text-align: center;
+}
+
+.log-in-box-container {
+    z-index: +1;
+    position: fixed;
+    left: 50%;
+    right: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.log-in-box-div {
+    box-shadow: .2px .2px 22px .2px lightgray;
+    z-index: 1;
+    width: 22rem;
+    height: 23rem;
+    padding: 20px 22px 12px 22px;
+    gap: 20px;
+}
+
+@keyframes fadeIn {
+    0% {
+        transform: rotate(5deg);
+        background: lightgray;
+        margin-top: 50px;
+        opacity: 0;
+        box-shadow: 2px 2px 62px 2px white;
+    }
+    100% {
+        visibility: visible;
+        margin-top: 0px;
+        opacity: 1;
+    }
+}
+
+.close-log-in-box-icon {
+    font-size: 1.5rem;
+    margin-left: 300px;
+    color: red;
+}
+
+.log-in-heading {
+    margin-top: -45px;
+    color: rgb(255, 58, 40);
+}
+
+.log-in-input {
+    margin-top: -10px;
+    outline: none;
+    border: none;
+    box-shadow: .2px .2px 12px .2px lightgray;
+    padding: 8px 12px 8px 12px;
+}
+
+.box-log-in-button,
+.create-your-account {
+    padding: 8px 12px 8px 12px;
+    box-shadow: .2px .2px 12px .2px rgb(241, 58, 58);
+}
+
+.box-log-in-button {
+    background: rgb(255, 58, 40);
+}
+
+.create-account-heading {
+    margin-top: 5px;
+    color: black
+}
+
+.create-your-account {
+    margin-top: -7px;
+    background: rgb(137, 11, 0);
+}
+
+.show-log-in-error {
+    width: 105.5%;
+    padding: 8px 12px 18px 13px;
+    margin: -3px 0px 0px -22px;
+    color: red;
+}
+
+.customer-service-button-div {
+    justify-content: flex-end;
+}
+
+.customer-service-icon {
+    position: fixed;
+    right: 0;
+    right: 20px;
+    bottom: 10px;
+    z-index: +1;
+    font-size: 2.5rem;
+    background: rgb(255, 58, 40);
+    box-shadow: .2px .2px 3px .2px rgb(255, 58, 40);
+    padding: 10px 12px 7px 12px;
+    border-radius: 200px;
+}
+
+.customer-service-box {
+    padding: 5px 8px 12px 16px;
+    width: 18.5rem;
+    height: 33rem;
+    box-shadow: .2px .2px 12px .2px gray;
+    position: fixed;
+    bottom: 70px;
+    right: 0;
+    z-index: +1;
+    animation-name: customerServiceBoxfadeIn;
+}
+
+@keyframes customerServiceBoxfadeIn {
+    0% {
+        background: transparent;
+        opacity: 0;
+        transform: rotate(-20deg);
+        box-shadow: 2px 2px 62px 2px white;
+    }
+    100% {
+        display: visible;
+        opacity: 1;
+    }
+}
+
+.customer-service-heading {
+    margin-top: -10px;
+}
+
+.customer-service-input {
+    border: none;
+    padding: 8px 12px 8px 12px;
+    width: 84%;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: .2px .2px 5px .2px lightgray;
+}
+
+.customer-service-input::placeholder {
+    font-family: 'Montserrat';
+}
+
+.customer-service-input:focus {
+    outline: none;
+    transition: .3s;
+    box-shadow: 0px 0px 1px 1.5px rgb(255, 94, 0);
+}
+
+.delete-customer-service-box-icon {
+    color: rgb(243, 2, 2);
+    font-size: 2.3rem;
+    margin-left: 248px;
+}
+
+.send-message-button {
+    font-size: 1.1rem;
+    border-radius: 200px;
+    background: rgb(255, 81, 0);
+    padding: 8px 6px 4px 10px;
+    position: absolute;
+    top: 90px;
+    left: 270px;
+    z-index: +1;
+}
+
+.send-message-button:hover {
+    transition: .3s;
+    box-shadow: .2px .2px 12px .2px lightgray;
+    color: rgb(255, 81, 0);
+    padding: 8px 6px 4px 10px;
+}
+
+.show-message {
+    font-family: 'Roboto';
+}
+
+.customer-service-big-icon,
+.customer-service-box-text {
+    color: rgb(255, 81, 0);
+}
+
+.customer-service-big-icon {
+    margin: 30px 0px 0px 80px;
+    font-size: 8rem;
+}
+
+.customer-service-box-text {
+    text-align: center;
+}
