@@ -1,4 +1,4 @@
-@media screen and (max-width:704px) {
+@media screen and (max-width:400px) {
     .top-bar-container-logo-div,
     .nav-bar-icon-div,
     .top-bar-container,
@@ -127,7 +127,7 @@
     }
     svg {
         z-index: -1;
-        margin-top: -110px;
+        margin-top: -88px;
     }
     .testimonials-section {
         height: 80rem;

@@ -56,17 +56,20 @@
 
                         <ul>
 
-                            <li><a href='#'>Home</a></li>
+                            <li><a href="header-section">Home</a></li>
 
-                            <li><a href='#'>Services</a></li>
+                            <li><a href="#service-section">Services</a></li>
 
                             <li>
-                                <a href='#'>Testimonials</a>
+                                <a href='#membership-section'>Membership Plans</a>
+                            </li>
+                            <li>
+                                <a href='#testimonials-section'>Testimonials</a>
                             </li>
 
-                            <li><a href='#'><button class='log-in-btn'>Log-in/Sign-up</button></a></li>
+                            <li><button class='log-in-button'><a href='#'>Log-in/Sign-up</a></button></li>
 
-                            <li><a href='#'>Contact Us</a></li>
+                            <li><a href='#contact-us-section'>Contact Us</a></li>
 
                         </ul>
 
@@ -108,7 +111,7 @@
 
                         <div class='header-image-div'>
 
-                            <img src='images/website-images/ivan-torres-MQUqbmszGGM-unsplash.jpg'>
+                            <img src='images/website-images/pizza-png-19310 (1).png'>
 
                         </div>
 
@@ -118,7 +121,7 @@
                 </header>
             </section>
 
-            <section class='service-section'>
+            <section id='service-section' class='service-section'>
 
                 <h1>Our Service</h1>
 
@@ -182,7 +185,7 @@
 
             <br>
 
-            <section class='membership-section'>
+            <section id='membership-section' class='membership-section'>
 
                 <h1>Membership Benifits</h1>
 
@@ -311,7 +314,7 @@
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill=" rgb(223, 26, 0)" fill-opacity="1" d="M0,224L48,197.3C96,171,192,117,288,128C384,139,480,213,576,208C672,203,768,117,864,106.7C960,96,1056,160,1152,160C1248,160,1344,96,1392,64L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>            </section>
 
 
-            <section class='testimonials-section'>
+            <section id='testimonials-section' class='testimonials-section'>
                 <br>
                 <h1>Testimonials</h1>
 
@@ -401,7 +404,7 @@
 
             </section>
 
-            <section class='contact-us-section'>
+            <section id='contact-us-section' class='contact-us-section'>
 
                 <h1>Contact Us</h1>
 
@@ -419,19 +422,20 @@
 
                     <form>
 
-                        <input placeholder="Username" type='text'>
+                        <input class='contact-us-username-input' placeholder="Username" type='text'>
 
-                        <input placeholder="Email-id" type='text'>
+                        <input class='contact-us-email-input' placeholder="Email-id" type='text'>
 
                         <textarea value='Write Down your Problem'></textarea>
 
-                        <button class='submit-btn'>Submit</button>
+                        <button class='submit-button'>Submit</button>
 
                     </form>
 
 
                 </div>
 
+                <div class='contact-us-error-div'></div>
 
                 <div class='contact-us-container'>
 
@@ -504,6 +508,8 @@
             <script src='js/log-in-box-script.js'></script>
 
             <script src='js/customer-service-button.js'></script>
+
+            <script src='js/contact-us.js'></script>
 
         </body>
     </head>

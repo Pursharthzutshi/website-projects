@@ -12,7 +12,7 @@
 
 .box-log-in-button,
 .create-your-account,
-.log-in-btn:hover,
+.log-in-button:hover,
 .customer-service-icon,
 .send-message-button {
     color: white;
@@ -52,6 +52,7 @@
     position: fixed;
     left: 50%;
     right: 50%;
+    top: 20%;
     align-items: center;
     justify-content: center;
 }
@@ -231,4 +232,10 @@
 
 .customer-service-box-text {
     text-align: center;
+}
+
+.contact-us-error {
+    margin-left: -20px;
+    font-family: 'Roboto';
+    color: rgb(167, 9, 9);
 }

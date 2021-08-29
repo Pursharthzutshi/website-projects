@@ -64,8 +64,9 @@ footer {
 }
 
 .membership-cards a,
-.submit-btn,
+.submit-button,
 header,
+nav a:hover,
 a:hover,
 .header-buttons-icons-container:nth-child(2) ion-icon,
 .header-buttons-icons-container:nth-child(2) button,
@@ -85,6 +86,9 @@ footer {
     justify-content: center;
 }
 
+.membership-cards a:hover,
+.customer-service-button ion-icon:hover,
+.submit-button:hover,
 .header-buttons-icons-container:nth-child(1) button,
 .membership-cards,
 .testimonials-section .line,
@@ -92,8 +96,15 @@ textarea {
     background: white;
 }
 
-button,
-a,
+.membership-cards a:hover,
+.customer-service-button ion-icon:hover,
+.submit-button:hover {
+    transition: .3s;
+    color: rgb(108, 15, 7);
+    box-shadow: .2px .2px 4px .2px lightgray;
+}
+
+nav a,
 .header-buttons-icons-container:nth-child(1) ion-icon {
     color: black;
 }
@@ -146,7 +157,7 @@ textarea {
 }
 
 .membership-cards a,
-.submit-btn {
+.submit-button {
     background: rgb(255, 58, 40);
     padding: 8px 12px 8px 12px;
     box-shadow: .2px .2px 12px .2px rgb(241, 58, 58);
@@ -167,6 +178,7 @@ button {
 }
 
 header {
+    padding-top: 50px;
     height: 25rem;
     clip-path: polygon(0% 0%, 18% 100%, 100% 100%, 100% 0%);
     background: rgb(137, 16, 0);
@@ -181,6 +193,9 @@ header {
 }
 
 .top-bar-container {
+    box-shadow: .2px .2px 4px .2px lightgray;
+    z-index: +1;
+    position: fixed;
     background-color: white;
     width: 100%;
     padding-top: 20px;
@@ -199,8 +214,9 @@ header {
     justify-content: space-between;
 }
 
-nav {
-    padding: 10px 80px 0px 0px;
+.top-bar-container {
+    background: white;
+    padding: 10px 0px 0px 0px;
 }
 
 ul {
@@ -209,22 +225,32 @@ ul {
 }
 
 li {
+    padding-right: 32px;
     list-style: none;
 }
 
 a {
+    text-decoration: none;
+}
+
+nav a {
     padding: 8px 12px 8px 12px;
     text-decoration: none;
 }
 
-a:hover {
-    transition: .2s;
+nav a:hover {
     padding: 8px 12px 8px 12px;
+    color: white;
+    transition: .2s;
     background: linear-gradient(to left, rgb(211, 42, 0), rgb(209, 77, 0));
 }
 
+nav a:focus {
+    color: white;
+    background: linear-gradient(to left, rgb(123, 25, 0), rgb(142, 52, 0));
+}
+
 img {
-    box-shadow: .2px .2px 12px .2px black;
     width: 20rem;
     height: auto;
 }
@@ -286,7 +312,8 @@ h1 {
 
 .service-icon-heading-column {
     padding: 12px 32px 2px 42px;
-    box-shadow: .2px .2px 12px .2px lightgray;
+    border: 23px double rgb(155, 7, 7);
+    border-radius: 20px;
 }
 
 .service-icon-heading-column ion-icon {
@@ -294,7 +321,8 @@ h1 {
 }
 
 .service-icon-heading-column h1 {
-    margin-left: -30px;
+    font-size: 1.1rem;
+    margin-left: -6px;
     color: rgb(83, 1, 19);
 }
 
@@ -305,8 +333,9 @@ h1 {
 }
 
 .icon-images {
+    margin-left: 10px;
     box-shadow: none;
-    width: 10rem;
+    width: 6.2rem;
     height: auto;
 }
 
@@ -318,7 +347,6 @@ h1 {
 .membership-cards {
     color: rgb(223, 26, 0);
     box-shadow: .2px .2px 12px .2px lightgray;
-    z-index: 1;
     width: 20rem;
     height: 20rem;
     padding: 2px 12px 12px 2px;
@@ -423,7 +451,7 @@ textarea {
     box-shadow: .2px .2px 12px .2px rgb(236, 236, 236);
 }
 
-.submit-btn {
+.submit-button {
     border-radius: 200px;
     margin: 0px 0px 0px 80px;
 }

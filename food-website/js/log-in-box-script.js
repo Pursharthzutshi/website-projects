@@ -1,6 +1,6 @@
 const logInBoxContainer = document.querySelector('.log-in-box-container');
 
-const logInBtn = document.querySelector(".log-in-btn");
+const logInBtn = document.querySelector(".log-in-button");
 
 logInBtn.addEventListener("click", showLogInBox, 1);
 
@@ -9,7 +9,7 @@ function showLogInBox() {
 
     logInBtn.style.pointerEvents = 'none';
 
-    const header = document.querySelector("header");
+    const topBarContainer = document.querySelector(".top-bar-container");
 
     const logInBoxContainer = document.querySelector('.log-in-box-container');
 
@@ -18,7 +18,9 @@ function showLogInBox() {
 
     logInBoxContainer.appendChild(logInBoxDiv);
 
-    header.style.opacity = '.1';
+    document.body.style.background = 'linear-gradient(to left,rgba(232, 232, 232, 1),rgba(0,0,0,0.1))';
+
+    topBarContainer.opacity = '.1';
 
     logInBoxContainer.style.opacity = '1';
 
@@ -100,9 +102,9 @@ function showLogInBox() {
 
         logInBoxContainer.removeChild(logInBoxDiv);
 
-        header.style.marginTop = '0px';
+        document.body.style.marginTop = '0px';
 
-        header.style.opacity = '1';
+        document.body.style.background = 'none';
 
         logInBtn.style.pointerEvents = 'auto';
 

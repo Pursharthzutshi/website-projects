@@ -24,6 +24,8 @@
         flex-direction: column;
     }
     .top-bar-container {
+        box-shadow: .2px .2px 12px .2px black;
+        height: 10vh;
         background: rgb(83, 8, 1);
     }
     .top-bar-container-logo-div {
@@ -54,7 +56,6 @@
     }
     .nav-bar-icon:hover {
         box-shadow: .2px .2px 6px .2px lightgray;
-        background: transparent;
         transition: .2s;
         color: rgb(255, 81, 0);
     }
@@ -62,7 +63,7 @@
         visibility: hidden;
     }
     header {
-        margin-top: -90px;
+        padding-top: 70px;
         height: 15.5rem;
         clip-path: none;
     }
@@ -130,7 +131,7 @@
     }
     svg {
         z-index: -1;
-        margin-top: -110px;
+        margin-top: -88px;
     }
     .testimonials-section {
         height: 80rem;
