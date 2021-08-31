@@ -6,6 +6,7 @@
     .header-buttons-container,
     our-service-container,
     .img-container,
+    .cuisine-container,
     .membership-section,
     .membership-container {
         display: flex;
@@ -16,6 +17,7 @@
     .header-buttons-container,
     .our-service-container,
     .img-container,
+    .cuisine-container,
     .membership-section,
     .membership-container,
     .testimonials-section,
@@ -105,6 +107,10 @@
     .service-section p {
         font-size: .72rem;
     }
+    .cuisine-section p {
+        line-height: 24px;
+        font-size: .8rem;
+    }
     .membership-section {
         height: 75rem;
     }
@@ -115,9 +121,17 @@
     .testimonials-container {
         align-items: center;
     }
+    .service-icon-heading-column h1 {
+        font-size: .9rem;
+    }
+    .icon-images {
+        margin-left: 20px;
+        width: 4.2rem;
+        height: auto;
+    }
     .service-icon-heading-column {
+        border: 8px double rgb(155, 7, 7);
         padding: 12px 32px 2px 42px;
-        box-shadow: .2px .2px 12px .2px lightgray;
     }
     .membership-container {
         margin-top: -20px;

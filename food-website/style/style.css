@@ -13,6 +13,8 @@ ul,
 .service-icon-heading-column,
 .line,
 .img-container,
+.cuisine-container,
+.cuisine-div,
 .membership-section,
 .membership-container,
 .membership-icons-plan-row,
@@ -39,6 +41,7 @@ ul,
 .our-service-container,
 .line,
 .img-container,
+.cuisine-container,
 .membership-container,
 .membership-icons-plan-row,
 .testimonials-container,
@@ -54,6 +57,7 @@ ul,
 
 .service-icon-heading-column,
 .service-section,
+.cuisine-div,
 .membership-section,
 .membership-cards,
 .testimonials-box,
@@ -339,6 +343,39 @@ h1 {
     height: auto;
 }
 
+.cuisine-section p {
+    text-align: center;
+}
+
+.cuisine-icon,
+.view-more-cuisine {
+    color: rgb(255, 51, 0);
+}
+
+.cuisine-icon {
+    margin-top: 5px;
+    font-size: 4.3rem;
+}
+
+.cuisine-section {
+    padding-left: 20px;
+}
+
+.cuisine-container {
+    padding-top: 30px;
+    justify-content: space-around;
+}
+
+.cuisine-div {
+    align-items: center;
+}
+
+.cuisine-div img {
+    width: 8.5rem;
+    height: auto;
+    border-radius: 200px;
+}
+
 .membership-container {
     margin-top: 70px;
     justify-content: space-around;
@@ -379,7 +416,7 @@ svg {
 .testimonials-section {
     background-attachment: fixed;
     margin-top: -10px;
-    background-image: linear-gradient(to left, rgba(84, 23, 5, 0.966), rgba(69, 0, 0, 0.694)), url('/images/website-images/amirali-mirhashemian-9hIJ4ZLMnZA-unsplash.jpg');
+    background-image: linear-gradient(to left, rgba(84, 23, 5, 0.966), rgba(69, 0, 0, 0.694)), url('amirali-mirhashemian-9hIJ4ZLMnZA-unsplash.jpg');
     background-position: center;
     background-size: cover;
     height: 78vh;

@@ -1,0 +1,86 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat';
+}
+
+.container,
+form,
+.left-sidebar {
+    display: flex;
+}
+
+.container {
+    flex-direction: row;
+}
+
+.container {
+    gap: 230px;
+}
+
+form,
+.left-sidebar {
+    flex-direction: column;
+}
+
+form {
+    gap: 30px;
+}
+
+.left-sidebar {
+    width: 30rem;
+    height: 44.6rem;
+    background: linear-gradient(to left, rgb(255, 51, 0), red);
+    color: white;
+    gap: 80px;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-sidebar h1 {
+    color: white;
+    padding: 8px 12px 8px 12px;
+}
+
+.main-page {
+    padding: 20px 0px 0px 0px;
+}
+
+h3 {
+    margin-left: 60px;
+    text-align: center;
+}
+
+input {
+    font-family: 'Montserrat';
+    width: 110%;
+    padding: 8px 42px 8px 12px;
+    outline: none;
+    border: none;
+    box-shadow: .2px .2px 12px .2px lightgray;
+}
+
+.sign-up-button {
+    margin: 20px 0px 0px 100px;
+    color: white;
+    border-radius: 200px;
+    border: none;
+    box-shadow: none;
+    padding: 8px 22px 8px 22px;
+    font-family: 'Montserrat';
+    box-shadow: .2px .2px 8px .2px rgb(255, 51, 0);
+    background: linear-gradient(to left, rgb(255, 51, 0), rgb(255, 78, 33));
+}
+
+.sign-up-button:hover {
+    background: white;
+    color: rgb(255, 51, 0);
+    cursor: pointer;
+    box-shadow: .2px .2px 8px .2px lightgray;
+    transition: .2s;
+}
+
+.icon-images {
+    width: 20rem;
+    height: auto;
+}
