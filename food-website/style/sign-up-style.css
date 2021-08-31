@@ -52,9 +52,10 @@ h3 {
 }
 
 input {
+    margin-left: 25px;
     font-family: 'Montserrat';
-    width: 110%;
-    padding: 8px 42px 8px 12px;
+    width: 100%;
+    padding: 8px 102px 8px 12px;
     outline: none;
     border: none;
     box-shadow: .2px .2px 12px .2px lightgray;
