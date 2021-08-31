@@ -60,6 +60,11 @@ input {
     box-shadow: .2px .2px 12px .2px lightgray;
 }
 
+input:focus {
+    border: 1px solid orange;
+    transition: .3s;
+}
+
 .sign-up-button {
     margin: 20px 0px 0px 100px;
     color: white;
