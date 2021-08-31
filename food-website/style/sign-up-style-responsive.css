@@ -1,0 +1,98 @@
+@media screen and (max-width:704px) {
+    .container,
+    form,
+    .left-sidebar,
+    .main-page,
+    .button-container {
+        display: flex;
+    }
+    .container,
+    .main-page {
+        flex-direction: column;
+    }
+    .left-sidebar {
+        margin-left: -50px;
+        width: 33.3rem;
+        height: 20.6rem;
+    }
+    .left-sidebar h1 {
+        margin-left: 20px;
+        margin-top: -10px;
+        font-size: 1.8rem;
+        color: white;
+        padding: 8px 12px 8px 12px;
+    }
+    .container,
+    .main-page,
+    form {
+        justify-content: center;
+        align-content: center;
+    }
+    .main-page {
+        padding: 20px 0px 0px 50px;
+    }
+    input {
+        margin-left: 40px;
+        font-family: 'Montserrat';
+        width: 70%;
+        padding: 8px 102px 8px 12px;
+        outline: none;
+        border: none;
+        box-shadow: .2px .2px 3px .2px lightgray;
+    }
+    input:focus {
+        box-shadow: 0.2px 0.2px 2px 1px #ff3300;
+        transition: .3s;
+    }
+    h3 {
+        margin-left: -25px;
+    }
+    .button-container button {
+        margin: 20px 0px 0px 0px;
+        color: white;
+        border-radius: 8px;
+        border: none;
+        box-shadow: none;
+        padding: 8px 22px 8px 22px;
+        font-family: 'Montserrat';
+    }
+    .button-container button:nth-child(1) {
+        box-shadow: .2px .2px 8px .2px rgb(255, 51, 0);
+        background: linear-gradient(to left, rgb(255, 51, 0), rgb(255, 78, 33));
+    }
+    .button-container button:nth-child(2) {
+        box-shadow: .2px .2px 8px .2px rgb(245, 27, 27);
+        background: linear-gradient(to left, rgb(245, 47, 47), rgb(251, 0, 0));
+    }
+    .button-container button:nth-child(3) {
+        box-shadow: .2px .2px 8px .2px rgb(11, 124, 194);
+        background: linear-gradient(to left, rgb(1, 138, 223), rgb(0, 95, 179));
+    }
+    .button-container button:hover {
+        background: white;
+        color: black;
+        cursor: pointer;
+        box-shadow: .2px .2px 8px .2px lightgray;
+        transition: .2s;
+    }
+    .icon-images {
+        margin: -70px 0px 0px 70px;
+        width: 10rem;
+        height: auto;
+    }
+    h2 {
+        color: rgb(255, 51, 0);
+        margin-left: -20px;
+        margin-top: -220px;
+    }
+    .show-error {
+        margin: 25px 0px 0px 30px;
+    }
+    .button-container {
+        padding-bottom: 30px;
+        margin-left: 70px;
+    }
+    .sign-up-button {
+        width: 70%;
+    }
+}
