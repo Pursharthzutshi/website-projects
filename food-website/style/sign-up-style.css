@@ -6,12 +6,23 @@ body {
 
 .container,
 form,
-.left-sidebar {
+.left-sidebar,
+.button-container {
     display: flex;
+}
+
+h2,
+h3,
+.show-error {
+    text-align: center;
 }
 
 .container {
     flex-direction: row;
+}
+
+.button-container {
+    flex-direction: column;
 }
 
 .container {
@@ -24,11 +35,12 @@ form,
 }
 
 form {
+    margin-top: 40px;
     gap: 30px;
 }
 
 .left-sidebar {
-    width: 30rem;
+    width: 40rem;
     height: 44.6rem;
     background: linear-gradient(to left, rgb(255, 51, 0), red);
     color: white;
@@ -47,8 +59,7 @@ form {
 }
 
 h3 {
-    margin-left: 60px;
-    text-align: center;
+    margin: 0px 0px 0px 60px;
 }
 
 input {
@@ -58,29 +69,46 @@ input {
     padding: 8px 102px 8px 12px;
     outline: none;
     border: none;
-    box-shadow: .2px .2px 12px .2px lightgray;
+    box-shadow: .2px .2px 3px .2px lightgray;
 }
 
 input:focus {
-    border: 1px solid orange;
+    box-shadow: 0.2px 0.2px 2px 1px #ff3300;
     transition: .3s;
 }
 
-.sign-up-button {
-    margin: 20px 0px 0px 100px;
+.button-container button {
+    margin: 20px 0px 0px 40px;
     color: white;
-    border-radius: 200px;
+    border-radius: 8px;
     border: none;
     box-shadow: none;
     padding: 8px 22px 8px 22px;
     font-family: 'Montserrat';
+}
+
+.button-container button:nth-child(1) {
     box-shadow: .2px .2px 8px .2px rgb(255, 51, 0);
     background: linear-gradient(to left, rgb(255, 51, 0), rgb(255, 78, 33));
 }
 
-.sign-up-button:hover {
+.button-container button:nth-child(2) {
+    box-shadow: .2px .2px 8px .2px rgb(245, 27, 27);
+    background: linear-gradient(to left, rgb(245, 47, 47), rgb(251, 0, 0));
+}
+
+.button-container button:nth-child(3) {
+    box-shadow: .2px .2px 8px .2px rgb(11, 124, 194);
+    background: linear-gradient(to left, rgb(1, 138, 223), rgb(0, 95, 179));
+}
+
+.button-container {
+    justify-content: center;
+}
+
+.button-container button:hover {
     background: white;
-    color: rgb(255, 51, 0);
+    color: black;
     cursor: pointer;
     box-shadow: .2px .2px 8px .2px lightgray;
     transition: .2s;
@@ -89,4 +117,13 @@ input:focus {
 .icon-images {
     width: 20rem;
     height: auto;
+}
+
+h2 {
+    color: rgb(255, 51, 0);
+    margin-left: 80px;
+}
+
+.show-error {
+    margin: 25px 0px 0px 30px;
 }

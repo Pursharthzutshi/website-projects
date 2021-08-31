@@ -51,14 +51,15 @@ function checkPassword() {
     const showErrorMessage = document.querySelector(".show-error");
 
     if (passwordInput.value == '') {
-        passwordInput.style.boxShadow = '1px 0px 1px 2px #ff2f2f';
+        passwordInput.style.boxShadow = 'rgb(255 47 47) 0px 0px 1px 2px';
         showErrorMessage.innerHTML = 'Password not filled';
     } else if (passwordInput.value.length < 5 || passwordInput.value.length > 30) {
-        passwordInput.style.boxShadow = '1px 0px 1px 2px #ff2f2f';
+        passwordInput.style.boxShadow = 'rgb(255 47 47) 0px 0px 1px 2px';
         showErrorMessage.innerHTML = 'Value should be between 5 to 30';
     } else if (passwordInput.value == passwordReCheckInput.value) {
-        passwordInput.style.boxShadow = '1px 0px 1px 2px #ff2f2f';
-        passwordReCheckInput.style.boxShadow = '1px 0px 1px 2px #ff2f2f';
+
+        passwordInput.style.boxShadow = 'rgb(255 47 47) 0px 0px 1px 2px';
+        passwordReCheckInput.style.boxShadow = 'rgb(255 47 47) 0px 0px 1px 2px';
         showErrorMessage.innerHTML = 'Password values not matched';
     } else {
         return;
