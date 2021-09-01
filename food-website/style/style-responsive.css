@@ -8,7 +8,9 @@
     .img-container,
     .cuisine-container,
     .membership-section,
-    .membership-container {
+    .membership-container,
+    .nav-bar,
+    ul {
         display: flex;
     }
     .nav-bar-icon-div,
@@ -21,9 +23,15 @@
     .membership-section,
     .membership-container,
     .testimonials-section,
+    .testimonials-container,
+    .nav-bar,
+    ul {
+        flex-direction: column;
+    }
+    .membership-section,
+    .membership-container,
     .testimonials-container {
         gap: 20px;
-        flex-direction: column;
     }
     .top-bar-container {
         box-shadow: .2px .2px 12px .2px black;
@@ -43,7 +51,8 @@
         white-space: nowrap;
         font-size: 1rem;
     }
-    .nav-bar-icon-div {
+    .nav-bar-icon-div,
+    .nav-bar {
         justify-content: center;
         align-items: center;
     }
@@ -62,7 +71,46 @@
         color: rgb(255, 81, 0);
     }
     ul {
+        gap: 30px;
         visibility: hidden;
+    }
+    .menu-bar-heading {
+        visibility: visible;
+        color: rgb(230, 86, 19);
+        margin-top: -10px;
+    }
+    .nav-bar a {
+        border-radius: 200px;
+        font-size: .9rem;
+        border: 2px solid rgb(230, 86, 19);
+        color: black;
+        white-space: nowrap;
+        padding: 7px 14px 7px 14px;
+        text-decoration: none;
+    }
+    .nav-bar a:hover {
+        transition: .2s;
+        color: white;
+        background: rgb(230, 86, 19);
+    }
+    .log-in-button {
+        margin-left: -12px;
+    }
+    .nav-bar-container {
+        z-index: +1;
+        visibility: hidden;
+        position: fixed;
+        left: 30%;
+        top: 20%;
+        background: white;
+        box-shadow: .2px .2px 22px .2px gray;
+        border-radius: 8px;
+        width: 60%;
+        height: 24rem;
+    }
+    .nav a {
+        padding: 8px 12px 8px 12px;
+        text-decoration: none;
     }
     header {
         padding-top: 70px;

@@ -188,6 +188,10 @@ header {
     background: rgb(137, 16, 0);
 }
 
+.menu-bar-heading {
+    visibility: hidden;
+}
+
 .nav-bar-icon-div {
     display: none;
 }
