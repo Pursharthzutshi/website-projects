@@ -1,6 +1,5 @@
 const customerServiceButton = document.querySelector(".customer-service-button");
 
-
 customerServiceButton.addEventListener("click", showCustomerServiceBox, true);
 
 function showCustomerServiceBox() {

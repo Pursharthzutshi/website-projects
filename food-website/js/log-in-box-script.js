@@ -1,4 +1,4 @@
-const logInBoxContainer = document.querySelector('.log-in-box-container');
+const logInBoxContainer = document.querySelector(".log-in-box-container");
 
 const logInBtn = document.querySelector(".log-in-button");
 
