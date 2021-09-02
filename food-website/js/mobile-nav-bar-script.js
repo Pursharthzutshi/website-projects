@@ -5,14 +5,14 @@ navBarButton.addEventListener("click", showMenuBar, true);
 
 function showMenuBar() {
 
-    removenavBarContainerIconDiv = document.createElement("div");
-    removenavBarContainerIconDiv.classList.add("remove-nav-bar-container-icon-div");
-    removenavBarContainerIconDiv.setAttribute("style", "display:flex;flex-direction:row;justify-content:flex-end;padding-top:30px;");
+    const removeNavBarContainerIconDiv = document.createElement("div");
+    removeNavBarContainerIconDiv.classList.add("remove-nav-bar-container-icon-div");
+    removeNavBarContainerIconDiv.setAttribute("style", "display:flex;flex-direction:row;justify-content:flex-end;padding-top:30px;");
 
-    const removenavBarContainerIcon = document.createElement("button");
-    removenavBarContainerIcon.classList.add("remove-nav-bar-container-icon");
-    removenavBarContainerIcon.innerHTML = '<i class="fa fa-times"></i>';
-    removenavBarContainerIcon.setAttribute("style", "margin:-20px 0px 0px -30px;color:red;");
+    const removeNavBarContainerIcon = document.createElement("button");
+    removeNavBarContainerIcon.classList.add("remove-nav-bar-container-icon");
+    removeNavBarContainerIcon.innerHTML = '<i class="fa fa-times"></i>';
+    removeNavBarContainerIcon.setAttribute("style", "margin:-20px 0px 0px -30px;color:red;");
 
     const menuBarHeading = document.createElement("h3");
     menuBarHeading.classList.add("menu-bar-heading");
@@ -28,17 +28,17 @@ function showMenuBar() {
 
     document.body.style.background = 'linear-gradient(to left,rgba(232, 232, 232, 1),rgba(0,0,0,0.1))';
 
-    removenavBarContainerIconDiv.appendChild(removenavBarContainerIcon);
+    removeNavBarContainerIconDiv.appendChild(removeNavBarContainerIcon);
 
-    navBarContainer.appendChild(removenavBarContainerIconDiv);
+    navBarContainer.appendChild(removeNavBarContainerIconDiv);
 
     navBarContainer.appendChild(menuBarHeading);
 
     navBarContainer.appendChild(navBar);
 
-    removenavBarContainerIcon.addEventListener("click", removeNavBar);
-
     navBar.style.visibility = 'visible';
+
+    removeNavBarContainerIcon.addEventListener("click", removeNavBar);
 
     function removeNavBar() {
         navBarContainer.removeChild(navBar);
