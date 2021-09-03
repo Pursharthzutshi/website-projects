@@ -1,0 +1,33 @@
+@media screen and (max-width:704px) {
+
+    ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-bar-container {
+        z-index: +1;
+        visibility: hidden;
+        position: fixed;
+        left: 20%;
+        top: 20%;
+        background: white;
+        box-shadow: .2px .2px 22px .2px gray;
+        border-radius: 8px;
+        width: 60%;
+        height: 24rem;
+    }
+
+    .navigation-bar a {
+        color: black;
+        border-radius: 200px;
+        padding: 5px 10px 5px 10px;
+        border: 3px solid rgb(230, 86, 19);
+    }
+
+    .navigation-bar a:hover {
+        background: rgb(230, 86, 19);
+        color: white;
+    }
+
+}
