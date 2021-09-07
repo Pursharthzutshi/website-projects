@@ -19,7 +19,7 @@ ul,
 .membership-container,
 .membership-icons-plan-row,
 .testimonials-container,
-.testimonials-box,
+.testimonials-box,.view-feedback-div,
 .icons-container,
 .testimonial-name-div,
 .line-div,
@@ -46,7 +46,7 @@ ul,
 .membership-icons-plan-row,
 .testimonials-container,
 .icons-container,
-.testimonial-name-div,
+.testimonial-name-div,.view-feedback-div,
 .line-div,
 .contact-us-form-container,
 .contact-us-container,
@@ -130,6 +130,19 @@ h1,
 ul,
 .testimonial-name-div {
     justify-content: flex-end;
+}
+
+.view-feedback-div{
+    justify-content: center;
+    align-content: center;
+}
+
+.view-feedback-button{
+    color:white;
+    text-align: center;
+    padding:8px 12px 8px 12px;
+    border-radius: 200px;
+    background: orangered;
 }
 
 body::-webkit-scrollbar {
@@ -457,6 +470,12 @@ svg {
     font-size: .9rem;
     margin: 15px 0px 0px 170px;
     text-align: end;
+}
+
+.feedback-box{
+    width: 8rem;
+    height: 8rem;
+    background:black;
 }
 
 .contact-us-section {
