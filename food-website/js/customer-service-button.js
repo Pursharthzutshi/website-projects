@@ -44,7 +44,6 @@ function showCustomerServiceBox() {
     sendMessageButton.classList.add('send-message-button');
     sendMessageButton.innerHTML = '<ion-icon name="send-outline"></ion-icon>';
 
-
     customerServiceBox.appendChild(showMessage);
 
     customerServiceBox.appendChild(sendMessageButton);
@@ -75,9 +74,7 @@ function showCustomerServiceBox() {
         }
     }
 
-
     deleteCustomerServiceBoxIcon.addEventListener("click", deleteCustomerServiceBox, true);
-
 
     function deleteCustomerServiceBox() {
 

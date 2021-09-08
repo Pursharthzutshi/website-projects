@@ -1,9 +1,6 @@
-const logInBoxContainer = document.querySelector(".log-in-box-container");
-
 const logInBtn = document.querySelector(".log-in-button");
 
 logInBtn.addEventListener("click", showLogInBox, 1);
-
 
 function showLogInBox() {
 
