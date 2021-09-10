@@ -19,8 +19,7 @@ ul,
 .membership-container,
 .membership-icons-plan-row,
 .testimonials-container,
-.testimonials-box,.view-feedback-div,.feedback-box-row,
-.icons-container,
+.testimonials-box,.icons-container,
 .testimonial-name-div,
 .line-div,
 .contact-us-form-container,
@@ -46,7 +45,7 @@ ul,
 .membership-icons-plan-row,
 .testimonials-container,
 .icons-container,
-.testimonial-name-div,.view-feedback-div,.feedback-box-row,.feedback-box-column,
+.testimonial-name-div,
 .line-div,
 .contact-us-form-container,
 .contact-us-container,
@@ -60,7 +59,7 @@ ul,
 .cuisine-div,
 .membership-section,
 .membership-cards,
-.testimonials-box,.feedback-box-column,
+.testimonials-box,
 .contact-us-div,
 form,
 footer {
@@ -132,18 +131,6 @@ ul,
     justify-content: flex-end;
 }
 
-.view-feedback-div{
-    justify-content: center;
-    align-content: center;
-}
-
-.view-feedback-button{
-    color:white;
-    text-align: center;
-    padding:8px 12px 8px 12px;
-    border-radius: 200px;
-    background: orangered;
-}
 
 body::-webkit-scrollbar,.feedback-box-div {
     background: linear-gradient(to left, rgb(184, 31, 11), rgb(220, 28, 3));
@@ -472,56 +459,6 @@ svg {
     text-align: end;
 }
 
-.feedback-box-div h2{
-    text-align: center;
-}
-
-.remove-feedback-box-icon{
-    color:red;
-    font-size: 1.5rem;
-}
-
-.feedback-box-div{
-    visibility: hidden;
-    position: fixed;
-    bottom:23%;
-    left: 35%;
-    box-shadow: .2px .2px 12px .2px black;
-    padding:12px 16px 2px 12px;
-    overflow-y: scroll;
-}
-
-.feedback-box-row img{
-    border-radius: 200px;
-    width: 2rem;
-    height: 2rem;
-    margin: 18px 0px 0px 10px;
-}
-
-.feedback-box-column h3,.feedback-box-column p{
-    margin-left: 20px;
-}
-
-.feedback-box-column h3{
-    font-size: 1.1rem;
-}
-
-
-.feedback-box-column p{
-    margin-top: -10px;
-    line-height: 22px;
-    font-size: .9rem;
-}
-
-.feedback-box-icons-row{
-    font-size: .9rem;
-    margin-left: 20px;
-    margin: -3px 0px 0px 20px;
-}
-
-.feedback-box-icons-row ion-icon{
-    color:gold;
-}
 
 .contact-us-section {
     padding-bottom: 30px;
