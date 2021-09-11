@@ -66,7 +66,7 @@ footer {
     flex-direction: column;
 }
 
-.membership-cards a,
+.orange-button,
 .submit-button,
 header,
 nav a:hover,
@@ -89,7 +89,7 @@ footer {
     justify-content: center;
 }
 
-.membership-cards a:hover,
+.orange-button:hover,
 .customer-service-button ion-icon:hover,
 .submit-button:hover,
 .header-buttons-icons-container:nth-child(1) button,
@@ -99,7 +99,7 @@ textarea {
     background: white;
 }
 
-.membership-cards a:hover,
+.orange-button:hover,
 .customer-service-button ion-icon:hover,
 .submit-button:hover {
     transition: .3s;
@@ -160,11 +160,10 @@ textarea {
     border: none;
 }
 
-.membership-cards a,
-.submit-button {
+.orange-button{
     background: rgb(255, 58, 40);
     padding: 8px 12px 8px 12px;
-    box-shadow: .2px .2px 12px .2px rgb(241, 58, 58);
+    box-shadow: .2px .2px 6px .2px rgb(241, 58, 58);
 }
 
 .header-text-image-container {
@@ -489,7 +488,7 @@ textarea {
     box-shadow: .2px .2px 12px .2px rgb(236, 236, 236);
 }
 
-.submit-button {
+.contact-us-form-container .orange-button{
     border-radius: 200px;
     margin: 0px 0px 0px 80px;
 }

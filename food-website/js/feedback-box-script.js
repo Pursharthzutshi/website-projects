@@ -82,5 +82,13 @@ function createBox(){
 
         document.body.style.background = 'linear-gradient(to left,rgba(232, 232, 232, 1),rgba(0,0,0,0.1))';
 
+        giveFeedbackRemoveIcon.addEventListener("click",removeGiveFeedbackBox);
+
+        function removeGiveFeedbackBox(){
+
+            document.body.removeChild(giveYourFeedbackBox);
+
+        }
+
     }
 }
