@@ -7,17 +7,16 @@
         display: flex;
     }
     .container,
-    .main-page {
+    .main-page,.button-container {
         flex-direction: column;
     }
     .left-sidebar {
         margin-left: -50px;
-        width: 33.3rem;
+        width: 111%;
         height: 20.6rem;
     }
     .left-sidebar h1 {
-        margin-left: 20px;
-        margin-top: -10px;
+        margin:-20px 0px 0px 70px;
         font-size: 1.8rem;
         color: white;
         padding: 8px 12px 8px 12px;
@@ -45,16 +44,17 @@
         transition: .3s;
     }
     h3 {
-        margin-left: -25px;
+        margin:-200px 0px 0px -25px
     }
-    .button-container button {
-        margin: 20px 0px 0px 0px;
+    button {
+        margin: 20px 0px 0px 10px;
         color: white;
         border-radius: 8px;
         border: none;
         box-shadow: none;
         padding: 8px 22px 8px 22px;
         font-family: 'Montserrat';
+        width: 70%;
     }
     .button-container button:nth-child(1) {
         box-shadow: .2px .2px 8px .2px rgb(255, 51, 0);
@@ -68,16 +68,17 @@
         box-shadow: .2px .2px 8px .2px rgb(11, 124, 194);
         background: linear-gradient(to left, rgb(1, 138, 223), rgb(0, 95, 179));
     }
-    .button-container button:hover {
+
+    .button-container button:hover{
+        color:black;
         background: white;
-        color: black;
         cursor: pointer;
         box-shadow: .2px .2px 8px .2px lightgray;
         transition: .2s;
     }
     .icon-images {
         margin: -70px 0px 0px 70px;
-        width: 10rem;
+        width:10rem;
         height: auto;
     }
     h2 {
@@ -90,7 +91,7 @@
     }
     .button-container {
         padding-bottom: 30px;
-        margin-left: 70px;
+        margin-left: 47px;
     }
     .sign-up-button {
         width: 70%;
