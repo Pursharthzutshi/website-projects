@@ -1,11 +1,11 @@
 .customer-service-box,
 .log-in-box-div,
-.log-in-box-container,.view-feedback-div,.feedback-box-row,.add-feedback-box-button-div {
+.log-in-box-container,.view-feedback-div,.feedback-box-row,.give-feedback-remove-icon-div,.give-feedback-box,.add-feedback-box-button-div {
     display: flex;
 }
 
 .customer-service-box,
-.log-in-box-container,.view-feedback-div,.feedback-box-row,.feedback-box-column,.add-feedback-box-button-div {
+.log-in-box-container,.view-feedback-div,.feedback-box-row,.give-feedback-remove-icon-div,.feedback-box-column,.add-feedback-box-button-div {
     flex-direction:row;
 }
 
@@ -15,7 +15,7 @@
 
 .log-in-box-div,
 .log-in-box-container,
-.customer-service-box,.feedback-box-column {
+.customer-service-box,.feedback-box-column,.give-feedback-box {
     flex-direction: column;
 }
 
@@ -301,17 +301,44 @@
     border-radius: 200px;
     background: orangered;
 }
+.feedback-name-input{
+    outline: none;
+    width: 95%;
+    padding:5px 2px 5px 7px;
+    border:none;
+    box-shadow: .2px .2px 12px .2px lightgray;
+}
+
+.feedback-name-input::placeholder{
+    font-family: 'Montserrat';
+}
+
+.feedback-text-area{
+    width: 75%;
+}
 
 .give-feedback-box{
+    gap:20px;
     padding:16px 2px 2px 12px;
     top:25%;
     left:34%;
     width: 30rem;
-    height: 23rem;
+    height: 26rem;
     background: white;
     box-shadow: .2px .2px 6px .2px gray;
     animation-name:giveFeedbackBox ;
     animation-duration: .3s;
+}
+
+.give-feedback-button{
+    color:white;
+    background: orangered;
+    padding:12px 2px 12px 2px;
+    width:95%;
+}
+
+.give-feedback-heading{
+    margin-top: -30px;
 }
 
 @keyframes giveFeedbackBox{
@@ -326,3 +353,12 @@
 
 }
 
+.give-feedback-remove-icon-div{
+    justify-content: flex-end;
+}
+
+.give-feedback-remove-icon{
+    font-size: 1.6rem;
+    color:red;
+
+}

@@ -42,12 +42,43 @@ function createBox(){
         const giveYourFeedbackBox = document.createElement("div");
         giveYourFeedbackBox.classList.add("give-feedback-box");
 
+        const giveFeedbackRemoveIconDiv = document.createElement('div');
+        giveFeedbackRemoveIconDiv.classList.add('give-feedback-remove-icon-div');
+
+        const giveFeedbackRemoveIcon = document.createElement('button');
+        giveFeedbackRemoveIcon.classList.add('give-feedback-remove-icon');
+        giveFeedbackRemoveIcon.innerHTML="<ion-icon name='close'></ion-icon>";
+
+        const giveFeedbackHeading = document.createElement('h2');
+        giveFeedbackHeading.classList.add('give-feedback-heading');
+        giveFeedbackHeading.textContent='YOUR FEEDBACK';
+        giveFeedbackHeading.style.textAlign='center';
+
         const nameInput = document.createElement('input');
         nameInput.classList.add('feedback-name-input');
+        nameInput.placeholder='Name';
+
+        const feedbackTextArea = document.createElement('textarea');
+        feedbackTextArea.classList.add('feedback-text-area');
+        feedbackTextArea.placeholder='Write down your feedback';
+
+        const giveFeedbackButton = document.createElement('button');
+        giveFeedbackButton.classList.add('give-feedback-button');
+        giveFeedbackButton.innerHTML='Add Your Feedback';
 
         document.body.appendChild(giveYourFeedbackBox);
 
+        giveFeedbackRemoveIconDiv.appendChild(giveFeedbackRemoveIcon);
+
+        giveYourFeedbackBox.appendChild(giveFeedbackRemoveIconDiv);
+
+        giveYourFeedbackBox.appendChild(giveFeedbackHeading);
+
         giveYourFeedbackBox.appendChild(nameInput);
+
+        giveYourFeedbackBox.appendChild(feedbackTextArea);
+
+        giveYourFeedbackBox.appendChild(giveFeedbackButton);
 
         document.body.style.background = 'linear-gradient(to left,rgba(232, 232, 232, 1),rgba(0,0,0,0.1))';
 
