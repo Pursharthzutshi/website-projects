@@ -94,6 +94,11 @@
         color: white;
         background: rgb(230, 86, 19);
     }
+
+    .log-in-box-container{
+        left: 10%;
+        top: 20%;
+    }
     .log-in-button {
         margin-left: -12px;
     }

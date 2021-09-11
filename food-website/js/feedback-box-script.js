@@ -5,7 +5,6 @@ viewFeedbackButton.addEventListener("click",createBox,true);
 
 function createBox(){
 
-
     const feedbackBoxDiv = document.querySelector(".feedback-box-div");
 
     feedbackBoxDiv.setAttribute("style","width: 27rem;height:22rem;background:white;visibility:visible")
@@ -16,7 +15,6 @@ function createBox(){
     const removeFeedbackBoxIcon = document.createElement('button');
     removeFeedbackBoxIcon.classList.add("remove-feedback-box-icon");
     removeFeedbackBoxIcon.innerHTML='<ion-icon name="close"></ion-icon>';
-
 
     feedbackBox.appendChild(removeFeedbackBoxIcon);
 
@@ -80,15 +78,15 @@ function createBox(){
 
         giveYourFeedbackBox.appendChild(giveFeedbackButton);
 
-        document.body.style.background = 'linear-gradient(to left,rgba(232, 232, 232, 1),rgba(0,0,0,0.1))';
-
         giveFeedbackRemoveIcon.addEventListener("click",removeGiveFeedbackBox);
 
         function removeGiveFeedbackBox(){
 
             document.body.removeChild(giveYourFeedbackBox);
 
+            document.body.style.background ='white';
         }
+
 
     }
 }
