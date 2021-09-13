@@ -4,10 +4,25 @@ body {
   padding: 0;
 }
 
+.line {
+  background: black;
+  width: 20%;
+  height: 0.2rem;
+}
+
 nav, ul, .header-content, .button-container, .subscribe-div, .service-section {
   display: flex;
   flex-direction: row;
   gap: 40px;
+}
+
+.headings-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
 }
 
 h2, a, h1, button, p {
@@ -47,6 +62,9 @@ header img {
   width: 17rem;
   height: auto;
 }
+header .line {
+  background: white;
+}
 
 .header-content {
   margin-top: 20px;
@@ -76,7 +94,8 @@ header img {
 .header-content .button-container {
   margin-top: 60px;
 }
-.header-content button {
+
+button {
   box-shadow: 0.2px 0.2px 12px 0.2px #56009d;
   border-radius: 4px;
   font-size: 1rem;
@@ -85,7 +104,7 @@ header img {
   border: none;
   background: linear-gradient(to left, #7a08d3, #8110b0);
 }
-.header-content button:hover {
+button:hover {
   cursor: pointer;
   transition: 0.3s;
   background: white;
@@ -93,6 +112,7 @@ header img {
 }
 
 h3 {
+  color: black;
   text-align: center;
 }
 
@@ -128,9 +148,24 @@ h3 {
   text-align: center;
 }
 
+.plans-div, h2 {
+  text-align: center;
+}
+
 .plans-icon-text-row, .plans-container {
   display: flex;
   flex-direction: row;
+}
+
+.headings-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.plans-section h2 {
+  color: black;
 }
 
 .plans-container {
@@ -140,10 +175,12 @@ h3 {
 }
 .plans-container .plans-div {
   width: 20rem;
-  height: 22rem;
-  background: linear-gradient(to left, #0a002d, #14015d);
+  height: 24rem;
+  background: linear-gradient(to left, #110148, #270056);
   box-shadow: 0.2px 0.2px 12px 0.2px black;
-  text-align: center;
+}
+.plans-container h2 {
+  color: white;
 }
 .plans-container .plans-icon-text-row ion-icon {
   color: white;

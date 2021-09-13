@@ -1,8 +1,8 @@
 @import "variables";
 
-@mixin flexRow(){
+@mixin flex($direction){
   display: flex;
-  flex-direction: row;
+  flex-direction:$direction;
 }
 
 @mixin justifyContent(){
@@ -10,8 +10,25 @@
   align-items: center ;
 }
 
+
+.plans-div,h2{
+text-align: $textAlignCenter;
+
+}
+
 .plans-icon-text-row,.plans-container{
-  @include flexRow();
+  @include flex(row);
+}
+
+.headings-container{
+  @include flex(column);
+  @include justifyContent();
+}
+
+.plans-section{
+  h2{
+    color:$blackColor;
+  }
 }
 
 .plans-container{
@@ -19,10 +36,12 @@
   gap:30px;
   .plans-div{
     width: 20rem ;
-    height: 22rem;
+    height: 24rem;
     background: $serviceBoxColor;
     box-shadow: .2px .2px 12px .2px black;
-    text-align: $textAlignCenter;
+  }
+  h2{
+    color:$whiteColor;
   }
   .plans-icon-text-row ion-icon{
     color:$whiteColor;
@@ -31,5 +50,7 @@
   }
   .plans-icon-text-row p{
     margin:10px 0px 0px -10px;
+  }
+  .plans-div button{
   }
 }

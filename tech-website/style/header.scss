@@ -1,18 +1,30 @@
 @import "variables";
 
-@mixin flexRow(){
+@mixin flex($direction){
     display: flex;
-    flex-direction: row;
+    flex-direction: $direction;
     gap:40px;
 }
 
+@mixin justifyContent(){
+    justify-content: center;
+    align-items: center ;
+}
+
 nav,ul,.header-content,.button-container,.subscribe-div,.service-section{
-    @include flexRow();
+    @include flex(row);
+}
+
+.headings-container{
+    @include flex(column);
+    @include justifyContent;
+    gap:0px;
 }
 
 h2,a,h1,button,p{
     color:$whiteColor;
- }
+}
+
 
 header {
     width: 100%;
@@ -47,6 +59,8 @@ header {
         width:17rem;
         height: auto;
     }
+    .line{
+background:$whiteColor; }
 }
 
 .header-content{
@@ -71,7 +85,6 @@ header {
             font-family: 'Montserrat';
         }
         button{
-
             padding:4px 17px 4px 17px;
         }
     }
@@ -80,27 +93,30 @@ header {
       margin-top: 60px;
     }
 
-    button{
-        box-shadow: .2px .2px 12px .2px #56009d;
-        border-radius: 4px;
-        font-size:1rem;
-        font-family: 'Montserrat';
-        padding:7px 14px 7px 14px;
-        border:none;
-        background:$purpleColor;
-
-        &:hover{
-            cursor: $cursorButton;
-            transition:$transitionButton;
-            background: $backgroundWhiteColor;
-            color:black;
-        }
-    }
 
 
 }
 
+button{
+    box-shadow: .2px .2px 12px .2px #56009d;
+    border-radius: 4px;
+    font-size:1rem;
+    font-family: 'Montserrat';
+    padding:7px 14px 7px 14px;
+    border:none;
+    background:$purpleColor;
+
+    &:hover{
+        cursor: $cursorButton;
+        transition:$transitionButton;
+        background: $backgroundWhiteColor;
+        color:black;
+    }
+}
+
+
 h3{
+    color:black;
     text-align: $textAlignCenter;
 }
 
