@@ -175,7 +175,7 @@ h3 {
 }
 .plans-container .plans-div {
   width: 20rem;
-  height: 24rem;
+  height: 25rem;
   background: linear-gradient(to left, #110148, #270056);
   box-shadow: 0.2px 0.2px 12px 0.2px black;
 }
@@ -189,6 +189,48 @@ h3 {
 }
 .plans-container .plans-icon-text-row p {
   margin: 10px 0px 0px -10px;
+}
+
+.features-container, .features-img-heading-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.features-section .line {
+  background: white;
+}
+.features-section .features-div {
+  border-radius: 8px;
+  padding: 2px 12px 2px 18px;
+  width: 18rem;
+  height: 14rem;
+  border: 8px double #f3f3f3;
+  flex-wrap: wrap;
+}
+.features-section img {
+  margin-left: -42px;
+  width: 5rem;
+  height: 5rem;
+}
+.features-section p {
+  color: white;
+  margin: 10px 10px 0px -50px;
+  font-size: 2.3rem;
+}
+.features-section span {
+  color: white;
+  text-align: center;
+  line-height: 30px;
+}
+
+.features-section {
+  background-image: linear-gradient(to left, rgba(88, 5, 157, 0.75), rgba(52, 41, 124, 0.7)), url("pexels-pixabay-220201.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 94vh;
 }
 
 /*# sourceMappingURL=style.css.map */

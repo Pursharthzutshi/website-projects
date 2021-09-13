@@ -36,7 +36,7 @@ text-align: $textAlignCenter;
   gap:30px;
   .plans-div{
     width: 20rem ;
-    height: 24rem;
+    height: 25rem;
     background: $serviceBoxColor;
     box-shadow: .2px .2px 12px .2px black;
   }
@@ -51,6 +51,5 @@ text-align: $textAlignCenter;
   .plans-icon-text-row p{
     margin:10px 0px 0px -10px;
   }
-  .plans-div button{
-  }
+
 }
