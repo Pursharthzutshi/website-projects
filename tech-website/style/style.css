@@ -4,19 +4,19 @@ body {
   padding: 0;
 }
 
-nav, ul, .header-content, .button-container, .subscribe-div {
+nav, ul, .header-content, .button-container, .subscribe-div, .service-section {
   display: flex;
   flex-direction: row;
   gap: 40px;
 }
 
-h2, a, h1, button {
+h2, a, h1, button, p {
   color: white;
 }
 
 header {
   width: 100%;
-  height: 64vh;
+  height: 77vh;
   background: linear-gradient(to left, #000e2d, #192554);
   clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%);
 }
@@ -90,6 +90,68 @@ header img {
   transition: 0.3s;
   background: white;
   color: black;
+}
+
+h3 {
+  text-align: center;
+}
+
+.header-heading {
+  color: white;
+  text-align: center;
+}
+.header-heading .line {
+  width: 5rem;
+  height: 10rem;
+  background: white;
+}
+
+.service-section {
+  justify-content: center;
+  margin-top: -50px;
+}
+.service-section .service-section-box {
+  z-index: 1;
+  width: 10rem;
+  height: 10rem;
+  background: linear-gradient(to left, #7a08d3, #8110b0);
+  box-shadow: 0.2px 0.2px 12px 0.2px black;
+  border-radius: 8px;
+}
+.service-section .service-section-box img {
+  margin: 10px 0px 0px 30px;
+  width: 6.2rem;
+  height: auto;
+}
+.service-section .service-section-box p {
+  margin: 5px;
+  text-align: center;
+}
+
+.plans-icon-text-row, .plans-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.plans-container {
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.plans-container .plans-div {
+  width: 20rem;
+  height: 22rem;
+  background: linear-gradient(to left, #0a002d, #14015d);
+  box-shadow: 0.2px 0.2px 12px 0.2px black;
+  text-align: center;
+}
+.plans-container .plans-icon-text-row ion-icon {
+  color: white;
+  margin: 0px 0px 0px 20px;
+  font-size: 3rem;
+}
+.plans-container .plans-icon-text-row p {
+  margin: 10px 0px 0px -10px;
 }
 
 /*# sourceMappingURL=style.css.map */

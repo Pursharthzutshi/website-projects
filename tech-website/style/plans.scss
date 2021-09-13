@@ -1,0 +1,35 @@
+@import "variables";
+
+@mixin flexRow(){
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin justifyContent(){
+  justify-content: center;
+  align-items: center ;
+}
+
+.plans-icon-text-row,.plans-container{
+  @include flexRow();
+}
+
+.plans-container{
+@include justifyContent();
+  gap:30px;
+  .plans-div{
+    width: 20rem ;
+    height: 22rem;
+    background: $serviceBoxColor;
+    box-shadow: .2px .2px 12px .2px black;
+    text-align: $textAlignCenter;
+  }
+  .plans-icon-text-row ion-icon{
+    color:$whiteColor;
+    margin:0px 0px 0px 20px;
+    font-size: 3rem;
+  }
+  .plans-icon-text-row p{
+    margin:10px 0px 0px -10px;
+  }
+}

@@ -1,0 +1,7 @@
+.plans-container {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+/*# sourceMappingURL=plans.css.map */

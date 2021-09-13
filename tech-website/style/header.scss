@@ -6,17 +6,17 @@
     gap:40px;
 }
 
-nav,ul,.header-content,.button-container,.subscribe-div{
+nav,ul,.header-content,.button-container,.subscribe-div,.service-section{
     @include flexRow();
 }
 
-h2,a,h1,button{
+h2,a,h1,button,p{
     color:$whiteColor;
  }
 
 header {
     width: 100%;
-    height: 64vh;
+    height: 77vh;
     background: $header-bg-color;
     clip-path: polygon(0% 0%,0% 100%,100% 100%,100% 0%);
     h2{
@@ -87,7 +87,7 @@ header {
         font-family: 'Montserrat';
         padding:7px 14px 7px 14px;
         border:none;
-        background:$primaryBtn;
+        background:$purpleColor;
 
         &:hover{
             cursor: $cursorButton;
@@ -97,5 +97,44 @@ header {
         }
     }
 
+
+}
+
+h3{
+    text-align: $textAlignCenter;
+}
+
+.header-heading{
+    color:$serviceSectionHeading;
+    text-align: $textAlignCenter;
+
+    .line{
+        width: 5rem;
+        height: 10rem;
+        background: white;
+    }
+}
+
+.service-section{
+    justify-content: center;
+    margin-top:-50px ;
+
+.service-section-box{
+    z-index:+1;
+    width: 10rem;
+    height: 10rem;
+    background:$purpleColor;
+    box-shadow: .2px .2px 12px .2px black;
+    border-radius: 8px;
+    img{
+        margin:10px 0px 0px 30px;
+        width: 6.2rem;
+        height: auto;
+    }
+    p{
+        margin: 5px;
+        text-align: center;
+    }
+}
 
 }
