@@ -1,0 +1,27 @@
+@import "variables";
+
+@mixin flex($direction){
+  display: flex;
+  flex-direction:$direction;
+}
+
+@mixin justifyContent(){
+  justify-content: center;
+  align-items: center ;
+}
+
+footer{
+  margin-top: 30px;
+  height: 10rem;
+  background: #00051f;
+}
+
+table{
+  @include flex(row);
+  color:$whiteColor;
+  border-collapse: collapse;
+
+  th{
+
+  }
+}

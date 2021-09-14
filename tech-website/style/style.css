@@ -10,6 +10,15 @@ body {
   height: 0.2rem;
 }
 
+body::-webkit-scrollbar {
+  background: #3c3cf3;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #001a4b;
+  height: 3rem;
+}
+
 nav, ul, .header-content, .button-container, .subscribe-div, .service-section {
   display: flex;
   flex-direction: row;
@@ -248,6 +257,7 @@ h3 {
 .accessibility-section .accessibility-div img {
   width: 25rem;
   height: auto;
+  margin-top: -40px;
 }
 .accessibility-section .accessibility-div p {
   margin-top: -45px;
@@ -323,7 +333,7 @@ h3 {
   flex-direction: column;
   align-items: center;
   width: 19rem;
-  height: 22rem;
+  height: 20rem;
   box-shadow: 0.2px 0.2px 12px 0.2px #00072d;
   border: 4px solid #3503b7;
   padding: 25px 12px 5px 12px;
@@ -335,6 +345,34 @@ h3 {
 }
 .feedback-container .feedback-div p {
   line-height: 30px;
+}
+.feedback-container .feedback-name-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  font-size: 0.8rem;
+}
+.feedback-container .feedback-name-div p {
+  margin-top: -5px;
+}
+.feedback-container .icons-container {
+  margin-top: -15px;
+}
+.feedback-container ion-icon {
+  color: white;
+}
+
+footer {
+  margin-top: 30px;
+  height: 10rem;
+  background: #00051f;
+}
+
+table {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  border-collapse: collapse;
 }
 
 /*# sourceMappingURL=style.css.map */

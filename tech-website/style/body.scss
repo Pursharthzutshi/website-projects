@@ -8,3 +8,12 @@ body {
     width:20% ;
     height: .2rem;
 }
+
+body::-webkit-scrollbar{
+    background: #3c3cf3;
+}
+
+body::-webkit-scrollbar-thumb{
+    background: #001a4b;
+    height: 3rem;
+}
