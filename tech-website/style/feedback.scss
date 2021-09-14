@@ -1,11 +1,18 @@
 @import "variables";
 
+.headings-container,.accessibility-div,.accessibility-icon-text-div{
+  @include flex(column);
+  @include justifyContent;
+  gap:0px;
+}
+
 .feedback-section{
-  background-image:linear-gradient(to left, rgba(88, 5, 157, 0.75), rgba(52, 41, 124, 0.7)),url('pexels-pixabay-220201.jpg');
+  background-image:linear-gradient(to left, rgba(22, 1, 38, 0.75), rgba(2, 0, 17, 0.7)),url('pexels-pixabay-41949.jpg');
   background-position: center;
   background-size:cover;
   background-attachment: fixed;
   height:70vh;
+  clip-path: polygon(0% 0%,0% 100%,100% 100%,90% 0%);
 
 }
 
@@ -13,4 +20,29 @@
   .line{
     background:$whiteColor;
   }
+}
+
+.feedback-container{
+  @include flex(row);
+  @include justifyContent;
+  gap:60px;
+
+  .feedback-div{
+    @include flex(column);
+    align-items: center;
+    width: 19rem;
+    height: 22rem;
+    box-shadow: .2px .2px 12px .2px #00072d;
+    border:4px solid #3503b7;
+    padding:25px 12px 5px 12px;
+    font-size: 1rem;
+  }
+  .feedback-div img{
+    width: 5.5rem;
+    height: auto;
+  }
+  .feedback-div p{
+    line-height: 30px;
+  }
+
 }

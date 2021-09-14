@@ -242,6 +242,7 @@ h3 {
 }
 
 .accessibility-section .headings-container h2 {
+  margin-top: 30px;
   color: black;
 }
 .accessibility-section .accessibility-div img {
@@ -270,7 +271,7 @@ h3 {
   color: black;
 }
 .accessibility-icon-text-div-container .accessibility-icon-text-div ion-icon {
-  font-size: 2rem;
+  font-size: 2.8rem;
 }
 
 .accessibility-icon-text-div:nth-child(1) ion-icon {
@@ -289,16 +290,51 @@ h3 {
   color: #2b78de;
 }
 
+.headings-container, .accessibility-div, .accessibility-icon-text-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+}
+
 .feedback-section {
-  background-image: linear-gradient(to left, rgba(88, 5, 157, 0.75), rgba(52, 41, 124, 0.7)), url("pexels-pixabay-220201.jpg");
+  background-image: linear-gradient(to left, rgba(22, 1, 38, 0.75), rgba(2, 0, 17, 0.7)), url("pexels-pixabay-41949.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
   height: 70vh;
+  clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 90% 0%);
 }
 
 .headings-container .line {
   background: white;
+}
+
+.feedback-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+.feedback-container .feedback-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 19rem;
+  height: 22rem;
+  box-shadow: 0.2px 0.2px 12px 0.2px #00072d;
+  border: 4px solid #3503b7;
+  padding: 25px 12px 5px 12px;
+  font-size: 1rem;
+}
+.feedback-container .feedback-div img {
+  width: 5.5rem;
+  height: auto;
+}
+.feedback-container .feedback-div p {
+  line-height: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
