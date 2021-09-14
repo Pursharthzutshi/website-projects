@@ -233,4 +233,72 @@ h3 {
   height: 94vh;
 }
 
+.headings-container, .accessibility-div, .accessibility-icon-text-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+}
+
+.accessibility-section .headings-container h2 {
+  color: black;
+}
+.accessibility-section .accessibility-div img {
+  width: 25rem;
+  height: auto;
+}
+.accessibility-section .accessibility-div p {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  text-align: center;
+  line-height: 30px;
+  color: black;
+}
+
+.accessibility-icon-text-div-container {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-top: 20px;
+  justify-content: space-around;
+}
+.accessibility-icon-text-div-container .accessibility-icon-text-div p {
+  font-size: 1rem;
+  margin-top: 10px;
+  font-family: "Roboto";
+  color: black;
+}
+.accessibility-icon-text-div-container .accessibility-icon-text-div ion-icon {
+  font-size: 2rem;
+}
+
+.accessibility-icon-text-div:nth-child(1) ion-icon {
+  color: #3197e0;
+}
+
+.accessibility-icon-text-div:nth-child(3) ion-icon {
+  color: #9b9b9b;
+}
+
+.accessibility-icon-text-div:nth-child(4) ion-icon {
+  color: #286b00;
+}
+
+.accessibility-icon-text-div:nth-child(5) ion-icon {
+  color: #2b78de;
+}
+
+.feedback-section {
+  background-image: linear-gradient(to left, rgba(88, 5, 157, 0.75), rgba(52, 41, 124, 0.7)), url("pexels-pixabay-220201.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 70vh;
+}
+
+.headings-container .line {
+  background: white;
+}
+
 /*# sourceMappingURL=style.css.map */

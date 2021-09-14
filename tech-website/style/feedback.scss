@@ -1,0 +1,16 @@
+@import "variables";
+
+.feedback-section{
+  background-image:linear-gradient(to left, rgba(88, 5, 157, 0.75), rgba(52, 41, 124, 0.7)),url('pexels-pixabay-220201.jpg');
+  background-position: center;
+  background-size:cover;
+  background-attachment: fixed;
+  height:70vh;
+
+}
+
+.headings-container{
+  .line{
+    background:$whiteColor;
+  }
+}
