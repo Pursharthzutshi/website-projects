@@ -47,7 +47,7 @@
   }
 
   span{
-color:$whiteColor;
+    color:$whiteColor;
     text-align: $textAlignCenter;
     line-height: 30px;
   }
@@ -55,10 +55,9 @@ color:$whiteColor;
 }
 
 .features-section{
-  background-image:linear-gradient(to left, rgba(88, 5, 157, 0.75), rgba(52, 41, 124, 0.7)),url('pexels-pixabay-220201.jpg');
+  background-image:linear-gradient(to left, rgba(50, 6, 87, 0.75), rgba(31, 16, 121, 0.7)),url('pexels-pixabay-220201.jpg');
   background-position: center;
   background-size:cover;
   background-attachment: fixed;
   height:94vh;
-
 }

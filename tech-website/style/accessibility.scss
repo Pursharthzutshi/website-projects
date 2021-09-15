@@ -16,6 +16,9 @@
       margin-top: 30px;
       color:$blackColor;
     }
+    .line{
+      background: $blackColor;
+    }
   }
 
   .accessibility-div{
@@ -59,15 +62,15 @@ img{
   color: #3197e0;
 }
 
+.accessibility-icon-text-div:nth-child(2) ion-icon{
+  color: #575757;
+}
+
 .accessibility-icon-text-div:nth-child(3) ion-icon{
-  color: #9b9b9b;
+  color: #2e9804;
 }
 
 .accessibility-icon-text-div:nth-child(4) ion-icon{
-  color: #286b00;
-}
-
-.accessibility-icon-text-div:nth-child(5) ion-icon{
-  color: #2b78de;
+  color: #0752b4;
 }
 

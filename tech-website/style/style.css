@@ -5,8 +5,7 @@ body {
 }
 
 .line {
-  background: black;
-  width: 20%;
+  width: 25%;
   height: 0.2rem;
 }
 
@@ -17,6 +16,11 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-thumb {
   background: #001a4b;
   height: 3rem;
+}
+
+.border {
+  border: 1px solid black;
+  background: black;
 }
 
 nav, ul, .header-content, .button-container, .subscribe-div, .service-section {
@@ -61,10 +65,14 @@ header li {
   list-style: none;
 }
 header a {
+  font-size: 1.05rem;
+  border-radius: 4px;
+  padding: 5px 12px 5px 12px;
+  font-family: "Montserrat";
   text-decoration: none;
 }
 header a:hover {
-  background: black;
+  background: #6f0fbd;
 }
 header img {
   margin: 20px 0px 0px 40px;
@@ -89,16 +97,25 @@ header .line {
   margin-top: 50px;
 }
 .header-content .subscribe-div input {
-  width: 50%;
-  padding: 2px 12px 2px 5px;
+  outline: none;
+  width: 60%;
+  padding: 2px 15px 2px 15px;
   box-shadow: 0.2px 0.2px 4px 0.2px white;
   border: none;
+}
+.header-content .subscribe-div input:focus {
+  transition: 0.2s;
+  border: 2px solid #0556bb;
+  box-shadow: 0.2px 0.2px 4px 0.2px #0556bb;
 }
 .header-content .subscribe-div input::placeholder {
   font-family: "Montserrat";
 }
 .header-content .subscribe-div button {
-  padding: 4px 17px 4px 17px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  margin-left: -40px;
+  padding: 6px 17px 6px 17px;
 }
 .header-content .button-container {
   margin-top: 60px;
@@ -147,6 +164,10 @@ h3 {
   box-shadow: 0.2px 0.2px 12px 0.2px black;
   border-radius: 8px;
 }
+.service-section .service-section-box:hover {
+  cursor: pointer;
+  background: #30046b;
+}
 .service-section .service-section-box img {
   margin: 10px 0px 0px 30px;
   width: 6.2rem;
@@ -173,14 +194,15 @@ h3 {
   align-items: center;
 }
 
-.plans-section h2 {
+.plans-section .headings-container h2 {
   color: black;
+}
+.plans-section .headings-container .line {
+  background: black;
 }
 
 .plans-container {
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
+  justify-content: space-around;
 }
 .plans-container .plans-div {
   width: 20rem;
@@ -235,7 +257,7 @@ h3 {
 }
 
 .features-section {
-  background-image: linear-gradient(to left, rgba(88, 5, 157, 0.75), rgba(52, 41, 124, 0.7)), url("pexels-pixabay-220201.jpg");
+  background-image: linear-gradient(to left, rgba(50, 6, 87, 0.75), rgba(31, 16, 121, 0.7)), url("pexels-pixabay-220201.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -253,6 +275,9 @@ h3 {
 .accessibility-section .headings-container h2 {
   margin-top: 30px;
   color: black;
+}
+.accessibility-section .headings-container .line {
+  background: black;
 }
 .accessibility-section .accessibility-div img {
   width: 25rem;
@@ -288,16 +313,16 @@ h3 {
   color: #3197e0;
 }
 
+.accessibility-icon-text-div:nth-child(2) ion-icon {
+  color: #575757;
+}
+
 .accessibility-icon-text-div:nth-child(3) ion-icon {
-  color: #9b9b9b;
+  color: #2e9804;
 }
 
 .accessibility-icon-text-div:nth-child(4) ion-icon {
-  color: #286b00;
-}
-
-.accessibility-icon-text-div:nth-child(5) ion-icon {
-  color: #2b78de;
+  color: #0752b4;
 }
 
 .headings-container, .accessibility-div, .accessibility-icon-text-div {
@@ -313,8 +338,8 @@ h3 {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  height: 70vh;
-  clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 90% 0%);
+  height: 72vh;
+  clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 88% 0%);
 }
 
 .headings-container .line {
@@ -333,15 +358,18 @@ h3 {
   flex-direction: column;
   align-items: center;
   width: 19rem;
-  height: 20rem;
+  height: 20.5rem;
   box-shadow: 0.2px 0.2px 12px 0.2px #00072d;
-  border: 4px solid #3503b7;
-  padding: 25px 12px 5px 12px;
+  border: 4px solid #3d0596;
+  padding: 25px 12px 5px 17px;
   font-size: 1rem;
+  border-radius: 8px;
 }
 .feedback-container .feedback-div img {
-  width: 5.5rem;
+  width: 5.3rem;
   height: auto;
+  border-radius: 8px;
+  box-shadow: 0.2px 0.2px 12px 0.2px black;
 }
 .feedback-container .feedback-div p {
   line-height: 30px;
@@ -349,6 +377,8 @@ h3 {
 .feedback-container .feedback-name-div {
   display: flex;
   flex-direction: row;
+  margin: 5px 0px 0px 120px;
+  align-items: flex-end;
   justify-content: flex-end;
   font-size: 0.8rem;
 }
@@ -364,7 +394,7 @@ h3 {
 
 footer {
   margin-top: 30px;
-  height: 10rem;
+  height: 12rem;
   background: #00051f;
 }
 
@@ -372,7 +402,8 @@ table {
   display: flex;
   flex-direction: row;
   color: white;
-  border-collapse: collapse;
+  justify-content: center;
+  margin: 12px 12px 12px 12px;
 }
 
 /*# sourceMappingURL=style.css.map */

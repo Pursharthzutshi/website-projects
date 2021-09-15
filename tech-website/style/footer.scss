@@ -12,14 +12,15 @@
 
 footer{
   margin-top: 30px;
-  height: 10rem;
+  height: 12rem;
   background: #00051f;
 }
 
 table{
   @include flex(row);
   color:$whiteColor;
-  border-collapse: collapse;
+  justify-content: center;
+  margin: 12px 12px 12px 12px;
 
   th{
 

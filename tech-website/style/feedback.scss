@@ -11,8 +11,8 @@
   background-position: center;
   background-size:cover;
   background-attachment: fixed;
-  height:70vh;
-  clip-path: polygon(0% 0%,0% 100%,100% 100%,90% 0%);
+  height:72vh;
+  clip-path: polygon(0% 0%,0% 100%,100% 100%,88% 0%);
 
 }
 
@@ -31,24 +31,29 @@
     @include flex(column);
     align-items: center;
     width: 19rem;
-    height: 20rem;
+    height: 20.5rem;
     box-shadow: .2px .2px 12px .2px #00072d;
-    border:4px solid #3503b7;
-    padding:25px 12px 5px 12px;
+    border:4px solid #3d0596;
+    padding:25px 12px 5px 17px;
     font-size: 1rem;
+    border-radius: 8px;
   }
   .feedback-div img{
-    width: 5.5rem;
+    width: 5.3rem;
     height: auto;
+    border-radius: 8px;
+    box-shadow: .2px .2px 12px .2px black;
   }
+
   .feedback-div p{
     line-height: 30px;
   }
   .feedback-name-div{
     @include flex(row);
+    margin: 5px 0px 0px 120px;
+    align-items: flex-end;
     justify-content: flex-end;
     font-size: .8rem;
-
   }
 
   .feedback-name-div p{

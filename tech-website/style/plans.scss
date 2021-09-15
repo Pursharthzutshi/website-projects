@@ -24,15 +24,23 @@ text-align: $textAlignCenter;
   @include justifyContent();
 }
 
+
 .plans-section{
+
+  .headings-container{
+
   h2{
     color:$blackColor;
+  }
+  .line{
+    background: $blackColor;
+  }
   }
 }
 
 .plans-container{
-@include justifyContent();
-  gap:30px;
+justify-content: space-around;
+
   .plans-div{
     width: 20rem ;
     height: 25rem;
