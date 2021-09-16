@@ -1,15 +1,22 @@
-const createAccount = document.querySelector(".create-account-button");
+const createAccountButton = document.querySelector(".create-account-button");
 
-createAccount.addEventListener("click",createLogInBox);
+createAccountButton.addEventListener("click",createLogInBox);
 
 function createLogInBox(){
 
     const createAccount = document.createElement("div");
     createAccount.classList.add("create-account");
 
-    const CreateAccountHeading = document.createElement("h3");
-    CreateAccountHeading.classList.add("create-account-heading");
-    CreateAccountHeading.innerHTML='Create Account';
+    const removeCreateAccountIconDiv = document.createElement("div");
+    removeCreateAccountIconDiv.classList.add("remove-create-account-icon-div");
+
+    const removeCreateAccountIcon = document.createElement("button");
+    removeCreateAccountIcon.classList.add("remove-create-icon-account");
+    removeCreateAccountIcon.innerHTML='<ion-icon name="close-outline"></ion-icon>';
+
+    const createAccountHeading = document.createElement("h3");
+    createAccountHeading.classList.add("create-account-heading");
+    createAccountHeading.innerHTML='Create Account';
 
     const nameInput = document.createElement("input");
     nameInput.classList.add("create-account-input");
@@ -28,7 +35,9 @@ function createLogInBox(){
     passwordReCheckInput.classList.add("create-account-input");
     passwordReCheckInput.placeholder='Re-Check-Password';
 
-    createAccount.appendChild(CreateAccountHeading);
+    createAccount.appendChild(removeCreateAccountIconDiv);
+
+    createAccount.appendChild(createAccountHeading);
 
     createAccount.appendChild(nameInput);
 
@@ -38,11 +47,19 @@ function createLogInBox(){
 
     createAccount.appendChild(passwordReCheckInput);
 
+    removeCreateAccountIconDiv.appendChild(removeCreateAccountIcon);
+
     document.body.appendChild(createAccount);
 
-    createAccount.style.pointerEvents='none';
+    document.body.style.pointerEvents='none';
 
+}
 
+const removeCreateAccountIcon = document.querySelector(".removeCreateAccountIcon")
 
+removeCreateAccountIcon.addEventListener("click",removeCreateAccount);
 
+function removeCreateAccount(){
+    const deleteCreateAccount = document.querySelector(".create-account");
+    document.body.removeChild(deleteCreateAccount);
 }

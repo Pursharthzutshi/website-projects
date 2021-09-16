@@ -23,8 +23,11 @@ body::-webkit-scrollbar-thumb {
   background: black;
 }
 
-.create-account {
+.create-account, .remove-create-account-icon-div {
   display: flex;
+}
+
+.create-account {
   flex-direction: column;
   align-items: center;
   gap: 30px;
@@ -47,6 +50,12 @@ body::-webkit-scrollbar-thumb {
   box-shadow: 0.2px 0.2px 14px 0.2px lightgray;
 }
 
+.remove-create-account-icon-div {
+  margin: 50px 0px 0px 10px;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
 @keyframes createAccount {
   0% {
     background: lightgray;
@@ -59,6 +68,13 @@ body::-webkit-scrollbar-thumb {
     opacity: 1;
   }
 }
+.top-button {
+  box-shadow: 0.2px 0.2px 4px 0.2px linear-gradient(to left, #7a08d3, #8110b0);
+  position: fixed;
+  left: 96%;
+  top: 93%;
+}
+
 nav, ul, .header-content, .button-container, .subscribe-div, .service-section {
   display: flex;
   flex-direction: row;

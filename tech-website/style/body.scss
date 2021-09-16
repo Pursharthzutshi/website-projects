@@ -24,9 +24,11 @@ body::-webkit-scrollbar-thumb{
     background: $blackColor;
 }
 
+.create-account,.remove-create-account-icon-div{
+    display: flex;
+}
 
 .create-account{
-    display: flex;
     flex-direction: column;
     align-items: center;
     gap:30px;
@@ -49,6 +51,14 @@ body::-webkit-scrollbar-thumb{
     box-shadow: .2px .2px 14px .2px lightgray;
 }
 
+.remove-create-account-icon-div{
+    margin: 50px 0px 0px 10px;
+    flex-direction: row;
+    justify-content: flex-end;
+
+
+}
+
 @keyframes createAccount{
     0%{
         background:lightgray;
@@ -65,3 +75,10 @@ body::-webkit-scrollbar-thumb{
 }
 
 
+.top-button{
+    box-shadow: .2px .2px 4px .2px $purpleColor;
+    position: fixed;
+    left:96%;
+    top:93%;
+
+}
