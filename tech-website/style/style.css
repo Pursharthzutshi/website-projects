@@ -207,14 +207,15 @@ h3 {
 .service-section {
   justify-content: center;
   margin-top: -50px;
-  background: linear-gradient(to left, #001d49, #040028);
-  height: 35vh;
+  background: linear-gradient(to left, #001738, #170026);
+  height: 28vh;
 }
 .service-section .service-section-box {
   z-index: 1;
-  width: 10rem;
-  height: 10rem;
-  background: linear-gradient(to left, #7a08d3, #8110b0);
+  width: 9.5rem;
+  height: 8rem;
+  background: linear-gradient(to left, #17003d, #200042);
+  box-shadow: 0.2px 0.2px 12px 0.2px #09002c;
   border-radius: 8px;
   margin-top: 20px;
 }
@@ -222,10 +223,10 @@ h3 {
   cursor: pointer;
   background: #30046b;
 }
-.service-section .service-section-box img {
-  margin: 10px 0px 0px 30px;
-  width: 6.2rem;
-  height: auto;
+.service-section .service-section-box ion-icon {
+  margin: 10px 0px 0px 43px;
+  font-size: 4.3rem;
+  color: #856aff;
 }
 .service-section .service-section-box p {
   margin: 5px;
