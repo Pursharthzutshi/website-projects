@@ -6,7 +6,6 @@ const topBarContainer = document.querySelector(".top-bar-container");
 
 const logInBoxContainer = document.querySelector('.log-in-box-container');
 
-
 const logInBoxDiv = document.createElement("div");
 
 logInBoxDiv.classList.add('log-in-box-div');
@@ -63,7 +62,6 @@ logInBoxDiv.appendChild(showLogInError);
 
 boxLogInButton.addEventListener("click", logInAuthentication);
 
-
 closeLogInBoxIcon.addEventListener("click", closeLogInBox);
 
 function logInAuthentication() {
@@ -100,7 +98,6 @@ function showLogInBox() {
 
     logInBtn.style.pointerEvents = 'none';
 
-
     logInBoxContainer.appendChild(logInBoxDiv);
 
     document.body.style.background = 'linear-gradient(to left,rgba(232, 232, 232, 1),rgba(0,0,0,0.1))';
@@ -108,9 +105,5 @@ function showLogInBox() {
     topBarContainer.opacity = '.1';
 
     logInBoxContainer.style.opacity = '1';
-
-
-
-
 
 }
