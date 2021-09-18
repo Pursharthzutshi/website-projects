@@ -1,0 +1,13 @@
+@import "variables";
+
+@media screen and (max-width:704px){
+
+@mixin flex($direction){
+  display: flex;
+  flex-direction: $direction;
+}
+
+  .plans-container{
+    @include flex(column);
+  }
+}

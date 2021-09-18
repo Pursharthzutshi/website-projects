@@ -2,13 +2,15 @@ main();
 
 function main() {
 
+    const removeNavBarIcon = document.querySelector(".remove-nav-bar-icon");
+
     const navBarButton = document.createElement("button");
     navBarButton.classList.add("nav-bar-button");
     navBarButton.innerHTML = "<ion-icon name='menu-outline'></ion-icon>";
 
-    navBarButton.addEventListener("click", showNavBar);
+    removeNavBarIcon.addEventListener("click",link);
 
-    navBarButton.style.visibility = "hidden";
+    navBarButton.addEventListener("click", showNavBar);
 
     document.body.appendChild(navBarButton);
 
@@ -26,10 +28,7 @@ function main() {
             navBarButton.style.visibility = "visible";
         }
     });
-
 }
-
-
 
 
 function showNavBar() {
@@ -37,15 +36,23 @@ function showNavBar() {
     const showNavBar = document.createElement("div");
     showNavBar.classList.add("show-nav-bar");
 
+    const removeNavBarIcon = document.createElement("button");
+    removeNavBarIcon.classList.add("remove-nav-bar-icon");
+    removeNavBarIcon.innerHTML='<ion-icon name="close-circle-outline"></ion-icon>';
+
     const navBar = document.querySelector(".nav-bar");
 
     showNavBar.appendChild(navBar);
+
+    showNavBar.appendChild(removeNavBarIcon);
 
     document.body.style.setAttribute = ("style", "overflow-y:hidden");
 
     document.body.appendChild(showNavBar);
 
+
 }
+
 
 function link() {
     const header = document.querySelector(".header");

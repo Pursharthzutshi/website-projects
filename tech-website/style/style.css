@@ -88,7 +88,20 @@ body::-webkit-scrollbar-thumb {
   width: 100%;
   height: 50rem;
   z-index: 1;
-  background: #02213b;
+  background: linear-gradient(to left, #001738, #170026);
+  animation: showNavBar 0.3s ease-in-out;
+}
+@keyframes showNavBar {
+  0% {
+    background: #70a3ff;
+    transform: scale(0.3) translateY(180px);
+    opacity: 0;
+  }
+  100% {
+    box-shadow: 0 0 0 black;
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }
 .show-nav-bar .nav-bar {
   margin-top: 50px;
@@ -109,6 +122,14 @@ body::-webkit-scrollbar-thumb {
 .show-nav-bar a {
   font-size: 1.3rem;
   text-decoration: none;
+}
+.show-nav-bar .button {
+  border-radius: 4px;
+  padding: 7px 14px 7px 14px;
+}
+.show-nav-bar .button:hover {
+  box-shadow: 0.2px 0.2px 12px 0.2px #56009d;
+  background: linear-gradient(to left, #7a08d3, #8110b0);
 }
 
 nav, ul, .header-content, .button-container, .subscribe-div, .service-section {
