@@ -34,12 +34,15 @@ function main() {
 
 function showNavBar() {
 
+    const navBarList = document.querySelector(".nav-bar-list");
+
     const showNavBar = document.createElement("div");
     showNavBar.classList.add("show-nav-bar");
 
     const navBar = document.querySelector(".nav-bar");
 
     showNavBar.appendChild(navBar);
+
 
     document.body.style.setAttribute = ("style", "overflow-y:hidden");
 

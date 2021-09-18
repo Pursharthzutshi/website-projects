@@ -19,7 +19,11 @@
 }
 
 .features-section{
-
+  background-image:linear-gradient(to left, rgba(50, 6, 87, 0.75), rgba(31, 16, 121, 0.7)),url('pexels-pixabay-220201.jpg');
+  background-position: center;
+  background-size:cover;
+  background-attachment: fixed;
+  height:94vh;
   .line{
     background: $whiteColor;
   }
@@ -52,12 +56,4 @@
     line-height: 30px;
   }
 
-}
-
-.features-section{
-  background-image:linear-gradient(to left, rgba(50, 6, 87, 0.75), rgba(31, 16, 121, 0.7)),url('pexels-pixabay-220201.jpg');
-  background-position: center;
-  background-size:cover;
-  background-attachment: fixed;
-  height:94vh;
 }

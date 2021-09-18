@@ -1,76 +1,79 @@
 @import "variables";
 
 
-.headings-container,.accessibility-div,.accessibility-icon-text-div{
+.headings-container, .accessibility-div, .accessibility-icon-text-div {
   @include flex(column);
   @include justifyContent;
-  gap:0px;
+  gap: 0px;
 }
 
 
-.accessibility-section{
+.accessibility-section {
 
-  .headings-container{
+  .headings-container {
 
-    h2{
+    h2 {
       margin-top: 30px;
-      color:$blackColor;
+      color: $blackColor;
     }
-    .line{
+
+    .line {
       background: $blackColor;
     }
   }
 
-  .accessibility-div{
-img{
-  width: 25rem;
-  height: auto;
-  margin-top: -40px;
-}
-    p{
+  .accessibility-div {
+    img {
+      width: 25rem;
+      height: auto;
+      margin-top: -40px;
+    }
+
+    p {
       margin-top: -45px;
       font-size: 1.1rem;
       text-align: center;
       line-height: 30px;
-      color:$blackColor;
+      color: $blackColor;
     }
 
   }
 
 }
 
-.accessibility-icon-text-div-container{
+.accessibility-icon-text-div-container {
   @include flex(row);
-  gap:30px;
+  gap: 30px;
   margin-top: 20px;
   justify-content: space-around;
 
-  .accessibility-icon-text-div{
-    p{
+  .accessibility-icon-text-div {
+    p {
       font-size: 1rem;
       margin-top: 10px;
       font-family: 'Roboto';
-      color:$blackColor;
+      color: $blackColor;
     }
-    ion-icon{
+
+    ion-icon {
       font-size: 2.8rem;
     }
   }
 }
 
-.accessibility-icon-text-div:nth-child(1) ion-icon{
+.accessibility-icon-text-div:nth-child(1) ion-icon {
   color: #3197e0;
 }
 
-.accessibility-icon-text-div:nth-child(2) ion-icon{
+.accessibility-icon-text-div:nth-child(2) ion-icon {
   color: #575757;
 }
 
-.accessibility-icon-text-div:nth-child(3) ion-icon{
+.accessibility-icon-text-div:nth-child(3) ion-icon {
   color: #2e9804;
 }
 
-.accessibility-icon-text-div:nth-child(4) ion-icon{
+.accessibility-icon-text-div:nth-child(4) ion-icon {
   color: #0752b4;
 }
 

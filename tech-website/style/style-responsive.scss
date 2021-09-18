@@ -1,13 +1,138 @@
 @import "variables";
-
-@media screen and (max-width:704px){
-
 @mixin flex($direction){
   display: flex;
   flex-direction: $direction;
 }
 
-  .plans-container{
-    @include flex(column);
-  }
+@mixin centerAligned{
+align-items: center;
+justify-content: center;
 }
+
+@media screen and (max-width:704px){
+
+
+  nav,.plans-container,.features-container{
+    @include flex(column);
+    @include centerAligned;
+    gap:30px;
+  }
+  body{
+    overflow-x: hidden;
+  }
+
+  .header{
+    height: 80vh;
+  }
+
+  nav{
+   h2{
+     font-size: 2rem;
+     text-align: $textAlignCenter;
+     line-height: 50px;
+
+   }
+    .nav-bar-list{
+      visibility: hidden;
+    }
+
+  }
+
+  .header-content{
+    @include  flex(column);
+    @include centerAligned;
+
+    h1{
+      margin-top: -5px;
+      font-size: 1.5rem;
+    }
+  }
+
+  .header-img-div{
+    img{
+      visibility: hidden;
+    }
+  }
+
+  .service-section{
+height: 25vh;
+    gap:20px;
+    .service-section-box{
+      width: 7rem;
+      height: 7rem;
+      padding:2px 5px 2px 2px;
+      ion-icon{
+        margin-left: 35px;
+      font-size: 3rem;
+      }
+      p{
+        font-size: .9rem;
+      }
+    }
+  }
+
+  .plans-section{
+    .plans-div{
+      height: 100%;
+      padding-bottom: 23px;
+      h2{
+        font-size: 1.3rem;
+      }
+      ion-icon{
+        font-size: 2rem;
+      }
+      p{
+        margin-top: 5px;
+        font-size: .9rem;
+      }
+      button{
+        padding:7px 14px 7px 14px;
+        font-size: .8rem;
+      }
+    }
+  }
+
+  .features-section{
+    height: 100%;
+  padding-bottom: 40px;
+  }
+  .features-container{
+
+    .features-div{
+      border-radius: 8px;
+      padding:2px 12px 2px 18px;
+      width: 14rem;
+      height: 9rem;
+      border:10px double #f3f3f3;
+      flex-wrap: wrap;
+
+      .features-img-heading-row{
+        margin-top: 7px;
+      }
+      img{
+        width: 3.2rem;
+        height: auto;
+      }
+      p{
+        margin-left: -60px;
+        font-size: 1.7rem;
+      }
+      span{
+        margin-top: -60px;
+        font-size: .9rem;
+      }
+    }
+  }
+
+  .accessibility-div{
+    img{
+      width: 2rem;
+      height: auto;
+    }
+    p{
+      font-size: .8rem;
+    }
+
+  }
+
+  }

@@ -341,6 +341,13 @@ h3 {
   margin-top: 30px;
 }
 
+.features-section {
+  background-image: linear-gradient(to left, rgba(50, 6, 87, 0.75), rgba(31, 16, 121, 0.7)), url("pexels-pixabay-220201.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 94vh;
+}
 .features-section .line {
   background: white;
 }
@@ -366,14 +373,6 @@ h3 {
   color: white;
   text-align: center;
   line-height: 30px;
-}
-
-.features-section {
-  background-image: linear-gradient(to left, rgba(50, 6, 87, 0.75), rgba(31, 16, 121, 0.7)), url("pexels-pixabay-220201.jpg");
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  height: 94vh;
 }
 
 .headings-container, .accessibility-div, .accessibility-icon-text-div {
@@ -516,6 +515,120 @@ table {
   color: white;
   justify-content: center;
   margin: 12px 12px 12px 12px;
+}
+@media screen and (max-width: 704px) {
+  nav, .plans-container, .features-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .header {
+    height: 80vh;
+  }
+
+  nav h2 {
+    font-size: 2rem;
+    text-align: center;
+    line-height: 50px;
+  }
+  nav .nav-bar-list {
+    visibility: hidden;
+  }
+
+  .header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .header-content h1 {
+    margin-top: -5px;
+    font-size: 1.5rem;
+  }
+
+  .header-img-div img {
+    visibility: hidden;
+  }
+
+  .service-section {
+    height: 25vh;
+    gap: 20px;
+  }
+  .service-section .service-section-box {
+    width: 7rem;
+    height: 7rem;
+    padding: 2px 5px 2px 2px;
+  }
+  .service-section .service-section-box ion-icon {
+    margin-left: 35px;
+    font-size: 3rem;
+  }
+  .service-section .service-section-box p {
+    font-size: 0.9rem;
+  }
+
+  .plans-section .plans-div {
+    height: 100%;
+    padding-bottom: 23px;
+  }
+  .plans-section .plans-div h2 {
+    font-size: 1.3rem;
+  }
+  .plans-section .plans-div ion-icon {
+    font-size: 2rem;
+  }
+  .plans-section .plans-div p {
+    margin-top: 5px;
+    font-size: 0.9rem;
+  }
+  .plans-section .plans-div button {
+    padding: 7px 14px 7px 14px;
+    font-size: 0.8rem;
+  }
+
+  .features-section {
+    height: 100%;
+    padding-bottom: 40px;
+  }
+
+  .features-container .features-div {
+    border-radius: 8px;
+    padding: 2px 12px 2px 18px;
+    width: 14rem;
+    height: 9rem;
+    border: 10px double #f3f3f3;
+    flex-wrap: wrap;
+  }
+  .features-container .features-div .features-img-heading-row {
+    margin-top: 7px;
+  }
+  .features-container .features-div img {
+    width: 3.2rem;
+    height: auto;
+  }
+  .features-container .features-div p {
+    margin-left: -60px;
+    font-size: 1.7rem;
+  }
+  .features-container .features-div span {
+    margin-top: -60px;
+    font-size: 0.9rem;
+  }
+
+  .accessibility-div img {
+    width: 2rem;
+    height: auto;
+  }
+  .accessibility-div p {
+    font-size: 0.8rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
