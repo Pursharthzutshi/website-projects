@@ -17,6 +17,7 @@ window.addEventListener("scroll",function(){
 navBarButton.addEventListener("click",showNavBar);
 
 function showNavBar(){
+
     const showNavBar = document.createElement("div");
     showNavBar.classList.add("show-nav-bar");
 
@@ -27,4 +28,29 @@ function showNavBar(){
     document.body.appendChild(showNavBar);
 
 }
+
+const button = document.querySelector(".button");
+
+button.addEventListener("click",link);
+
+function link(){
+    const button = document.querySelector(".button");
+
+    const header = document.querySelector(".header");
+
+    const navBar = document.querySelector(".nav-bar");
+
+    const showNavBar = document.querySelector(".show-nav-bar");
+
+    for(let i = 0 ; i < button.length ; i++){
+
+    document.body.removeChild(showNavBar);
+
+    showNavBar.style.visibility='hidden';
+
+    header.appendChild(navBar);
+    }
+}
+
+
 

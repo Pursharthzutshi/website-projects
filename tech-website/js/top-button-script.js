@@ -27,5 +27,4 @@ window.addEventListener("scroll",function(){
         return;
     }
 
-
 });
