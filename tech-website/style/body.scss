@@ -1,5 +1,10 @@
 @import "variables";
 
+@mixin flexDirection($direction){
+    display: flex;
+    flex-direction: $direction;
+}
+
 body {
     font-family: 'Montserrat';
     margin: 0;
@@ -81,4 +86,38 @@ body::-webkit-scrollbar-thumb{
     left:96%;
     top:93%;
 
+}
+
+.nav-bar-button{
+    position: fixed;
+    left:1%;
+    top:93%;
+}
+
+.show-nav-bar{;
+    position: fixed;
+    left:0%;
+    top:0%;
+    width: 100%;
+    height: 50rem;
+    z-index: +1;
+    background: #02213b;
+.nav-bar{
+    margin-top: 50px;
+@include flexDirection(column);
+   justify-content: center;
+
+}ul{
+    margin-left: -30px;
+    align-items: center;
+     justify-content: center;
+
+     @include flexDirection(column);
+ }
+    li{
+list-style: none;
+    }a{
+    font-size: 1.3rem;
+             text-decoration: $noTextUnderline;
+         }
 }

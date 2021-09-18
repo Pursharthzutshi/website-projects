@@ -75,6 +75,42 @@ body::-webkit-scrollbar-thumb {
   top: 93%;
 }
 
+.nav-bar-button {
+  position: fixed;
+  left: 1%;
+  top: 93%;
+}
+
+.show-nav-bar {
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  width: 100%;
+  height: 50rem;
+  z-index: 1;
+  background: #02213b;
+}
+.show-nav-bar .nav-bar {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.show-nav-bar ul {
+  margin-left: -30px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+.show-nav-bar li {
+  list-style: none;
+}
+.show-nav-bar a {
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+
 nav, ul, .header-content, .button-container, .subscribe-div, .service-section {
   display: flex;
   flex-direction: row;
