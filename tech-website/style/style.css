@@ -391,13 +391,13 @@ h3 {
   background: black;
 }
 .accessibility-section .accessibility-div img {
-  width: 25rem;
+  width: 23rem;
   height: auto;
   margin-top: -40px;
 }
 .accessibility-section .accessibility-div p {
   margin-top: -45px;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   text-align: center;
   line-height: 30px;
   color: black;
@@ -517,7 +517,19 @@ table {
   margin: 12px 12px 12px 12px;
 }
 @media screen and (max-width: 704px) {
-  nav, .plans-container, .features-container {
+  .top-button, .nav-bar-button {
+    position: fixed;
+  }
+
+  .top-button {
+    left: 88%;
+  }
+
+  .nav-bar-button {
+    left: 2%;
+  }
+
+  nav, .plans-container, .features-container, .feedback-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -627,8 +639,38 @@ table {
     height: auto;
   }
   .accessibility-div p {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
   }
+
+  .accessibility-icon-text-div-container .accessibility-icon-text-div ion-icon {
+    font-size: 3rem;
+  }
+  .accessibility-icon-text-div-container .accessibility-icon-text-div p {
+    font-size: 0.9rem;
+  }
+}
+.feedback-section {
+  clip-path: none;
+  height: 100%;
+  padding-bottom: 30px;
+}
+.feedback-section .feedback-div {
+  height: 18rem;
+}
+.feedback-section .feedback-div img {
+  width: 4.2rem;
+  height: auto;
+}
+.feedback-section .feedback-div p {
+  margin-top: 2px;
+  line-height: 30px;
+  font-size: 0.95rem;
+}
+.feedback-section .feedback-div .icons-container {
+  margin-top: 10px;
+}
+.feedback-section .feedback-div .feedback-name-div {
+  margin-top: -1px;
 }
 
 /*# sourceMappingURL=style.css.map */
