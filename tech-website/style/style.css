@@ -449,7 +449,7 @@ h3 {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  height: 72vh;
+  height: 73vh;
   clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 88% 0%);
 }
 
@@ -504,18 +504,52 @@ h3 {
 }
 
 footer {
-  margin-top: 30px;
-  height: 12rem;
-  background: #00051f;
+  color: white;
+  padding: 20px;
+  height: 100%;
+  background: linear-gradient(to left, #01123b, #04002f);
+}
+footer h2 {
+  margin-top: 10px;
+  font-size: 1.5rem;
+}
+footer p {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.footer-column {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 180px;
 }
 
 table {
-  display: flex;
-  flex-direction: row;
   color: white;
-  justify-content: center;
   margin: 12px 12px 12px 12px;
+  padding: 2px 2px 2px 2px;
+  border-collapse: collapse;
 }
+table tr {
+  text-align: center;
+  margin-left: 30px;
+}
+table td {
+  font-size: 0.9rem;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+table td a {
+  text-decoration: none;
+}
+table td a:hover {
+  transition: 0.2s;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 @media screen and (max-width: 704px) {
   .top-button, .nav-bar-button {
     position: fixed;
@@ -650,7 +684,6 @@ table {
   }
 }
 .feedback-section {
-  clip-path: none;
   height: 100%;
   padding-bottom: 30px;
 }
@@ -671,6 +704,35 @@ table {
 }
 .feedback-section .feedback-div .feedback-name-div {
   margin-top: -1px;
+}
+.feedback-section .footer-column {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.feedback-section .footer-section table {
+  color: white;
+  padding: 2px 2px 2px 2px;
+  border-collapse: collapse;
+}
+.feedback-section .footer-section table tr {
+  text-align: center;
+  margin-left: 30px;
+}
+.feedback-section .footer-section table td {
+  font-size: 0.7rem;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+.feedback-section .footer-section table td a {
+  text-decoration: none;
+}
+.feedback-section .footer-section table td a:hover {
+  transition: 0.2s;
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=style.css.map */

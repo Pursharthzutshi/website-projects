@@ -11,18 +11,48 @@
 }
 
 footer{
-  margin-top: 30px;
-  height: 12rem;
-  background: #00051f;
+  color:$whiteColor;
+  padding:20px;
+  height: 100%;
+  background: linear-gradient(to left, #01123b, #04002f);
+h2{
+  margin-top: 10px;
+  font-size: 1.5rem;
+}
+  p{
+    padding-top: 20px;
+    text-align: $textAlignCenter;
+  }
+}
+
+.footer-column{
+  @include justifyContent;
+  @include flex(row);
+  gap:180px;
 }
 
 table{
-  @include flex(row);
   color:$whiteColor;
-  justify-content: center;
   margin: 12px 12px 12px 12px;
+  padding:2px 2px 2px 2px;
+  border-collapse: collapse;
 
-  th{
+  tr{
+    text-align:$textAlignCenter;
+    margin-left: 30px;
+  }
 
+  td{
+    font-size: .9rem;
+    margin-top: 30px;
+    margin-left: 20px;
+a{
+  text-decoration: $noTextUnderline;
+  &:hover{
+    transition: .2s;
+    cursor: $cursorButton;
+    text-decoration: underline;
+  }
+}
   }
 }

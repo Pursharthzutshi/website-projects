@@ -1,5 +1,15 @@
 @import "variables";
 
+@mixin flex($direction){
+  display: flex;
+  flex-direction: $direction;
+}
+
+@mixin centerAligned{
+  align-items: center;
+  justify-content: center;
+}
+
 .headings-container,.accessibility-div,.accessibility-icon-text-div{
   @include flex(column);
   @include justifyContent;
@@ -11,9 +21,8 @@
   background-position: center;
   background-size:cover;
   background-attachment: fixed;
-  height:72vh;
+  height:73vh;
   clip-path: polygon(0% 0%,0% 100%,100% 100%,88% 0%);
-
 }
 
 .headings-container{
