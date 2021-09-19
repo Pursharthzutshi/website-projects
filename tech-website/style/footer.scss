@@ -5,54 +5,63 @@
   flex-direction:$direction;
 }
 
-@mixin justifyContent(){
+@mixin centerAligned{
   justify-content: center;
   align-items: center ;
 }
 
 footer{
   color:$whiteColor;
-  padding:20px;
+  padding:2px 30px 32px 2px;
   height: 100%;
-  background: linear-gradient(to left, #01123b, #04002f);
-h2{
+  background: linear-gradient(to left, #00051e, #170034);
+
+  .footer-div{
+    @include centerAligned;
+    @include flex(column);
+    gap:50px;
+
+    table{
+      color:$whiteColor;
+      margin: 12px 12px 12px 12px;
+      padding:2px 2px 2px 2px;
+      border-collapse: collapse;
+
+      tr{
+        text-align:$textAlignCenter;
+        margin-left: 30px;
+      }
+
+      td{
+        font-size: .9rem;
+        margin-top: 30px;
+        margin-left: 20px;
+        a{
+          text-decoration: $noTextUnderline;
+          &:hover{
+            transition: .2s;
+            cursor: $cursorButton;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+  h2{
   margin-top: 10px;
   font-size: 1.5rem;
 }
+    .address-div{
+      @include flex(row);
+  address{
+    margin-top: -30px;
+  }
+    }
   p{
-    padding-top: 20px;
+
     text-align: $textAlignCenter;
-  }
+    font-size: .7rem;
+    padding-top: 20px;
+   }
 }
-
-.footer-column{
-  @include justifyContent;
-  @include flex(row);
-  gap:180px;
-}
-
-table{
-  color:$whiteColor;
-  margin: 12px 12px 12px 12px;
-  padding:2px 2px 2px 2px;
-  border-collapse: collapse;
-
-  tr{
-    text-align:$textAlignCenter;
-    margin-left: 30px;
-  }
-
-  td{
-    font-size: .9rem;
-    margin-top: 30px;
-    margin-left: 20px;
-a{
-  text-decoration: $noTextUnderline;
-  &:hover{
-    transition: .2s;
-    cursor: $cursorButton;
-    text-decoration: underline;
-  }
-}
-  }
 }
