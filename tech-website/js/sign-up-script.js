@@ -1,6 +1,12 @@
+main();
+
+function main(){
+
 const createAccountButton = document.querySelector(".create-account-button");
 
 createAccountButton.addEventListener("click",createLogInBox);
+
+}
 
 function createLogInBox(){
 

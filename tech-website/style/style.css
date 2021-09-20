@@ -1,4 +1,4 @@
-.create-account, .top-button, .nav-bar-button, .show-nav-bar {
+.create-account, .top-button, .nav-bar-button, .show-nav-bar, .contact-us-box {
   position: fixed;
 }
 
@@ -40,7 +40,7 @@ body::-webkit-scrollbar-thumb {
   height: 44.6rem;
   background: white;
   color: white;
-  top: 0%;
+  top: 50%;
   animation: createAccount 0.5s ease-in-out;
 }
 
@@ -66,9 +66,9 @@ body::-webkit-scrollbar-thumb {
     top: 100%;
   }
   100% {
-    top: 0%;
     background: white;
     opacity: 1;
+    top: 0%;
   }
 }
 .top-button {
@@ -130,6 +130,84 @@ body::-webkit-scrollbar-thumb {
 .show-nav-bar .button:hover {
   box-shadow: 0.2px 0.2px 12px 0.2px #56009d;
   background: linear-gradient(to left, #7a08d3, #8110b0);
+}
+
+.contact-us-button {
+  margin-top: -2px;
+  padding: 2px 2px 2px 2px;
+  background: none;
+  box-shadow: none;
+}
+.contact-us-button:hover {
+  background: none;
+}
+
+.contact-us-box {
+  padding: 26px 22px 12px 21px;
+  box-shadow: 0.2px 0.2px 2px 0.2px black;
+  z-index: 1;
+  width: 27rem;
+  height: 20rem;
+  background: linear-gradient(to left, #12002d, #13002f);
+  top: 22%;
+  left: 35%;
+  animation: contactUsPage 0.4s ease-in-out;
+  border-radius: 20px;
+}
+
+@keyframes contactUsPage {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.contact-us-box {
+  width: 40%;
+  left: 30%;
+}
+
+.contact-us-div {
+  display: flex;
+  flex-direction: row;
+  visibility: hidden;
+  padding: 22px 2px 12px 22px;
+  gap: 50px;
+  font-size: 0.9rem;
+}
+.contact-us-div form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.contact-us-div form textarea {
+  margin-top: 30px;
+}
+.contact-us-div .contact-us-column-container {
+  margin: -20px 0px 0px -20px;
+  display: flex;
+  flex-direction: column;
+}
+.contact-us-div .contact-us-column-container .contact-us-column {
+  display: flex;
+  flex-direction: column;
+}
+.contact-us-div .contact-us-column-container .contact-us-column ion-icon {
+  font-size: 2rem;
+  color: white;
+}
+.contact-us-div .contact-us-column-container .contact-us-column address {
+  color: white;
+}
+
+.remove-contact-us-icon {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-left: -27px;
+}
+.remove-contact-us-icon:hover {
+  color: black;
 }
 
 nav, ul, .header-content, .button-container, .subscribe-div, .service-section {

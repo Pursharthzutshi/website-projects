@@ -5,7 +5,7 @@
   flex-direction: $direction;
 }
 
-.create-account ,.top-button,.nav-bar-button,.show-nav-bar{
+.create-account, .top-button, .nav-bar-button, .show-nav-bar, .contact-us-box {
   position: fixed;
 }
 
@@ -48,7 +48,7 @@ body::-webkit-scrollbar-thumb {
   height: 44.6rem;
   background: white;
   color: white;
-  top: 0%;
+  top: 50%;
   animation: createAccount .5s ease-in-out;
 }
 
@@ -76,9 +76,9 @@ body::-webkit-scrollbar-thumb {
   }
 
   100% {
-    top: 0%;
     background: $whiteColor;
     opacity: 1;
+    top: 0%;
 
   }
 }
@@ -142,13 +142,100 @@ body::-webkit-scrollbar-thumb {
     font-size: 1.3rem;
     text-decoration: $noTextUnderline;
   }
-  .button{
-    border-radius: 4px;
-    padding:7px 14px 7px 14px;
 
-    &:hover{
+  .button {
+    border-radius: 4px;
+    padding: 7px 14px 7px 14px;
+
+    &:hover {
       box-shadow: .2px .2px 12px .2px #56009d;
-      background:$purpleColor;
+      background: $purpleColor;
     }
   }
 }
+
+.contact-us-button {
+  margin-top: -2px;
+  padding: 2px 2px 2px 2px;
+  background: none;
+  box-shadow: none;
+
+  &:hover {
+    background: none;
+  }
+}
+
+.contact-us-box {
+  padding: 26px 22px 12px 21px;
+  box-shadow: .2px .2px 2px .2px black;
+  z-index: +1;
+  width: 27rem;
+  height: 20rem;
+  background: linear-gradient(to left, #12002d, #13002f);
+  top: 22%;
+  left: 35%;
+  animation: contactUsPage .4s ease-in-out;
+  border-radius: 20px;
+}
+
+@keyframes contactUsPage {
+  0% {
+    opacity: 0;
+  }
+  100% {
+
+    opacity: 1;
+  }
+}
+
+
+.contact-us-box {
+  width: 40%;
+  left: 30%;
+}
+
+  .contact-us-div {
+    @include flexDirection(row);
+    visibility: hidden;
+    padding: 22px 2px 12px 22px;
+    gap: 50px;
+    font-size: .9rem;
+
+    form {
+      @include flexDirection(column);
+      gap: 30px;
+      input{
+
+      }
+      textarea{
+        margin-top: 30px;
+      }
+
+    }
+    .contact-us-column-container{
+      margin:-20px 0px 0px -20px;
+      @include flexDirection(column);
+
+    .contact-us-column{
+      @include flexDirection(column);
+
+    ion-icon {
+      font-size: 2rem;
+      color: $whiteColor;
+    }
+
+    address {
+      color: $whiteColor;
+    }
+  }
+    }
+  }
+
+  .remove-contact-us-icon{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-left: -27px;
+    &:hover{
+      color:black;
+    }
+  }

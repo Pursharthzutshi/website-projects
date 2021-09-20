@@ -1,0 +1,39 @@
+
+    <div class="contact-us-div">
+
+        <div class="contact-us-heading-div">
+
+        <h2>Contact Us</h2>
+        </div>
+
+        <div class="input-column">
+
+        <input type="text"/>
+
+        <textarea></textarea>
+
+    </div>
+
+        <div class="">
+
+        <div class="contact-us-column">
+
+            <ion-icon name="location-outline"></ion-icon>
+
+        <address>ADDRESS:Lorem ipsum dolor sit amet, consectetur adipiscing elit. </address>
+
+        </div>
+        <div class="contact-us-column">
+            <ion-icon name="call-outline"></ion-icon>
+
+            <p>Phone No:923562123 </p>
+
+        </div>
+        <div class="contact-us-column">
+            <ion-icon name="mail-outline"></ion-icon>
+
+            <p>Email-id: techwebsite@gmail.com</p>
+
+        </div>
+        </div>
+    </div>
