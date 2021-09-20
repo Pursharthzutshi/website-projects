@@ -173,15 +173,16 @@ body::-webkit-scrollbar-thumb {
 
 .contact-us-box {
   padding: 26px 22px 12px 21px;
+  background: linear-gradient(to left, #12002d, #13002f);
   box-shadow: .2px .2px 2px .2px black;
   z-index: +1;
-  width: 27rem;
-  height: 20rem;
-  background: linear-gradient(to left, #12002d, #13002f);
   top: 22%;
-  left: 35%;
+  left: 0%;
+  width: 97.2%;
+  height: 20rem;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
   animation: contactUsPage .4s ease-in-out;
-  border-radius: 20px;
 }
 
 @keyframes contactUsPage {
@@ -197,11 +198,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 
-.contact-us-box {
-  position: fixed;
-  width: 75%;
-  left: 0%;
-}
 
   .contact-us-div {
     @include flexDirection(row);
@@ -210,16 +206,31 @@ body::-webkit-scrollbar-thumb {
     padding: 42px 2px 2px 22px;
     gap: 200px;
     font-size: .9rem;
-
+    h2{
+      padding:0px 5px 0px 20px;
+    }
+    span{
+      color: #7c7cfa;
+    }
     form {
       @include flexDirection(column);
       @include justifyContent;
       gap: 10px;
       input{
+        border: $noBorder;
+        outline: $noInputOutline;
+        box-shadow: .2px .2px 5px .2px lightgray;
+        padding: 4px 2px 4px 7px;
+        width: 100%;
         margin-top: -20px;
+        &::placeholder{
+          font-family: "Montserrat";
+        }
       }
       textarea{
-        margin-top: 30px;
+        box-shadow: .2px .2px 7px .2px lightgray;
+        outline: $noInputOutline;
+        margin:30px 0px 0px -5px;
       }
 
     }
@@ -245,8 +256,9 @@ body::-webkit-scrollbar-thumb {
   .remove-contact-us-icon{
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-    margin-left: 53px;
-    margin-top: -45px;
+    height: 50vh;
+    margin-left: -65px;
+    margin-top: -42px;
     &:hover{
       color:black;
     }

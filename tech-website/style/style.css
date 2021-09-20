@@ -145,15 +145,16 @@ body::-webkit-scrollbar-thumb {
 
 .contact-us-box {
   padding: 26px 22px 12px 21px;
+  background: linear-gradient(to left, #12002d, #13002f);
   box-shadow: 0.2px 0.2px 2px 0.2px black;
   z-index: 1;
-  width: 27rem;
-  height: 20rem;
-  background: linear-gradient(to left, #12002d, #13002f);
   top: 22%;
-  left: 35%;
+  left: 0%;
+  width: 97.2%;
+  height: 20rem;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
   animation: contactUsPage 0.4s ease-in-out;
-  border-radius: 20px;
 }
 
 @keyframes contactUsPage {
@@ -166,12 +167,6 @@ body::-webkit-scrollbar-thumb {
     opacity: 1;
   }
 }
-.contact-us-box {
-  position: fixed;
-  width: 75%;
-  left: 0%;
-}
-
 .contact-us-div {
   display: flex;
   flex-direction: row;
@@ -181,6 +176,12 @@ body::-webkit-scrollbar-thumb {
   gap: 200px;
   font-size: 0.9rem;
 }
+.contact-us-div h2 {
+  padding: 0px 5px 0px 20px;
+}
+.contact-us-div span {
+  color: #7c7cfa;
+}
 .contact-us-div form {
   display: flex;
   flex-direction: column;
@@ -189,10 +190,20 @@ body::-webkit-scrollbar-thumb {
   gap: 10px;
 }
 .contact-us-div form input {
+  border: none;
+  outline: none;
+  box-shadow: 0.2px 0.2px 5px 0.2px lightgray;
+  padding: 4px 2px 4px 7px;
+  width: 100%;
   margin-top: -20px;
 }
+.contact-us-div form input::placeholder {
+  font-family: "Montserrat";
+}
 .contact-us-div form textarea {
-  margin-top: 30px;
+  box-shadow: 0.2px 0.2px 7px 0.2px lightgray;
+  outline: none;
+  margin: 30px 0px 0px -5px;
 }
 .contact-us-div .contact-us-column-container {
   margin: -20px 0px 0px -20px;
@@ -214,8 +225,9 @@ body::-webkit-scrollbar-thumb {
 .remove-contact-us-icon {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
-  margin-left: 53px;
-  margin-top: -45px;
+  height: 50vh;
+  margin-left: -65px;
+  margin-top: -42px;
 }
 .remove-contact-us-icon:hover {
   color: black;
@@ -725,6 +737,74 @@ footer .footer-div p {
 
   .header-img-div img {
     visibility: hidden;
+  }
+
+  .contact-us-box {
+    width: 100%;
+    height: 120rem;
+    top: 0%;
+    padding: 2px 32px 2px 32px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+
+  .contact-us-div {
+    margin-left: -60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 100%;
+    padding: 42px 2px 2px 22px;
+    gap: 40px;
+    font-size: 0.9rem;
+  }
+  .contact-us-div .contact-us-heading-div {
+    margin-top: -30px;
+  }
+  .contact-us-div form {
+    margin: 30px 0px 0px 35px;
+  }
+  .contact-us-div form input {
+    width: 90%;
+  }
+  .contact-us-div form textarea {
+    width: 90%;
+  }
+  .contact-us-div form button {
+    margin-left: -20px;
+  }
+  .contact-us-div .contact-us-column-container {
+    align-items: center;
+    justify-content: center;
+  }
+  .contact-us-div .contact-us-column-container .contact-us-column {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .contact-us-div .contact-us-column-container .contact-us-column ion-icon {
+    font-size: 1.5rem;
+  }
+  .contact-us-div .contact-us-column-container .contact-us-column p {
+    white-space: pre;
+    font-size: 0.75rem;
+  }
+
+  .remove-contact-us-icon {
+    font-size: 1.5rem;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    width: 114%;
+    height: 3vh;
+    margin: 10px 0px 0px 10px;
+    padding: 20px 0px 46px 0px;
+  }
+  .remove-contact-us-icon:hover {
+    color: black;
   }
 
   .service-section {

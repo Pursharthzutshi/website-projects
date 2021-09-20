@@ -9,7 +9,6 @@ function main() {
 
     navBarButton.addEventListener("click", showNavBar);
 
-
     document.body.appendChild(navBarButton);
 
     const button = document.querySelectorAll(".button");
