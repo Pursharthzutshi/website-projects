@@ -20,7 +20,6 @@ function main(){
 
 function contactUs(){
 
-
     const contactUsDiv = document.querySelector(".contact-us-div");
 
     const contactUsBox = document.createElement("div");

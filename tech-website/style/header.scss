@@ -1,6 +1,6 @@
 @import "variables";
 
-@mixin flex($direction){
+@mixin flexDirection($direction){
     display: flex;
     flex-direction: $direction;
     gap:40px;
@@ -12,11 +12,11 @@
 }
 
 nav,ul,.header-content,.button-container,.subscribe-div,.service-section{
-    @include flex(row);
+    @include flexDirection(row);
 }
 
 .headings-container{
-    @include flex(column);
+    @include flexDirection(column);
     @include justifyContent;
     gap:0px;
 }
@@ -145,9 +145,9 @@ h3{
 
 .service-section{
     justify-content: center;
-    margin-top:-50px ;
+    margin-top:-3px ;
     background: linear-gradient(to left, #001738, #170026);
-    height: 28vh;
+    height: 23vh;
 
     .service-section-box{
         z-index:+1;
@@ -156,8 +156,7 @@ h3{
         background: linear-gradient(to left, #17003d, #200042);
         box-shadow: .2px .2px 12px .2px #09002c;
         border-radius: 8px;
-        margin-top: 20px;
-
+        margin-top: -20px;
 
         &:hover{
             cursor: $cursorButton;
@@ -174,5 +173,12 @@ h3{
             text-align: center;
         }
     }
+    .service-heading-container{
+        @include flexDirection(column);
+        @include justifyContent;
 
+    }
+    .line{
+
+    }
 }

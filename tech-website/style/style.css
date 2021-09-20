@@ -88,6 +88,7 @@ body::-webkit-scrollbar-thumb {
   width: 100%;
   height: 50rem;
   z-index: 1;
+  z-index: 1;
   background: linear-gradient(to left, #001738, #170026);
   animation: showNavBar 0.3s ease-in-out;
 }
@@ -157,29 +158,38 @@ body::-webkit-scrollbar-thumb {
 
 @keyframes contactUsPage {
   0% {
+    transform: scale(0.5);
     opacity: 0;
   }
   100% {
+    transform: scale(1);
     opacity: 1;
   }
 }
 .contact-us-box {
-  width: 40%;
-  left: 30%;
+  position: fixed;
+  width: 75%;
+  left: 0%;
 }
 
 .contact-us-div {
   display: flex;
   flex-direction: row;
-  visibility: hidden;
-  padding: 22px 2px 12px 22px;
-  gap: 50px;
+  position: absolute;
+  top: 100%;
+  padding: 42px 2px 2px 22px;
+  gap: 200px;
   font-size: 0.9rem;
 }
 .contact-us-div form {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.contact-us-div form input {
+  margin-top: -20px;
 }
 .contact-us-div form textarea {
   margin-top: 30px;
@@ -204,7 +214,8 @@ body::-webkit-scrollbar-thumb {
 .remove-contact-us-icon {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
-  margin-left: -27px;
+  margin-left: 53px;
+  margin-top: -45px;
 }
 .remove-contact-us-icon:hover {
   color: black;
@@ -341,9 +352,9 @@ h3 {
 
 .service-section {
   justify-content: center;
-  margin-top: -50px;
+  margin-top: -3px;
   background: linear-gradient(to left, #001738, #170026);
-  height: 28vh;
+  height: 23vh;
 }
 .service-section .service-section-box {
   z-index: 1;
@@ -352,7 +363,7 @@ h3 {
   background: linear-gradient(to left, #17003d, #200042);
   box-shadow: 0.2px 0.2px 12px 0.2px #09002c;
   border-radius: 8px;
-  margin-top: 20px;
+  margin-top: -20px;
 }
 .service-section .service-section-box:hover {
   cursor: pointer;
@@ -367,7 +378,13 @@ h3 {
   margin: 5px;
   text-align: center;
 }
-
+.service-section .service-heading-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
 .plans-div, h2 {
   text-align: center;
 }
