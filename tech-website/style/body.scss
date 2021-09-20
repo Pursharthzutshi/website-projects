@@ -5,6 +5,14 @@
   flex-direction: $direction;
 }
 
+.create-account ,.top-button,.nav-bar-button,.show-nav-bar{
+  position: fixed;
+}
+
+.create-account, .remove-create-account-icon-div {
+  display: flex;
+}
+
 body {
   font-family: 'Montserrat';
   margin: 0;
@@ -30,9 +38,6 @@ body::-webkit-scrollbar-thumb {
   background: $blackColor;
 }
 
-.create-account, .remove-create-account-icon-div {
-  display: flex;
-}
 
 .create-account {
   flex-direction: column;
@@ -43,7 +48,6 @@ body::-webkit-scrollbar-thumb {
   height: 44.6rem;
   background: white;
   color: white;
-  position: fixed;
   top: 0%;
   animation: createAccount .5s ease-in-out;
 }
@@ -62,7 +66,6 @@ body::-webkit-scrollbar-thumb {
   flex-direction: row;
   justify-content: flex-end;
 
-
 }
 
 @keyframes createAccount {
@@ -80,23 +83,19 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
-
 .top-button {
   box-shadow: .2px .2px 4px .2px $purpleColor;
-  position: fixed;
   left: 96%;
   top: 93%;
 
 }
 
 .nav-bar-button {
-  position: fixed;
   left: 1%;
   top: 93%;
 }
 
 .show-nav-bar {
-  position: fixed;
   left: 0%;
   top: 0%;
   width: 100%;

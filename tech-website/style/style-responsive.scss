@@ -12,6 +12,16 @@
 
 @media screen and (max-width: 704px) {
 
+  html{
+    overflow-x: hidden;
+  }
+
+  body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+  }
+
   nav, .plans-container, .features-container, .feedback-container,.footer-div {
     @include flex(column);
     @include centerAligned;
@@ -36,13 +46,11 @@
     left: 2%;
   }
 
-
-  body {
-    overflow-x: scroll;
-  }
-
   .header {
-    height: 80vh;
+    height: 70vh;
+    .headings-container{
+      visibility: hidden;
+    }
   }
 
   nav {
@@ -50,13 +58,11 @@
       font-size: 2rem;
       text-align: $textAlignCenter;
       line-height: 50px;
-
     }
 
-    .nav-bar-list {
-      visibility: hidden;
+    .nav-bar-list{
+    visibility: hidden;
     }
-
   }
 
   .header-content {
@@ -64,7 +70,7 @@
     @include centerAligned;
 
     h1 {
-      margin-top: -5px;
+      margin-top: -85px;
       font-size: 1.5rem;
     }
   }
@@ -189,6 +195,7 @@ padding:2px 20px 2px 20px;
     }
   }
   .feedback-section {
+    padding-bottom: 30px;
     height: 100%;
      clip-path: none;
 
@@ -221,6 +228,7 @@ padding:2px 20px 2px 20px;
 
 
   footer{
+
 
     .footer-div {
       gap: 10px;
@@ -258,6 +266,10 @@ padding:2px 20px 2px 20px;
 
   address{
     font-size: .8rem;
+  }
+  iframe{
+width: 200px;
+    height: 150px;
   }
 }
   p{

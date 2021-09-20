@@ -1,3 +1,11 @@
+.create-account, .top-button, .nav-bar-button, .show-nav-bar {
+  position: fixed;
+}
+
+.create-account, .remove-create-account-icon-div {
+  display: flex;
+}
+
 body {
   font-family: "Montserrat";
   margin: 0;
@@ -23,10 +31,6 @@ body::-webkit-scrollbar-thumb {
   background: black;
 }
 
-.create-account, .remove-create-account-icon-div {
-  display: flex;
-}
-
 .create-account {
   flex-direction: column;
   align-items: center;
@@ -36,7 +40,6 @@ body::-webkit-scrollbar-thumb {
   height: 44.6rem;
   background: white;
   color: white;
-  position: fixed;
   top: 0%;
   animation: createAccount 0.5s ease-in-out;
 }
@@ -70,19 +73,16 @@ body::-webkit-scrollbar-thumb {
 }
 .top-button {
   box-shadow: 0.2px 0.2px 4px 0.2px linear-gradient(to left, #7a08d3, #8110b0);
-  position: fixed;
   left: 96%;
   top: 93%;
 }
 
 .nav-bar-button {
-  position: fixed;
   left: 1%;
   top: 93%;
 }
 
 .show-nav-bar {
-  position: fixed;
   left: 0%;
   top: 0%;
   width: 100%;
@@ -306,6 +306,9 @@ h3 {
   align-items: center;
 }
 
+.plans-section {
+  width: 100%;
+}
 .plans-section .headings-container h2 {
   color: black;
 }
@@ -347,6 +350,7 @@ h3 {
   background-size: cover;
   background-attachment: fixed;
   height: 94vh;
+  width: 100%;
 }
 .features-section .line {
   background: white;
@@ -439,8 +443,8 @@ h3 {
 .headings-container, .accessibility-div, .accessibility-icon-text-div {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   gap: 0px;
 }
 
@@ -450,6 +454,7 @@ h3 {
   background-size: cover;
   background-attachment: fixed;
   height: 73vh;
+  width: 100%;
   clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 88% 0%);
 }
 
@@ -504,9 +509,8 @@ h3 {
 }
 
 footer {
-  color: white;
   padding: 2px 30px 32px 2px;
-  height: 100%;
+  color: white;
   background: linear-gradient(to left, #00051e, #170034);
 }
 footer .footer-div {
@@ -550,6 +554,10 @@ footer .footer-div .address-div {
 footer .footer-div .address-div address {
   margin-top: -30px;
 }
+footer .footer-div .address-div iframe {
+  border-radius: 20px;
+  margin-left: 30px;
+}
 footer .footer-div p {
   text-align: center;
   font-size: 0.7rem;
@@ -557,6 +565,16 @@ footer .footer-div p {
 }
 
 @media screen and (max-width: 704px) {
+  html {
+    overflow-x: hidden;
+  }
+
+  body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+  }
+
   nav, .plans-container, .features-container, .feedback-container, .footer-div {
     display: flex;
     flex-direction: column;
@@ -583,12 +601,11 @@ footer .footer-div p {
     left: 2%;
   }
 
-  body {
-    overflow-x: scroll;
-  }
-
   .header {
-    height: 80vh;
+    height: 70vh;
+  }
+  .header .headings-container {
+    visibility: hidden;
   }
 
   nav h2 {
@@ -607,7 +624,7 @@ footer .footer-div p {
     justify-content: center;
   }
   .header-content h1 {
-    margin-top: -5px;
+    margin-top: -85px;
     font-size: 1.5rem;
   }
 
@@ -704,6 +721,7 @@ footer .footer-div p {
   }
 
   .feedback-section {
+    padding-bottom: 30px;
     height: 100%;
     clip-path: none;
   }
@@ -758,6 +776,10 @@ footer .footer-div p {
   }
   .address-div address {
     font-size: 0.8rem;
+  }
+  .address-div iframe {
+    width: 200px;
+    height: 150px;
   }
 
   p {
