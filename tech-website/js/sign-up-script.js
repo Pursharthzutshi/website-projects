@@ -17,12 +17,15 @@ function createLogInBox(){
     removeCreateAccountIconDiv.classList.add("remove-create-account-icon-div");
 
     const removeCreateAccountIcon = document.createElement("button");
-    removeCreateAccountIcon.classList.add("remove-create-icon-account");
-    removeCreateAccountIcon.innerHTML='<ion-icon name="close-outline"></ion-icon>';
+    removeCreateAccountIcon.classList.add("remove-create-account-icon");
+    removeCreateAccountIcon.innerHTML="<ion-icon name='close-outline'></ion-icon>";
 
     const createAccountHeading = document.createElement("h3");
     createAccountHeading.classList.add("create-account-heading");
     createAccountHeading.innerHTML='Create Account';
+
+    const form = document.createElement("form");
+    form.classList.add("form");
 
     const nameInput = document.createElement("input");
     nameInput.classList.add("create-account-input");
@@ -41,31 +44,57 @@ function createLogInBox(){
     passwordReCheckInput.classList.add("create-account-input");
     passwordReCheckInput.placeholder='Re-Check-Password';
 
+    const signUpButtonsContainer = document.createElement("div");
+    signUpButtonsContainer.classList.add("sign-up-buttons-container");
+
+    const signUpButton = document.createElement("button");
+    signUpButton.classList.add("sign-up-button");
+    signUpButton.textContent='Sign Up';
+
+    const googleAccountSignUp = document.createElement("button");
+    googleAccountSignUp.classList.add("sign-up-button");
+    googleAccountSignUp.textContent='Sign Up with Google';
+
+    const facebookAccountSignUp = document.createElement("button");
+    facebookAccountSignUp.classList.add("sign-up-button");
+    facebookAccountSignUp.textContent='Sign Up with Facebook';
+
+    removeCreateAccountIconDiv.appendChild(removeCreateAccountIcon);
+
     createAccount.appendChild(removeCreateAccountIconDiv);
 
     createAccount.appendChild(createAccountHeading);
 
-    createAccount.appendChild(nameInput);
+    form.appendChild(nameInput);
 
-    createAccount.appendChild(emailId);
+    form.appendChild(emailId);
 
-    createAccount.appendChild(passwordInput);
+    form.appendChild(passwordInput);
 
-    createAccount.appendChild(passwordReCheckInput);
+    form.appendChild(passwordReCheckInput);
 
-    removeCreateAccountIconDiv.appendChild(removeCreateAccountIcon);
+    signUpButtonsContainer.appendChild(signUpButton);
+
+    signUpButtonsContainer.appendChild(googleAccountSignUp);
+
+    signUpButtonsContainer.appendChild(facebookAccountSignUp);
+
+    form.appendChild(signUpButtonsContainer);
+
+    createAccount.appendChild(form);
 
     document.body.appendChild(createAccount);
 
     document.body.style.pointerEvents='none';
 
+    removeCreateAccountIconDiv.appendChild(removeCreateAccountIcon);
 }
 
-const removeCreateAccountIcon = document.querySelector(".removeCreateAccountIcon")
+const removeCreateAccount = document.querySelector(".remove-create-account-icon")
 
-removeCreateAccountIcon.addEventListener("click",removeCreateAccount);
+removeCreateAccount.addEventListener("click",removeAccount);
 
-function removeCreateAccount(){
+function removeAccount(){
     const deleteCreateAccount = document.querySelector(".create-account");
     document.body.removeChild(deleteCreateAccount);
 }

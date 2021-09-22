@@ -2,10 +2,9 @@ main();
 
 function main() {
 
-
     const contactUsButton = document.querySelector(".contact-us-button");
 
-    contactUsButton.addEventListener("click", contactUs, true);
+    contactUsButton.addEventListener("click", contactUs);
 
     const contactUsDiv = document.querySelector(".contact-us-div");
 
@@ -13,37 +12,36 @@ function main() {
     removeContactUsIcon.classList.add("remove-contact-us-icon");
     removeContactUsIcon.innerHTML = '<ion-icon name="close-outline"></ion-icon>';
 
-    removeContactUsIcon.addEventListener("click", removeContactUs, true);
+    removeContactUsIcon.addEventListener("click", removeContactUs);
 
     contactUsDiv.appendChild(removeContactUsIcon);
 }
 
 function contactUs() {
 
-    const navBarButton = document.querySelector(".nav-bar-button");
-    const contactUsDiv = document.querySelector(".contact-us-div");
-
     const contactUsBox = document.createElement("div");
     contactUsBox.classList.add("contact-us-box");
 
-    document.body.style.background = 'gray';
+    const navBarButton = document.querySelector(".nav-bar-button");
+    const contactUsButton = document.querySelector(".contact-us-button");
+    const contactUsDiv = document.querySelector(".contact-us-div");
 
-    contactUsDiv.style.top = '0%';
+    contactUsDiv.style.top = '20%';
 
-    document.body.appendChild(contactUsBox);
+    contactUsDiv.style.animation='contactUsPage .3s ease';
 
-    contactUsBox.appendChild(contactUsDiv);
-
-    contactUsDiv.style.visibility = 'visible';
-
-    contactUsBox.style.visibility = 'visible';
+    contactUsButton.style.pointerEvents = 'none';
 
     navBarButton.style.pointerEvents = 'none';
+
+    contactUsDiv.appendChild(contactUsBox);
 
 }
 
 function removeContactUs() {
+
     const navBarButton = document.querySelector(".nav-bar-button");
+    const contactUsButton = document.querySelector(".contact-us-button");
     const contactUsBox = document.querySelector(".contact-us-box");
     const contactUsDiv = document.querySelector(".contact-us-div");
 
@@ -51,8 +49,9 @@ function removeContactUs() {
 
     contactUsDiv.style.top = '100%';
 
-    document.body.removeChild(contactUsBox);
+    contactUsButton.style.pointerEvents = 'auto';
 
     navBarButton.style.pointerEvents = 'auto';
-    
+
+    contactUsDiv.removeChild(contactUsBox);
 }
