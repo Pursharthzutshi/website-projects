@@ -1,3 +1,83 @@
+footer {
+  padding: 2px 30px 32px 2px;
+  color: white;
+  background: -webkit-gradient(linear, right top, left top, from(#00051e), to(#170034));
+  background: linear-gradient(to left, #00051e, #170034);
+}
 
+footer .footer-div {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 50px;
+}
 
+footer .footer-div table {
+  color: white;
+  margin: 12px 12px 12px 12px;
+  padding: 2px 2px 2px 2px;
+  border-collapse: collapse;
+}
+
+footer .footer-div table tr {
+  text-align: center;
+  margin-left: 30px;
+}
+
+footer .footer-div table td {
+  font-size: .9rem;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+
+footer .footer-div table td a {
+  text-decoration: none;
+}
+
+footer .footer-div table td a:hover {
+  -webkit-transition: .2s;
+  transition: .2s;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+footer .footer-div h2 {
+  margin-top: 10px;
+  font-size: 1.5rem;
+}
+
+footer .footer-div .address-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+footer .footer-div .address-div address {
+  margin-top: -30px;
+}
+
+footer .footer-div .address-div iframe {
+  border-radius: 20px;
+  margin-left: 30px;
+}
+
+footer .footer-div p {
+  text-align: center;
+  font-size: .7rem;
+  padding-top: 20px;
+}
 /*# sourceMappingURL=footer.css.map */

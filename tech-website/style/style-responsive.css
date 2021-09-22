@@ -1,9 +1,315 @@
 @media screen and (max-width: 704px) {
-  .plans-section .plans-container {
+  html {
+    overflow-x: hidden;
+  }
+  body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+  }
+  nav, .plans-container, .features-container, .feedback-container, .footer-div {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 30px;
+  }
+  .nav-bar-button, .top-button {
+    padding: 5px 10px 4px 10px;
+    font-size: 1.1rem;
+    z-index: +1;
+  }
+  .top-button, .nav-bar-button {
+    position: fixed;
+  }
+  .top-button {
+    left: 88%;
+  }
+  .nav-bar-button {
+    left: 2%;
+  }
+  .header {
+    height: 70vh;
+  }
+  .header .headings-container {
+    visibility: hidden;
+  }
+  nav h2 {
+    font-size: 2rem;
+    text-align: center;
+    line-height: 50px;
+  }
+  nav .nav-bar-list {
+    visibility: hidden;
+  }
+  .header-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .header-content h1 {
+    margin-top: -85px;
+    font-size: 1.5rem;
+  }
+  .header-img-div img {
+    visibility: hidden;
+  }
+  .contact-us-box {
+    width: 100%;
+    height: 120rem;
+    top: 0%;
+    padding: 2px 32px 2px 32px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+  .contact-us-div {
+    margin-left: -60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: absolute;
+    top: 100%;
+    padding: 42px 2px 2px 22px;
+    gap: 40px;
+    font-size: .9rem;
+  }
+  .contact-us-div .contact-us-heading-div {
+    margin-top: -30px;
+  }
+  .contact-us-div form {
+    margin: 30px 0px 0px 35px;
+  }
+  .contact-us-div form input {
+    width: 90%;
+  }
+  .contact-us-div form textarea {
+    width: 90%;
+  }
+  .contact-us-div form button {
+    margin-left: -20px;
+  }
+  .contact-us-div .contact-us-column-container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contact-us-div .contact-us-column-container .contact-us-column {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .contact-us-div .contact-us-column-container .contact-us-column ion-icon {
+    font-size: 1.5rem;
+  }
+  .contact-us-div .contact-us-column-container .contact-us-column p {
+    white-space: pre;
+    font-size: .75rem;
+  }
+  .remove-contact-us-icon {
+    font-size: 1.5rem;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    width: 114%;
+    height: 3vh;
+    margin: 10px 0px 0px 10px;
+    padding: 20px 0px 46px 0px;
+  }
+  .remove-contact-us-icon:hover {
+    color: black;
+  }
+  .service-section {
+    height: 23vh;
+    gap: 20px;
+  }
+  .service-section .service-section-box {
+    width: 6.5rem;
+    height: 6.5rem;
+    padding: 2px 5px 2px 2px;
+  }
+  .service-section .service-section-box ion-icon {
+    margin-left: 30px;
+    font-size: 3rem;
+  }
+  .service-section .service-section-box p {
+    font-size: .9rem;
+  }
+  .plans-section .plans-div {
+    height: 100%;
+    padding-bottom: 23px;
+  }
+  .plans-section .plans-div h2 {
+    font-size: 1.3rem;
+  }
+  .plans-section .plans-div ion-icon {
+    font-size: 2rem;
+  }
+  .plans-section .plans-div p {
+    margin-top: 5px;
+    font-size: .9rem;
+  }
+  .plans-section .plans-div button {
+    padding: 7px 14px 7px 14px;
+    font-size: .8rem;
+  }
+  .features-section {
+    height: 100%;
+    padding-bottom: 40px;
+  }
+  .features-container .features-div {
+    border-radius: 8px;
+    padding: 2px 12px 2px 18px;
+    width: 14rem;
+    height: 9rem;
+    border: 10px double #f3f3f3;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .features-container .features-div .features-img-heading-row {
+    margin-top: 7px;
+  }
+  .features-container .features-div img {
+    width: 3.2rem;
+    height: auto;
+  }
+  .features-container .features-div p {
+    margin-left: -60px;
+    font-size: 1.4rem;
+  }
+  .features-container .features-div span {
+    margin-top: -60px;
+    font-size: .9rem;
+  }
+  .accessibility-section {
+    padding: 2px 20px 2px 20px;
+  }
+  .accessibility-section .accessibility-div img {
+    width: 15rem;
+    height: auto;
+  }
+  .accessibility-section .accessibility-div p {
+    margin-left: -2px;
+    font-size: .85rem;
+  }
+  .accessibility-section .accessibility-icon-text-div-container {
+    gap: 0px;
+  }
+  .accessibility-section .accessibility-icon-text-div-container .accessibility-icon-text-div ion-icon {
+    font-size: 2.3rem;
+  }
+  .accessibility-section .accessibility-icon-text-div-container .accessibility-icon-text-div p {
+    text-align: center;
+    margin-left: -1px;
+    font-size: .85rem;
+  }
+  .feedback-section {
+    padding-bottom: 30px;
+    height: 100%;
+    -webkit-clip-path: none;
+            clip-path: none;
+  }
+  .feedback-section .feedback-div {
+    height: 18rem;
+  }
+  .feedback-section .feedback-div img {
+    width: 4.2rem;
+    height: auto;
+  }
+  .feedback-section .feedback-div p {
+    margin: -2px 0px 0px 22px;
+    line-height: 30px;
+    font-size: .95rem;
+  }
+  .feedback-section .feedback-div .icons-container {
+    margin-top: 10px;
+  }
+  .feedback-section .feedback-div .feedback-name-div {
+    margin-top: -1px;
+  }
+  footer .footer-div {
+    gap: 10px;
+    padding: 2px 12px 2px 22px;
+  }
+  footer table {
+    color: white;
+    padding: 2px 2px 2px 2px;
+    border-collapse: collapse;
+  }
+  footer table tr {
+    text-align: center;
+    margin-left: 30px;
+  }
+  footer table td {
+    font-size: .7rem;
+    margin-top: 30px;
+    margin-left: 20px;
+  }
+  footer table td a {
+    text-decoration: none;
+  }
+  footer table td a:hover {
+    -webkit-transition: .2s;
+    transition: .2s;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  .address-div {
+    margin-top: 40px;
+  }
+  .address-div address {
+    font-size: .8rem;
+  }
+  .address-div iframe {
+    width: 200px;
+    height: 150px;
+  }
+  p {
+    margin-left: 20px;
+    text-align: center;
+    font-size: .8rem;
   }
 }
-
 /*# sourceMappingURL=style-responsive.css.map */

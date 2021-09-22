@@ -2,8 +2,8 @@
     "version": 3,
     "mappings": "",
     "sources": [
-        "log-in-box.scss"
+        "variables.scss"
     ],
     "names": [],
-    "file": "log-in-box.css"
+    "file": "variables.css"
 }

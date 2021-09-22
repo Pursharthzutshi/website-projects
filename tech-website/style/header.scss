@@ -15,16 +15,15 @@ nav,ul,.header-content,.button-container,.subscribe-div,.service-section{
     @include flexDirection(row);
 }
 
+h2,a,h1,button,p{
+    color:$whiteColor;
+}
+
 .headings-container{
     @include flexDirection(column);
     @include justifyContent;
     gap:0px;
 }
-
-h2,a,h1,button,p{
-    color:$whiteColor;
-}
-
 
 header {
     width: 100%;

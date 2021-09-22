@@ -1,1 +1,9 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"common-components.css"}
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "common-components.scss"
+    ],
+    "names": [],
+    "file": "common-components.css"
+}

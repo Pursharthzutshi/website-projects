@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,OAAO,CAAA;EACL,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,KAAK;EACb,UAAU,EAAE,KAAK;CAClB",
+    "sources": [
+        "header-faq-style.scss"
+    ],
+    "names": [],
+    "file": "header-faq-style.css"
+}

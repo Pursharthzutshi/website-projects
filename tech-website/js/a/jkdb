@@ -1,5 +1,0 @@
-    header.style.paddingTop='30px';
-
-    headerContent.style.paddingTop='70px';
-
-    navBar.style.marginTop='-500px';

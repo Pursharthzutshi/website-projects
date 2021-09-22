@@ -1,0 +1,150 @@
+@import "variables";
+
+@mixin flexDirection($direction) {
+  display: flex;
+  flex-direction: $direction;
+}
+
+@mixin justifyContent {
+  justify-content: center;
+  align-items: center;
+}
+
+.container, .question-box {
+  box-shadow: .2px .2px 12px .2px lightgray;
+}
+
+.container {
+  padding: 2px 2px 22px 22px;
+  margin: -17px 0px 0px 15px;
+  height: 100%;
+  width: 96%;
+
+}
+
+.input-div {
+  @include flexDirection(row);
+
+  input {
+    outline: $noInputOutline;
+    border:$noBorder;
+    padding: 0px 6px 0px 10px;
+    font-family: 'Montserrat';
+    box-shadow: .2px .2px 12px .2px lightgray;
+    margin: 20px 0px 0px 15px;
+    width: 93%;
+    &:focus{
+      transition: .2s;
+      box-shadow: 0px 0px 1px 1px #0d0284;
+}
+  }
+
+  ion-icon {
+    color: $whiteColor;
+    background: #0b0046;
+    box-shadow: .2px .2px 12px .2px $header-bg-color;
+    margin-top: 21px;
+    font-size: 1rem;
+    padding: 10px 15px 10px 12px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+}
+
+.show-answer-div-button {
+  cursor: $cursorButton;
+  margin-top: -5px;
+  padding: 0px 2px 0px 2px;
+  border: $noBorder;
+  background: none;
+  font-size: 1rem;
+  width: 100%;
+
+}
+
+
+.question-box, .answer-box {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 12px 22px 2px 22px;
+  width: 96%;
+  box-shadow: .2px .2px 12px .2px lightgray;
+}
+
+.question-box {
+  @include flexDirection(row);
+  font-family: 'Montserrat';
+  margin-top: 20px;
+  width: 95%;
+  height: 3.5rem;
+  justify-content: space-between;
+  border-left: 4px solid #08448d;
+&:hover{
+  background: linear-gradient(to left, #011d3f, #01223b);
+  color: $whiteColor;
+  transition: .2s;
+  border-left: 4px solid #002b59;
+}
+  ion-icon {
+    padding: 2px 4px 2px 2px;
+    font-size: 1.5rem;
+    margin: 11px 0px 0px 10px;
+  }
+}
+
+.answer-box {
+  display: none;
+}
+
+
+.show-answer-box {
+  color: $whiteColor;
+  display: block;
+  width: 96%;
+  height: 10rem;
+  transform: translateY(10px);
+  background: linear-gradient(to left, #003a7e, #003a67);
+  box-shadow: .2px .2px 12px .2px lightgray;
+  animation: showAnswerBox .4s ease;
+
+  p {
+    line-height: 27px;
+  }
+}
+
+@keyframes showAnswerBox {
+  0% {
+    transform: translateY(0px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(10px);
+    opacity: 1;
+  }
+
+}
+
+body::-webkit-scrollbar {
+  background: #3c3cf3;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #001a4b;
+  height: 2rem;
+}
+
+footer {
+  @include flexDirection(column);
+  @include justifyContent;
+  height: 7rem;
+
+  h2 {
+    margin-top: 40px;
+    text-align: $textAlignCenter;
+  }
+
+  p {
+    font-size: .8rem;
+  }
+}

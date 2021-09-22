@@ -20,8 +20,6 @@ function main() {
 }
 
 
-
-
 function showNavBar() {
 
     const navBarList = document.querySelector(".nav-bar-list");

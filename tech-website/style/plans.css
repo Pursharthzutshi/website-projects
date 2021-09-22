@@ -1,7 +1,70 @@
-.plans-container {
-  display: flex;
-  flex-direction: row;
-  gap: 40px;
+.plans-div, h2 {
+  text-align: center;
 }
 
+.plans-icon-text-row, .plans-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.headings-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.plans-section {
+  width: 100%;
+}
+
+.plans-section .headings-container h2 {
+  color: black;
+}
+
+.plans-section .headings-container .line {
+  background: black;
+}
+
+.plans-container {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.plans-container .plans-div {
+  width: 20rem;
+  height: 25rem;
+  background: -webkit-gradient(linear, right top, left top, from(#110148), to(#270056));
+  background: linear-gradient(to left, #110148, #270056);
+  -webkit-box-shadow: .2px .2px 12px .2px black;
+          box-shadow: .2px .2px 12px .2px black;
+}
+
+.plans-container h2 {
+  color: white;
+}
+
+.plans-container .plans-icon-text-row ion-icon {
+  color: white;
+  margin: 0px 0px 0px 20px;
+  font-size: 3rem;
+}
+
+.plans-container .plans-icon-text-row p {
+  margin: 10px 0px 0px -10px;
+}
 /*# sourceMappingURL=plans.css.map */
