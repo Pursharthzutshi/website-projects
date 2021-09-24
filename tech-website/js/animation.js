@@ -1,3 +1,4 @@
+const accessibilitySection = document.querySelector(".accessibility-section");
 const featuresSection = document.querySelector(".features-section");
 const headerImg = document.querySelector(".header-img");
 
@@ -10,6 +11,7 @@ window.addEventListener("scroll", function () {
 window.addEventListener("scroll", function () {
     if (featuresSection.getBoundingClientRect().top < window.innerHeight) {
         featuresSection.style.transform = "scale(1)";
+        accessibilitySection.style.transform="scale(1)";
     } else {
         featuresSection.style.transform = "scale(.9)";
     }

@@ -9,7 +9,8 @@
 
 
 .accessibility-section {
-
+  transform: scale(.1);
+  transition: .5s;
   .headings-container {
 
     h2 {
