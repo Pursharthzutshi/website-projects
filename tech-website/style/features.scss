@@ -25,6 +25,8 @@
   background-attachment: fixed;
   height:94vh;
   width: 100%;
+  transform: scale(.1);
+  transition: .5s;
   .line{
     background: $whiteColor;
   }

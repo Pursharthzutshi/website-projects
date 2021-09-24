@@ -5,7 +5,7 @@ for (let i =0; i < showAnswerDivButton.length; i++){
 showAnswerDivButton.addEventListener("click", showAnswer);
 }
 
-function showAnswer(e) {
+function showAnswer() {
 
     const answerBox = document.querySelector(".answer-box");
 
