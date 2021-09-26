@@ -1,10 +1,11 @@
-const customerServiceButton = document.querySelector(".customer-service-button");
+const customerServiceButton = document.querySelector(".customer-service-icon");
 
 customerServiceButton.addEventListener("click", showCustomerServiceBox, true);
 
 function showCustomerServiceBox() {
 
     customerServiceButton.style.pointerEvents = 'none';
+
 
     const customerServiceBox = document.createElement("div");
     customerServiceBox.classList.add("customer-service-box");
@@ -78,7 +79,7 @@ function showCustomerServiceBox() {
 
     function deleteCustomerServiceBox() {
 
-        const customerServiceButton = document.querySelector(".customer-service-button");
+        const customerServiceButton = document.querySelector(".customer-service-icon");
 
         document.body.removeChild(customerServiceBox);
 

@@ -88,8 +88,6 @@ function closeLogInBox() {
 
     document.body.style.marginTop = '0px';
 
-    document.body.style.background = 'none';
-
     logInBtn.style.pointerEvents = 'auto';
 
 }
@@ -99,8 +97,6 @@ function showLogInBox() {
     logInBtn.style.pointerEvents = 'none';
 
     logInBoxContainer.appendChild(logInBoxDiv);
-
-    document.body.style.background = 'linear-gradient(to left,rgba(232, 232, 232, 1),rgba(0,0,0,0.1))';
 
     topBarContainer.opacity = '.1';
 

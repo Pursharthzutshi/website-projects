@@ -66,7 +66,7 @@ footer {
     flex-direction: column;
 }
 
-.orange-button,
+.primary-button,
 .submit-button,
 header,
 nav a:hover,
@@ -89,7 +89,7 @@ footer {
     justify-content: center;
 }
 
-.orange-button:hover,
+.primary-button:hover,
 .customer-service-button ion-icon:hover,
 .submit-button:hover,
 .header-buttons-icons-container:nth-child(1) button,
@@ -99,7 +99,7 @@ textarea {
     background: white;
 }
 
-.orange-button:hover,
+.primary-button:hover,
 .customer-service-button ion-icon:hover,
 .submit-button:hover {
     transition: .3s;
@@ -160,7 +160,7 @@ textarea {
     border: none;
 }
 
-.orange-button {
+.primary-button {
     background: rgb(255, 58, 40);
     padding: 8px 12px 8px 12px;
     box-shadow: .2px .2px 6px .2px rgb(241, 58, 58);
@@ -308,25 +308,27 @@ h1 {
 }
 
 .our-service-container {
-    justify-content: space-evenly;
-    gap: 100px;
+    justify-content: center;
+    gap: 120px;
     margin-top: 30px;
 }
 
 .service-icon-heading-column {
+
     padding: 12px 32px 2px 42px;
-    border: 23px double rgb(155, 7, 7);
-    border-radius: 20px;
+    border: 5px solid rgb(155, 7, 7);
 }
 
 .service-icon-heading-column ion-icon {
-    font-size: 5rem;
+    font-size: 5.3rem;
+    margin-left: 20px;
+    color: rgb(155, 7, 7);
 }
 
 .service-icon-heading-column h1 {
     font-size: 1.1rem;
     margin-left: -6px;
-    color: rgb(83, 1, 19);
+    color: rgb(155, 7, 7);
 }
 
 .img-container img {
@@ -382,7 +384,7 @@ h1 {
 
 .membership-cards {
     color: rgb(223, 26, 0);
-    box-shadow: .2px .2px 12px .2px #170000;
+    box-shadow: .2px .2px 12px .2px #9d9d9d;
     width: 20rem;
     height: 20rem;
     padding: 2px 12px 12px 2px;
@@ -488,7 +490,7 @@ textarea {
     box-shadow: .2px .2px 12px .2px rgb(236, 236, 236);
 }
 
-.contact-us-form-container .orange-button {
+.contact-us-form-container .primary-button {
     border-radius: 200px;
     margin: 0px 0px 0px 80px;
 }
