@@ -1,13 +1,26 @@
-const navBarButton = document.querySelector(".nav-bar-button");
+main();
 
-navBarButton.addEventListener("click", showMenuBar,true);
+function main() {
 
-function showMenuBar() {
     const navBarButton = document.querySelector(".nav-bar-button");
 
-    const navBarContainer = document.querySelector(".nav-bar-container");
+    navBarButton.addEventListener("click", showMenuBar);
 
-    const navBar = document.querySelector(".navigation-bar");
+    const removeNavBarContainerIcon = document.querySelector(".remove-nav-bar-container-icon");
+
+    removeNavBarContainerIcon.addEventListener("click", removeNavBar);
+
+}
+
+
+function showMenuBar() {
+
+    const navBarContainer = document.createElement("div");
+    navBarContainer.classList.add("nav-bar-container");
+
+    const navBarButton = document.querySelector(".nav-bar-button");
+
+    const navBar = document.querySelector(".nav-bar");
 
     const removeNavBarContainerIconDiv = document.createElement("div");
     removeNavBarContainerIconDiv.classList.add("remove-nav-bar-container-icon-div");
@@ -24,9 +37,7 @@ function showMenuBar() {
 
     document.body.style.background = 'linear-gradient(to left,rgba(232, 232, 232, 1),rgba(0,0,0,0.1))';
 
-    navBarContainer.style.visibility = 'visible';
-
-    navBar.style.visibility='visible';
+    navBar.setAttribute("style","visibility:visible");
 
     removeNavBarContainerIconDiv.appendChild(removeNavBarContainerIcon);
 
@@ -36,21 +47,22 @@ function showMenuBar() {
 
     navBarContainer.appendChild(navBar);
 
-    navBarButton.style.pointerEvents='none';
+    document.body.appendChild(navBarContainer);
 
-    removeNavBarContainerIcon.addEventListener("click", removeNavBar,true);
-
-    function removeNavBar() {
+    navBarButton.style.pointerEvents = 'none';
 
 
-        navBarContainer.removeChild(navBar);
-        document.body.removeChild(navBarContainer);
+}
 
-        menuBarHeading.style.color = 'transparent';
-        navBar.style.visibility='visible';
 
-        navBarButton.style.pointerEvents='auto';
+function removeNavBar(){
 
-    }
+    const navBarButton = document.querySelector(".nav-bar-button");
+
+    const navBarContainer = document.querySelector(".nav-bar-container");
+
+    document.body.removeChild(navBarContainer);
+
+    navBarButton.style.pointerEvents = 'auto';
 
 }

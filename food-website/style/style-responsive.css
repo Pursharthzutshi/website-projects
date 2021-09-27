@@ -71,7 +71,6 @@
     }
     ul {
         gap: 30px;
-        visibility: hidden;
     }
     .menu-bar-heading {
 
@@ -125,7 +124,7 @@
     }
     .header-buttons-container {
         gap: 20px;
-        margin-top: 0px;
+        margin:  20px 0px 0px -30px;
         justify-content: space-evenly;
         box-shadow: none;
     }
@@ -150,7 +149,8 @@
     .service-section p {
         font-size: .72rem;
     }
-    .cuisine-section p {
+    .cu
+    isine-section p {
         line-height: 24px;
         font-size: .8rem;
     }
@@ -164,16 +164,20 @@
     .testimonials-container {
         align-items: center;
     }
+    .our-service-container{
+        margin-top: 70px;
+    }
+    .service-icon-heading-column{
+        margin-top: -70px;
+    }
     .service-icon-heading-column h1 {
         font-size: .9rem;
     }
-    .icon-images {
-        margin-left: 20px;
-        width: 4.2rem;
-        height: auto;
+    .service-icon-heading-column ion-icon {
+        margin-left: 18px;
+        font-size: 3.7rem;
     }
     .service-icon-heading-column {
-        border: 8px double rgb(155, 7, 7);
         padding: 12px 32px 2px 42px;
     }
     .membership-container {
@@ -201,5 +205,25 @@
     }
     .contact-us-div p {
         font-size: .65rem;
+    }
+
+.change-theme-icon{
+    left:3%;
+    top:93%;
+    font-size: 1.1rem;
+    padding:8px 10px 10px 12px;
+
+}
+    .customer-service-icon{
+        font-size: 2rem;
+        padding:8px 10px 6px 10px;
+    }
+
+    .top-button-icon{
+        font-size: 1.1rem;
+        position: fixed;
+        top: 84%;
+        left: 84%;
+        padding: 9px 10px 9px 10px;
     }
 }
