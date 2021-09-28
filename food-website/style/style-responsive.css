@@ -82,7 +82,6 @@
     }
 
     .menu-bar-heading {
-
         visibility: visible;
         color: rgb(230, 86, 19);
         margin-top: -35px;
@@ -173,8 +172,7 @@
         font-size: .72rem;
     }
 
-    .cu
-    isine-section p {
+    .cuisine-section p {
         line-height: 24px;
         font-size: .8rem;
     }
@@ -251,7 +249,6 @@
         top: 93%;
         font-size: 1.1rem;
         padding: 8px 10px 10px 12px;
-
     }
 
     .customer-service-icon {
@@ -266,4 +263,39 @@
         left: 84%;
         padding: 9px 10px 9px 10px;
     }
+
+    .close-log-in-box-icon {
+        margin-left: 250px;
+    }
+
+    .log-in-box-div {
+        width: 18rem;
+        height: 25rem;
+        padding: 20px 22px 12px 22px;
+        gap: 20px;
+        border-radius: 8px;
+    }
+
+    .log-in-heading {
+        font-size: 1.3rem;
+        margin-top: -45px;
+        color: rgb(255, 58, 40);
+    }
+
+    .log-in-input {
+        box-shadow: .2px .2px 12px .2px lightgray;
+        padding: 7px 8px 7px 8px;
+    }
+
+    .box-log-in-button,
+    .create-your-account {
+        padding: 8px 10px 8px 10px;
+        box-shadow: .2px .2px 12px .2px rgb(241, 58, 58);
+    }
+
+    .box-log-in-button {
+        background: rgb(255, 58, 40);
+    }
+
+
 }

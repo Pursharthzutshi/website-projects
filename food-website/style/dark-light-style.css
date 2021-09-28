@@ -511,6 +511,7 @@ footer {
     padding-top: 20px;
     height: 10rem;
     width: 100%;
+    background: #171717;
 }
 
 footer p {
@@ -539,7 +540,12 @@ body, footer, .top-bar-container, .membership-cards {
     background: #1f1f1f;
 }
 
-footer {
-    background: #171717;
+
+.top-button-icon {
+    background: white;
+    color: black;
 }
 
+.change-theme-icon-button {
+    box-shadow: .2px .2px 6px .2px white;
+}
