@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <link rel="stylesheet" href="style/style.css" class="change-theme">
 
@@ -56,7 +57,7 @@
 
         <nav class="nav-bar">
 
-            <ul >
+            <ul>
 
                 <li><a href="header-section">Home</a></li>
 
@@ -128,7 +129,7 @@
 
 <section id='service-section' class='service-section'>
 
-    <h1>Our Service</h1>
+    <h1 class="service-section-heading">Our Service</h1>
 
     <div class='line-div'>
 
@@ -142,11 +143,9 @@
         eget posuere nunc luctus a." </p>
 
     <br>
-    <p></p>
-
     <div class='our-service-container'>
 
-        <div class='service-icon-heading-column'>
+        <div id="box-1" class='service-icon-heading-column'>
 
             <ion-icon name="checkmark-circle-outline"></ion-icon>
 
@@ -154,7 +153,7 @@
 
         </div>
 
-        <div class='service-icon-heading-column'>
+        <div id="box-2" class='service-icon-heading-column'>
 
             <ion-icon name="checkmark-circle-outline"></ion-icon>
 
@@ -162,7 +161,7 @@
 
         </div>
 
-        <div class='service-icon-heading-column'>
+        <div id="box-3" class='service-icon-heading-column'>
 
             <ion-icon name="checkmark-circle-outline"></ion-icon>
 
@@ -173,7 +172,7 @@
 
     <br>
 
-    <div class="img-container">
+    <div data-aos="fade-in" class="img-container">
 
         <img src='images/website-images/ivan-torres-MQUqbmszGGM-unsplash.jpg'>
 
@@ -667,13 +666,13 @@
 
 <div class="bottom-icons-row">
 
-        <ion-icon class='customer-service-icon' name="chatbox-ellipses-outline"></ion-icon>
+    <ion-icon class='customer-service-icon' name="chatbox-ellipses-outline"></ion-icon>
 
-        <ion-icon class='change-theme-icon' name="moon-outline"></ion-icon>
+    <ion-icon class='change-theme-icon' name="moon-outline"></ion-icon>
 </div>
 <div class="bottom-icons-row">
 
-         <ion-icon class='top-button-icon' name="arrow-up-outline"></ion-icon>
+    <ion-icon class='top-button-icon' name="arrow-up-outline"></ion-icon>
 </div>
 <footer>
 
@@ -704,6 +703,8 @@
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
+<script src="js/animationZ.js"></script>
+
 <script src="js/mobile-navigation-bar.js"></script>
 
 <script src="js/theme-button.js"></script>
@@ -715,6 +716,8 @@
 <script src="js/feedback-box-script.js"></script>
 
 <script src="js/customer-service-button.js"></script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 </body>
 

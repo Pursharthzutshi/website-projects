@@ -395,7 +395,7 @@
 }
 
 
-.top-button-icon{
+.top-button-icon {
     cursor: pointer;
     font-size: 1.2rem;
     position: fixed;
@@ -403,6 +403,6 @@
     left: 95%;
     padding: 12px 13px 12px 13px;
     background: #d90a0a;
-    color:white;
+    color: white;
     border-radius: 200px;
 }
