@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+}
+
+header {
+    background-image: linear-gradient(to top, rgba(2, 124, 168, 0.5), rgba(0, 38, 59, 0.6)), url('images/pexels-pok-rie-3233371.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 60vh;
+    color: white;
+}
+
+nav, ul, .header-box-container, .header-heading-buttons-column, .select-options-row, .buttons-container, .heading-div {
+    display: flex;
+}
+
+nav, ul, .header-box-container, .select-options-row, .buttons-container {
+    flex-direction: row;
+}
+
+.header-heading-buttons-column, .heading-div {
+    flex-direction: column;
+}
+
+.header-heading-buttons-column {
+    justify-content: space-between;
+}
+
+
+nav {
+    margin-top: -20px;
+    height: 9vh;
+    width: 96.5%;
+    padding: 12px 32px 2px 20px;
+    justify-content: space-between;
+    background: linear-gradient(to left, rgba(2, 124, 168, 0.72), transparent, rgba(2, 124, 168, 0.64));
+    box-shadow: 0px -2px 6px 0px #242323;
+}
+
+ul {
+    gap: 30px;
+}
+
+
+li {
+    list-style: none;
+}
+
+a {
+    border-bottom: 2px solid white;
+    letter-spacing: 2px;
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+}
+
+
+.header-box-container {
+    padding: 2px 2px 2px 2px;
+    justify-content: center;
+}
+
+.header-box-container h3 {
+    text-align: center;
+}
+
+.header-box {
+    box-shadow: .2px .2px 3px .2px lightgray;
+    width: 40%;
+    height: 9.8rem;
+    margin: -32px 2px 2px 2px;
+    background: white;
+    border-left: 6px solid deepskyblue;
+}
+
+.select-options-row {
+    margin-top: 20px;
+    justify-content: space-around;
+}
+
+header h3 {
+    letter-spacing: 2px;
+    line-height: 28px;
+    margin: 62px 2px 2px 92px;
+}
+
+select {
+    outline: none;
+    border: none;
+    font-family: "Roboto";
+    font-size: 1rem;
+    padding: 3px 2px 3px 8px;
+    border-bottom: 3px solid deepskyblue;
+}
+
+option {
+    border: none;
+    font-family: "Montserrat";
+}
+
+button {
+    border: none;
+}
+
+.buttons-container {
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.explore-button {
+    padding: 6px 18px 6px 18px;
+    border-radius: 4px;
+    color: white;
+    background: linear-gradient(to left, #00a2da, #0081a9);
+    font-family: "Roboto";
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+.explore-button:hover {
+    transition: .2s;
+    background: white;
+    color: #0081a9;
+    cursor: pointer;
+}
+
+h2 {
+    text-align: center;
+}
+
+.heading-div {
+    color: #005975;
+    margin-top: 20px;
+    padding: 2px 2px 2px 2px;
+    justify-content: center;
+    align-items: center;
+}
+
+.line {
+    margin-top: -10px;
+    width: 20%;
+    height: .2rem;
+    background: #005975;
+}
