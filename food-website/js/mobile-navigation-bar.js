@@ -6,9 +6,6 @@ function main() {
 
     navBarButton.addEventListener("click", showMenuBar);
 
-    const removeNavBarContainerIcon = document.querySelector(".remove-nav-bar-container-icon");
-
-    removeNavBarContainerIcon.addEventListener("click", removeNavBar);
 
 }
 
@@ -37,7 +34,7 @@ function showMenuBar() {
 
     document.body.style.background = 'linear-gradient(to left,rgba(232, 232, 232, 1),rgba(0,0,0,0.1))';
 
-    navBar.setAttribute("style","visibility:visible");
+    navBar.style.visibility='visible';
 
     removeNavBarContainerIconDiv.appendChild(removeNavBarContainerIcon);
 
@@ -51,6 +48,7 @@ function showMenuBar() {
 
     navBarButton.style.pointerEvents = 'none';
 
+    removeNavBarContainerIcon.addEventListener("click", removeNavBar);
 
 }
 

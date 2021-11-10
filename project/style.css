@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Montserrat';
+}
+
+header, ul, .buttons-container {
+    display: flex;
+}
+
+header, .buttons-container {
+    flex-direction: row;
+}
+
+ul {
+    flex-direction: column;
+}
+
+header {
+    justify-content: space-between;
+}
+
+ul {
+
+    margin-top: 250px;
+    align-items: center;
+    gap: 40px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    padding: 2px 12px 2px 12px;
+    border: 2px solid white;
+    opacity: .8;
+    color: white;
+    text-decoration: none;
+}
+
+.header-left-page {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-left-page p {
+    margin: 32px 2px 2px 20px;
+}
+
+.header-left-page input {
+    padding: 8px 2px 8px 8px;
+    outline: none;
+    border: none;
+    box-shadow: .2px .2px 22px .2px #e7e7e7;
+    margin-left: 80px;
+}
+
+.bg-image {
+    background-image: linear-gradient(to left, rgba(38, 0, 133, 0.54), rgba(0, 4, 255, 0.51)), url('images/pexels-oleg-magni-2058141.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 53%;
+    clip-path: polygon(40% 30%, 0% 100%, 100% 100%, 100% 0%);
+}
+
+h2 {
+    margin-left: 20px;
+}
+
+nav {
+    margin-left: -20px;
+    margin-top: 50px;
+}
+
+.icon-image {
+    width: 24rem;
+    height: auto;
+    margin: 35px 2px 2px 182px;
+    padding:7px 22px 7px 22px;
+    border-radius: 200px;
+    background-image: linear-gradient(to left, rgba(52, 0, 176, 0.54), rgba(0, 3, 189, 0.51));
+}
+
+.buttons-container {
+    gap: 30px;
+    justify-content: center;
+}
+
+.buttons-container button {
+    background: rgba(47, 0, 161, 0.55);
+    border: 3px solid rgb(35, 0, 68);
+    border-radius: 8px;
+    font-size: 1rem;
+    color: white;
+    padding: 4px 22px 3px 22px;
+}
+
+.service-section{
+
+}

@@ -13,11 +13,11 @@ header {
     color: white;
 }
 
-nav, ul, .header-box-container, .header-heading-buttons-column, .select-options-row, .buttons-container, .heading-div {
+nav, ul, .header-box-container, .header-heading-buttons-column, .select-options-row, .buttons-container, .heading-div,.service-box-container,.testimonials-box-container {
     display: flex;
 }
 
-nav, ul, .header-box-container, .select-options-row, .buttons-container {
+nav, ul, .header-box-container, .select-options-row, .buttons-container,.service-box-container,.testimonials-box-container {
     flex-direction: row;
 }
 
@@ -144,4 +144,55 @@ h2 {
     width: 20%;
     height: .2rem;
     background: #005975;
+}
+
+.service-box-container{
+    margin-top: 60px;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.service-section-box{
+    width: 25rem;
+    height: 21rem;
+    box-shadow: .2px .2px 2px .2px lightgray;
+}
+
+.service-section-box h3{
+    text-align: center;
+}
+
+.service-section-box img{
+    width: 25rem;
+    height: auto;
+
+}
+
+.testimonials-section{
+    background-image: linear-gradient(to top, rgba(2, 124, 168, 0.5), rgba(0, 38, 59, 0.6)), url('images/pexels-pixabay-417173.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 60vh;
+}
+
+.testimonials-section .heading-div{
+    color:white;
+}
+
+.testimonials-section .line{
+    background: white;
+}
+
+.testimonials-box-container{
+    justify-content: space-around;
+}
+
+
+.testimonials-box-container .testimonials-box{
+    width: 20rem;
+    height: 20rem;
+    border-radius: 8px;
+    box-shadow: .2px .2px 2px .2px black;
 }

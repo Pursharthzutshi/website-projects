@@ -1,7 +1,6 @@
-const showAnswerDivButton = document.querySelector(".container");
+const container = document.querySelector(".container");
 
-
-showAnswerDivButton.addEventListener("click", showAnswer);
+container.addEventListener("click", showAnswer);
 
 
 function showAnswer(e) {
@@ -14,7 +13,7 @@ function showAnswer(e) {
 
     console.log(e.target)
 
-    if (target.matches('ion-icon') && showAnswerDivButton.contains(target)) {
+    if (target.matches('ion-icon') && container.contains(target)) {
 
         const parent = target.closest('button');
         parent.nextElementSibling.classList.toggle("show-answer-box");

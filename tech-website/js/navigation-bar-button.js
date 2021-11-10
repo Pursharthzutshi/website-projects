@@ -52,6 +52,7 @@ function link() {
     }else{
         navBarList.style.visibility='visible';
     }
+
     document.body.removeChild(showNavBar);
 
     navBarContainer.appendChild(navBar);

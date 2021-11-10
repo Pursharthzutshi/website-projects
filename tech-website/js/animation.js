@@ -11,7 +11,7 @@ window.addEventListener("scroll", function () {
 window.addEventListener("scroll", function () {
     if (featuresSection.getBoundingClientRect().top < window.innerHeight) {
         featuresSection.style.transform = "scale(1)";
-        accessibilitySection.style.transform="scale(1)";
+        accessibilitySection.style.transform = "scale(1)";
     } else {
         featuresSection.style.transform = "scale(.9)";
     }

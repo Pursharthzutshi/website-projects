@@ -1,0 +1,72 @@
+.share-file-box,.upload-box,.share-box-icon-div{
+    display: flex;
+}
+
+.share-box-icon-div{
+    flex-direction: row;
+}
+
+.share-file-box,.upload-box{
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.upload-box{
+    position: fixed;
+    top:27%;
+    left: 35%;
+    width: 25rem;
+    height: 20rem;
+    background:white;
+    box-shadow: .2px .2px 12px .2px lightgray;
+}
+
+.share-box-heading{
+    margin-top: -20px;
+    text-align: center;
+}
+
+.share-file-box{
+    width: 5rem;
+    height: 4rem;
+    border:3px solid #8a01c0;
+    align-items: center;
+
+}
+
+.share-file-box ion-icon{
+    color: #8a01c0;
+    font-size: 1.5rem;
+}
+
+.share-box-icon-div{
+    gap:50px;
+}
+
+.share-box-icon{
+    padding:7px 12px 4px 12px;
+    font-size: 1.3rem;
+    border:none;
+    box-shadow: none;
+}
+
+.share-box-icon:nth-child(1){
+    background: linear-gradient(to left, #0278b7, #064f96);
+    color:white;
+}
+
+.share-box-icon:nth-child(2){
+    background: linear-gradient(to left, #0194a4, #019bc7);
+    color:white;
+}
+
+.share-box-icon:nth-child(3){
+    background: linear-gradient(to left, #b702ae, #7c0696);
+    color:white;
+}
+
+.share-box-icon:nth-child(4){
+    background: linear-gradient(to left, #02b711, #01c92b);
+    color:white;
+}
