@@ -1,0 +1,71 @@
+.price-button-div {
+    display: flex;
+}
+
+.price-button-div {
+    flex-direction: row;
+}
+
+.donate-box {
+    background: white;
+    z-index: +1;
+    width: 22rem;
+    height: 12rem;
+    box-shadow: .2px .2px 1px .2px black;
+    padding: 2px 12px 2px 12px;
+    border-top: 8px solid green;
+    border-bottom: 8px solid rgb(0, 109, 0);
+    border-radius: 10px;
+    position: fixed;
+    top: 35%;
+    left: 37%;
+    animation-name: donationBox;
+}
+
+@keyframes donationBox {
+    0% {
+        background: transparent;
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.price-button-div {
+    justify-content: space-around;
+}
+
+.price-button-div button {
+    border: none;
+    font-size: 1rem;
+    background: linear-gradient(to left, rgb(3, 194, 76), rgb(5, 192, 77));
+    color: white;
+    box-shadow: .2px .2px 2px .2px green;
+    padding: 5px 12px 5px 12px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.price-input {
+    margin-left: 50px;
+    margin-top: 37px;
+    box-shadow: .2px .2px 2px .2px green;
+    outline: none;
+    padding: 4px 22px 4px 70px;
+    border: none;
+    border-left: 2px solid green;
+    border-right: 2px solid green;
+}
+
+.price-input::placeholder {
+    color: green;
+}
+
+.background-blur-div {
+    filter: blur(20px);
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+}
