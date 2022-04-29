@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat;
+}
+
+.main-container,
+.left-sidebar-icon-div,
+.logo-div,
+.left-sidebar-icon-div a {
+    display: flex;
+}
+
+nav,
+.main-container ul,
+.left-sidebar-icon-div,
+.query-container {
+    flex-direction: column;
+}
+
+::-webkit-scrollbar {
+    background: rgb(0, 113, 94);
+    ;
+}
+
+::-webkit-scrollbar-button {
+    overflow-y: scroll;
+    height: 20rem;
+    background: rgb(0, 165, 140);
+    ;
+}
+
+.dashboard {
+    margin-left: 60px;
+    width: 97%;
+}
+
+.left-sidebar ion-icon {
+    font-size: 1.5rem;
+}
+
+.heading-div {
+    color: rgb(0, 56, 50);
+}
+
+h2 {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    border-left: none;
+    margin-top: 10px;
+    text-align: center;
+}
+
+h3 {
+    padding: 10px;
+}
+
+.left-sidebar {
+    visibility: visible;
+    position: fixed;
+    top: 0%;
+    padding: 20px 0px 30px 0px;
+    width: 5%;
+    background: linear-gradient(to top, rgb(255, 255, 255), rgb(252, 255, 254));
+    box-shadow: .2px .2px 3px .2px rgb(231, 251, 248);
+}
+
+.left-sidebar-logo {
+    color: white;
+    border-radius: 200px;
+    background: rgb(0, 56, 50);
+    padding: 5px 10px 5px 10px;
+    margin: -20px 0px 0px 5px;
+}
+
+nav {
+    padding: 35px 10px 65px 10px;
+    margin-top: -20px;
+    box-shadow: .2px .2px 1px .2px rgb(231, 231, 231);
+}
+
+.navigation-bar {
+    position: fixed;
+}
+
+.left-sidebar-icon-div {
+    padding-top: 63px;
+    gap: 80px;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-sidebar-icon-div ion-icon {
+    color: rgb(0, 109, 98);
+}
+
+.left-sidebar-icon-div ion-icon:hover {
+    color: darkgreen;
+}
+
+.changed-left-sidebar {
+    background-color: red;
+}
+
+a {
+    gap: 20px;
+}
+
+.left-sidebar-icon-div a span {
+    color: red;
+}
+
+.span-link {
+    visibility: hidden;
+}

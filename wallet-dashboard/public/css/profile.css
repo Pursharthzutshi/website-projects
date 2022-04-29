@@ -1,0 +1,57 @@
+.dashboard {
+    margin-top: -10px;
+    padding-left: 20px;
+}
+
+.input-label-row {
+    display: flex;
+}
+
+.input-label-row {
+    flex-direction: row;
+}
+
+h3 {
+    margin-top: -5px;
+}
+
+.input-label-row {
+    margin-left: 20px;
+    gap: 10px;
+}
+
+.input-label-row input {
+    box-shadow: inset .2px .2px 2px .2px rgb(0, 122, 108);
+    outline: none;
+    border: none;
+    padding: 5px 12px 5px 6px;
+}
+
+.input-label-row input::placeholder {
+    color: green;
+    letter-spacing: 2px;
+}
+
+.profile-div {
+    padding-left: 20px;
+}
+
+.profile-div img {
+    padding: 4px 8px 4px 8px;
+    box-shadow: .2px .2px 22px .2px whitesmoke;
+    border-radius: 200px;
+    width: 8rem;
+    height: auto;
+}
+
+.profile-div p {
+    border: 3px solid rgb(2, 144, 94);
+    box-shadow: .2px .2px 3px .2px rgb(0, 135, 99);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background: linear-gradient(to left, rgb(0, 146, 134), rgb(1, 133, 93));
+    color: white;
+    letter-spacing: 2px;
+    width: 30%;
+    padding: 7px 2px 7px 18px;
+}

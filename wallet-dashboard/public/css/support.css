@@ -1,0 +1,193 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat;
+}
+
+.main-container,
+.left-sidebar-icon-div,
+.top-row,
+.query-container,
+.query-box {
+    display: flex;
+}
+
+nav,
+.main-container ul,
+.left-sidebar-icon-div,
+.query-container {
+    flex-direction: column;
+}
+
+::-webkit-scrollbar {
+    background: rgb(9, 131, 119);
+}
+
+::-webkit-scrollbar-button {
+    overflow-y: scroll;
+    height: 20rem;
+    background: rgb(0, 90, 81);
+}
+
+.main-container,
+.top-row {
+    flex-direction: row;
+}
+
+.query-container,
+.top-row {
+    margin-left: 40px;
+}
+
+.dashboard {
+    margin-left: 60px;
+    width: 97%;
+}
+
+.left-sidebar ion-icon {
+    font-size: 1.5rem;
+}
+
+.heading-div {
+    color: rgb(0, 56, 50);
+}
+
+h2 {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    border-left: none;
+    margin-top: 10px;
+    text-align: center;
+}
+
+h3 {
+    padding: 10px;
+}
+
+.left-sidebar {
+    position: fixed;
+    top: 0%;
+    padding: 20px 0px 30px 0px;
+    width: 5%;
+}
+
+nav {
+    padding: 35px 10px 65px 10px;
+    margin-top: -20px;
+    box-shadow: .2px .2px 12px .2px lightgray;
+}
+
+.navigation-bar {
+    position: fixed;
+}
+
+.left-sidebar-icon-div {
+    padding-top: 63px;
+    gap: 80px;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-sidebar-icon-div ion-icon:hover {
+    color: green;
+}
+
+.top-row {
+    margin-top: 20px;
+}
+
+.top-row input::placeholder {
+    color: rgb(0, 41, 37);
+    font-family: Montserrat;
+}
+
+.top-row input {
+    border: none;
+    box-shadow: .2px .2px 2px .2px lightgray;
+    outline: none;
+    width: 93%;
+    padding: 15px 2px 15px 7px;
+    height: 1.8rem;
+}
+
+.top-row ion-icon {
+    font-size: 1rem;
+    margin: 0px 2px 2px 0px;
+    box-shadow: .2px .2px 4px .2px lightgray;
+    border: 2px solid white;
+    padding: 5px 5px 5px 5px;
+}
+
+.query-container {
+    word-spacing: 4px;
+    font-size: 1.5rem;
+    gap: 30px;
+    justify-content: space-around;
+}
+
+.query-container p {
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+    padding: 5px 0px 5px 10px;
+    width: 92%;
+    color: rgb(0, 56, 50);
+    border-top: 5px double rgb(7, 135, 122);
+    border-bottom: 5px double rgb(7, 135, 122);
+}
+
+.query-box a {
+    color: rgb(0, 56, 50);
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: .2s;
+}
+
+.query-box a:hover {
+    text-decoration: underline;
+    font-size: 1.1rem;
+}
+
+.query-box {
+    border-radius: 4px;
+    padding: 10px 2px 2px 12px;
+    width: 90%;
+    height: 2rem;
+    box-shadow: .2px .2px 3px .2px rgb(234, 234, 234);
+    border-left: 7px solid rgb(4, 121, 137);
+}
+
+.query-box:hover {
+    cursor: pointer;
+    transition: .2s;
+    background: linear-gradient(to left, rgb(213, 252, 253), rgb(222, 254, 245));
+    box-shadow: none;
+}
+
+.fixed-icon {
+    color: rgb(0, 56, 50);
+    position: fixed;
+    left: 96%;
+    top: 92%;
+    border-radius: 8px;
+    padding: 7px 8px 9px 8px;
+    font-size: 2rem;
+    margin: -2px 0px 0px 0px;
+    box-shadow: .2px .2px 12px .2px lightgray;
+}
+
+.fixed-icon:hover {
+    background: rgb(0, 56, 50);
+    color: white;
+    cursor: pointer;
+}
+
+.bottom-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bottom-box a {
+    font-size: 1rem;
+}
