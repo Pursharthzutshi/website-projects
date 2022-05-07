@@ -67,7 +67,7 @@ closeLogInBoxIcon.addEventListener("click", closeLogInBox);
 function logInAuthentication() {
 
     if (logInInputEmailId.value == '' && logInInputPassword.value == '') {
-        showLogInError.innerHTML = 'Please Fill The Value';
+        showLogInError.innerHTML = 'Please Fill The Form';
         logInInputEmailId.style.boxShadow = 'red 0px 0px 1px 1px';
         logInInputPassword.style.boxShadow = 'red 0px 0px 1px 1px';
 

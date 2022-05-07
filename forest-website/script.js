@@ -54,3 +54,20 @@ function showDonateBox() {
 
     body.style.backdropFilter = "blur(2px)";
 }
+
+function fadeInBox() {
+
+    const donateBoxFadeIn = document.querySelector(".donate-box");
+
+    setTimeout(function() {
+        donateBoxFadeIn.style.opacity = .6;
+        donateBoxFadeIn.style.transition = .3;
+    }, 1000)
+}
+
+function inputAmount() {
+    const priceInputValue = document.querySelector(".price-input");
+    priceInputValue.addEventListener("change", function() {
+
+    })
+}

@@ -24,7 +24,7 @@ function showNavBar() {
 
     const navBarList = document.querySelector(".nav-bar-list");
 
-    navBarList.style.visibility='visible';
+    navBarList.style.visibility = 'visible';
 
     const showNavBar = document.createElement("div");
     showNavBar.classList.add("show-nav-bar");
@@ -45,12 +45,12 @@ function link() {
     const showNavBar = document.querySelector(".show-nav-bar");
     const navBarList = document.querySelector(".nav-bar-list");
 
-    const mq = window.matchMedia( "(max-width: 704px)" );
+    const mq = window.matchMedia("(max-width: 704px)");
 
-    if(mq.matches){
-        navBarList.style.visibility='hidden';
-    }else{
-        navBarList.style.visibility='visible';
+    if (mq.matches) {
+        navBarList.style.visibility = 'hidden';
+    } else {
+        navBarList.style.visibility = 'visible';
     }
 
     document.body.removeChild(showNavBar);
@@ -60,8 +60,3 @@ function link() {
 
 
 }
-
-
-
-
-
