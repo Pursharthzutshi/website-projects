@@ -3,55 +3,71 @@
     padding-left: 20px;
 }
 
-.input-label-row {
+.dashboard h2 {
+    color: black;
+}
+
+.box h3 {
+    margin-left: 10px;
+    margin-top: -1px;
+    color: rgb(0, 128, 105);
+}
+
+form {
     display: flex;
-}
-
-.input-label-row {
-    flex-direction: row;
-}
-
-h3 {
-    margin-top: -5px;
-}
-
-.input-label-row {
+    margin-top: -6px;
     margin-left: 20px;
-    gap: 10px;
+    flex-direction: column;
+    gap: 20px;
 }
 
-.input-label-row input {
-    box-shadow: inset .2px .2px 2px .2px rgb(0, 122, 108);
+.label-input-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.box {
+    background: linear-gradient(to left, rgba(248, 255, 253, 0.811), rgb(250, 253, 251));
+    border-radius: 4px;
+    margin: 30px 0px 0px 10px;
+    width: 98%;
+    height: 43vh;
+    border: 2px solid rgb(1, 117, 92);
+    box-shadow: .2px .2px 2px .2px rgb(226, 226, 226);
+}
+
+.box form div {
+    display: inline;
+}
+
+label {
+    text-align: start;
+}
+
+form input {
+    padding: 2px 2px 2px 5px;
     outline: none;
     border: none;
-    padding: 5px 12px 5px 6px;
+    box-shadow: .2px .2px 2px .2px lightgray;
+    margin-left: 50px;
 }
 
-.input-label-row input::placeholder {
+form button {
+    font-size: .8rem;
+    font-family: "Montserrat";
+    background: white;
+    padding: 5px 12px 5px 12px;
+    border: none;
+    box-shadow: .2px .2px 1px .2px lightgray;
     color: green;
-    letter-spacing: 2px;
+    border: 2px solid green;
+    border-radius: 4px;
 }
 
-.profile-div {
-    padding-left: 20px;
-}
-
-.profile-div img {
-    padding: 4px 8px 4px 8px;
-    box-shadow: .2px .2px 22px .2px whitesmoke;
-    border-radius: 200px;
-    width: 8rem;
-    height: auto;
-}
-
-.profile-div p {
-    border: 3px solid rgb(2, 144, 94);
-    box-shadow: .2px .2px 3px .2px rgb(0, 135, 99);
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    background: linear-gradient(to left, rgb(0, 146, 134), rgb(1, 133, 93));
+form button:hover {
+    transition: .2s;
+    cursor: pointer;
+    background: rgb(0, 128, 100);
     color: white;
-    letter-spacing: 2px;
-    width: 30%;
-    padding: 7px 2px 7px 18px;
 }
