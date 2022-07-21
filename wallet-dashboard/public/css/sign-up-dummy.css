@@ -1,0 +1,87 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat";
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+}
+
+.left-sidebar {
+    display: flex;
+    box-shadow: .2px .2px 12px .2px lightgray;
+    background-color: green;
+    width: 120px;
+    height: 100vh;
+}
+
+.sign-up-form-container {
+    background: linear-gradient(green, green);
+    height: 100vh;
+    display: flex;
+    flex: 0 0 90%;
+    width: 320px;
+}
+
+form {
+    padding-top: 20px;
+    gap: 20px;
+    padding-left: 20px;
+}
+
+.form-div {
+    gap: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+form input {
+    padding: 3px 2px 3px 6px;
+    box-shadow: .2px .2px 2px .2px;
+    outline: none;
+    border: none;
+    font-family: "Montserrat";
+}
+
+.gender-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.password-icon {
+    position: fixed;
+    left: 63%;
+}
+
+
+/* .logo-div {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.logo-div h3 {
+    margin-left: -10px;
+}
+
+.logo-div .icon {
+    font-size: 1.1rem;
+    color: white;
+    background: green;
+    padding: 5px 8px 5px 8px;
+    margin-top: 10px;
+    border-radius: 200px; */
+
+
+}

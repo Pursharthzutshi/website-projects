@@ -17,7 +17,7 @@ function addingNewCardDialogBox(event) {
 
     const saveCardsForm = document.createElement("form");
     saveCardsForm.classList.add("save-cards-form");
-    saveCardsForm.action = "/";
+    saveCardsForm.action = "/AddingCard";
     saveCardsForm.method = "post";
 
     //creating a container
@@ -69,6 +69,9 @@ function addingNewCardDialogBox(event) {
     saveCardButton.classList.add("save-card-button");
     saveCardButton.innerHTML = "Save Card";
 
+
+    const errorMessage = document.querySelector(".error-message");
+
     document.body.appendChild(bgDiv);
 
     inputsContainerDiv.appendChild(cardNo);
@@ -87,6 +90,8 @@ function addingNewCardDialogBox(event) {
 
     saveCardsForm.appendChild(inputsContainerDiv)
 
+    newCard.appendChild(errorMessage);
+
     newCard.appendChild(cardHeading);
 
     newCard.appendChild(saveCardsForm);
@@ -101,7 +106,7 @@ function addingNewCardDialogBox(event) {
     //    button.textContent = "button"
     //    newCard.appendChild(button);
 
-    // button.addEventListener("click", addNewCard);
+    //saveCardButton.addEventListener("click", addNewCard);
 
     //    saveCardButtonDiv.addEventListener("click", addNewCard);
 }
@@ -109,11 +114,9 @@ function addingNewCardDialogBox(event) {
 // function cardNoEvent() {
 //     const cardNoValueEvent = document.querySelector(".input-1")
 
-
-//     for (let i = 0; i < cardNoValueEvent.value.length; cardNoValueEvent.value.length++) {
+//     for (let i = 0; i < cardNoValueEvent.value + 4; cardNoValueEvent.value++) {
 //         if (i % 4 == 0) {
-//             cardNoValueEvent.value =
-//                 cardNoValueEvent.value(match.substring(i, i + 4))
+//             cardNoValueEvent.value = cardNoValueEvent.value + ""
 //             console.log(i);
 //         }
 //     }

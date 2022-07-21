@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <link rel="stylesheet" href="/css/sign-up.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:ital@1&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="main-container">
+
+        <div class="left-sidebar">
+            <div class="heading-div">
+                <h2>FlatIcons</h2>
+                <h3>Sign-up</h3>
+            </div>
+        </div>
+
+        <div class="sign-up-form-container">
+
+            <form action="/home" method="post">
+
+                <div class="sign-up-error-message-div">
+                    <p class="sign-up-error-message">
+                        <%=SignUpErrorMessage%>
+                    </p>
+                </div>
+                <h3 class="sign-up-form-container-heading">Join us </h3>
+
+                <div class="form-div">
+
+                    <input name="username" placeholder="Username" type="text">
+                </div>
+
+                <div class="form-div">
+
+                    <input class="emailId" name="emailId" placeholder="Email Id" type="email">
+                </div>
+
+
+                <div class="form-div">
+
+                    <input name="password" class="password" placeholder="Password" type="password">
+
+                    <ion-icon class="password-icon" name="eye-outline">
+                    </ion-icon>
+
+                </div>
+
+
+                <div class="form-div">
+
+                    <input name="reCheckPassword" class="Re-Check-Password" placeholder="Re-Check-Password" type="password">
+                </div>
+                <input placeholder="Your age" min="5" max="100" name="age" class="age" type="number" title="You changed it">
+
+                <div class="gender-row">
+
+
+                    <label>Male:</label>
+                    <input name="gender" value="male" class="radio-button" type="radio">
+
+                    <label>Female:</label>
+                    <input name="gender" value="female" class="radio-button" type="radio">
+
+                </div>
+
+                <h4>Address</h4>
+
+                <div class="form-div">
+
+                    <textarea name="address" placeholder="Type Your Address" rows="10" cols="57"></textarea>
+
+                </div>
+
+                <div class="button-container">
+
+                    <button type="submit">Sign Up</button>
+                </div>
+
+                <div class="button-container-2">
+
+                    <div class="buttons-icon-row">
+
+                        <ion-icon class="google-icon" name="logo-google"></ion-icon>
+                        <button>Sign Up with Google</button>
+
+                    </div>
+
+
+                    <div class="buttons-icon-row">
+
+                        <ion-icon class="facebook-icon" name="logo-facebook"></ion-icon>
+                        <button>Sign Up with Facebook</button>
+
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <script src="/js/sign-up.js"></script>
+
+</body>

@@ -38,7 +38,7 @@
     border-radius: 4px;
     color: darkgreen;
     background: linear-gradient(to left, rgb(244, 244, 244), rgb(250, 251, 250));
-    padding: 2px 15px 2px 15px;
+    padding: 22px 15px 2px 23px;
     z-index: +1;
     position: fixed;
     top: 15%;
@@ -182,4 +182,9 @@
 
 .left-sidebar ion-icon {
     margin-left: 70px;
+}
+
+.error-message {
+    color: red;
+    margin-top: 0px;
 }
